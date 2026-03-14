@@ -19,8 +19,15 @@
    &-2xl {
       border-radius: 1rem; /* 16px */
    }
+   &-20-px {
+      border-radius: 20px; /* 16px */
+   }
    &-3xl {
       border-radius: 1.5rem; /* 24px */
    }
+}
+
+.tw-rounded-top-20-px {
+   border-radius: 20px 20px 0 20px;
 }
 /* Border Radius Css End */
