@@ -1,0 +1,27 @@
+/* Font Size Class Start */
+.text {
+  &-inherit {
+      font-size: inherit;
+  }
+}
+
+@each $property, $value in $font-sizes {
+  .tw-text-#{$property} {
+    font-size: $value;
+  }
+}  
+/* Font Size Class End */
+
+
+@each $property, $value in $spaces {
+    .tw-text-#{$property} {
+      font-size: $value;
+    }
+}  
+
+.tw-sm-text-sm {
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+/* Font Size Class End */
