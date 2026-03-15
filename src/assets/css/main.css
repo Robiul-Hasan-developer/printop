@@ -1130,6 +1130,7 @@ input:focus, input:focus-visible {
 
 .bg-gradient-sidebar {
     background: linear-gradient(80.26deg, #FFDCE9 25.59%, #DDE5FE 108.77%);
+    background: linear-gradient(80.26deg, #ffdce978 25.59%, #dde5fe8a 108.77%);
 }
 
 /* hover bg class end */
@@ -2258,6 +2259,10 @@ input:focus, input:focus-visible {
 /* ======================== Group Css Start =============================== */
 .group:hover .group-hover-text-white {
     color: hsl(var(--white)) !important;
+}
+
+.group:hover .group-hover-text-heading {
+    color: hsl(var(--black)) !important;
 }
 
 .group:hover .group-hover-text-main-600 {
