@@ -3,10 +3,30 @@
     &:not(:last-child) {
         border-bottom: 1px solid #E0E0E0;
     }
+
     &:hover {
         .sidebar-dropdown-menu {
             margin-top: 0;
         }
+    }
+}
+
+.mash-gradient-shape {
+    &::before, &::after {
+        position: absolute;
+        content: "";
+        width: 309px;
+        height: 309px;
+        top: 150px;
+        inset-inline-start: 110px;
+        opacity: 1;
+        background: #FEAE007D;
+        filter: blur(244px);
+        z-index: -1;
+    }
+    &::after {
+        background: #1EE8FF7A;
+        inset-inline-start: 50%;
     }
 }
 
