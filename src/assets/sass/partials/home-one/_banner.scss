@@ -1,3 +1,16 @@
 /* whole banner section start */
+.sidebar-list-item {
+    &:not(:last-child) {
+        border-bottom: 1px solid #E0E0E0;
+    }
+}
 
+.bg-gradient-sidebar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(80.26deg, #FFDCE9 25.59%, #DDE5FE 108.77%);
+  opacity: 0.44;
+  z-index: -1;
+}
 /* whole banner section end */

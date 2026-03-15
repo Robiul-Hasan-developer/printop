@@ -1128,18 +1128,6 @@ input:focus, input:focus-visible {
     background-color: hsl(var(--white)/0.08);
 }
 
-.bg-white-13 {
-    background-color: hsl(var(--white)/0.13);
-}
-
-.bg-white-7 {
-    background-color: hsl(var(--white)/0.7);
-}
-
-.bg-white-06 {
-    background-color: hsl(var(--white)/0.06);
-}
-
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -4183,7 +4171,7 @@ input:focus, input:focus-visible {
 }
 
 .tw-rounded-top-20-px {
-    border-radius: 20px 20px 0 20px;
+    border-radius: 20px 20px 0 0px;
 }
 
 /* Border Radius Css End */
@@ -5366,6 +5354,19 @@ input:focus, input:focus-visible {
 
 /* Custom Cursor Css End */
 /* whole banner section start */
+.sidebar-list-item:not(:last-child) {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.bg-gradient-sidebar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(80.26deg, #FFDCE9 25.59%, #DDE5FE 108.77%);
+    opacity: 0.44;
+    z-index: -1;
+}
+
 /* whole banner section end */
 /* ================================== rtl css start ================================== */
 .text-start {
