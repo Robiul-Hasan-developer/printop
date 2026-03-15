@@ -24,6 +24,11 @@
             transform: scale(0.98);
         }
     }
+    &-099 {
+        &:hover {
+            transform: scale(0.99);
+        }
+    }
     &-102 {
         &:hover {
             transform: scale(1.02);
