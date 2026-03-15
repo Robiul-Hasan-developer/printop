@@ -73,19 +73,19 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
-    --heading-font: "Vidaloka", serif;
-    --body-font: "Poppins", sans-serif;
+    --heading-font: "Plus Jakarta Sans", sans-serif;
+    --body-font: "Gabarito", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2rem, -0.0733rem + 6.3692vw, 4.25rem);
-    --heading-two: clamp(1.75rem, 0.7133rem + 2.8846vw, 2.875rem);
-    --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.5rem);
-    --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 2rem);
-    --heading-five: clamp(1.125rem, 1.2rem + 0.722vw, 1.75rem);
-    --heading-six: clamp(1rem, 0.769rem + 0.6813vw, 1.25rem);
+    --heading-one: clamp(2.5rem, -0.0733rem + 6.3692vw, 3.625rem);
+    --heading-two: clamp(2rem, 0.7133rem + 2.8846vw, 3rem);
+    --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 1.75rem);
+    --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 1.375rem);
+    --heading-five: 1.125rem;
+    --heading-six: 1.125rem;
   /* Font Size End */
   /* template main color */
     --main-h: 151;
@@ -313,6 +313,26 @@
 }
 
 .btn-main-two.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-main-outline {
+    background-color: transparent !important;
+    color: var(--main-600) !important;
+    border: 1px solid var(--main-600) !important;
+}
+
+.btn-main-outline.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-main-two-outline {
+    background-color: transparent !important;
+    color: var(--main-two-600) !important;
+    border: 1px solid var(--main-two-600) !important;
+}
+
+.btn-main-two-outline.button--stroke::after {
     border-color: transparent;
 }
 
@@ -760,12 +780,18 @@ span {
     display: inline-block;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
     margin: 0;
     font-family: var(--heading-font);
     color: hsl(var(--heading-color));
@@ -773,28 +799,36 @@ h6, .h6 {
     font-weight: 700;
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: var(--heading-one);
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: var(--heading-two);
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: var(--heading-three);
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: var(--heading-four);
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: var(--heading-five);
+    font-family: var(--body-font);
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: var(--heading-six);
+    font-family: var(--body-font);
 }
 
 h1 > a,
@@ -856,7 +890,8 @@ button:focus {
     box-shadow: none;
 }
 
-input:focus, input:focus-visible {
+input:focus,
+input:focus-visible {
     box-shadow: none;
 }
 
@@ -1510,6 +1545,10 @@ input:focus, input:focus-visible {
     border-style: dashed !important;
 }
 
+.border-pink-600 {
+    border-color: #FF1C6A !important;
+}
+
 .border-transparent {
     border-color: transparent !important;
 }
@@ -1653,6 +1692,10 @@ input:focus, input:focus-visible {
 
 .text-main {
     color: var(--main-600);
+}
+
+.text-pink-600 {
+    color: #FF1C6A;
 }
 
 /* Colors class End */
@@ -2239,8 +2282,8 @@ input:focus, input:focus-visible {
     gap: clamp(1.5rem, 0.0938rem + 4.5vw, 2.625rem);
 }
 
-.tw-gap-48-px {
-    gap: clamp(1.3rem, 0.0938rem + 2vw, 3rem);
+.tw-gap-52-px {
+    gap: clamp(1.3rem, 0.0938rem + 2.4vw, 3.25rem);
 }
 
 .tw-gap-56-px {
@@ -3224,6 +3267,10 @@ input:focus, input:focus-visible {
 
 .max-w-330-px {
     max-width: 330px;
+}
+
+.max-w-476-px {
+    max-width: 520px;
 }
 
 /* Max width Css Class End */

@@ -83,6 +83,26 @@
     }
 }
 
+.btn-main-outline {
+    background-color: transparent !important;
+    color: var(--main-600) !important;
+    border: 1px solid var(--main-600) !important;
+}
+
+.btn-main-outline.button--stroke::after {
+    border-color: transparent;
+}
+
+.btn-main-two-outline {
+    background-color: transparent !important;
+    color: var(--main-two-600) !important;
+    border: 1px solid var(--main-two-600) !important;
+}
+
+.btn-main-two-outline.button--stroke::after {
+    border-color: transparent;
+}
+
 .hover-style {
     &-one {
         &:hover, &:active {
