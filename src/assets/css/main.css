@@ -316,6 +316,15 @@
     border-color: transparent;
 }
 
+.btn-white {
+    background-color: hsl(var(--white)) !important;
+    color: hsl(var(--heading-color)) !important;
+}
+
+.btn-white.button--stroke::after {
+    border-color: transparent;
+}
+
 .btn-main-outline {
     background-color: transparent !important;
     color: var(--main-600) !important;
@@ -1184,6 +1193,14 @@ input:focus-visible {
     background-color: #FF7B1C17;
 }
 
+.bg-navy-black {
+    background-color: #110225;
+}
+
+.bg-navy-black-light {
+    background-color: #241636;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -1563,6 +1580,10 @@ input:focus-visible {
 
 .border-pink-600 {
     border-color: #FF1C6A !important;
+}
+
+.border-white-39 {
+    border-color: #ffffff59 !important;
 }
 
 .border-transparent {
@@ -4288,6 +4309,11 @@ input:focus-visible {
 .tw-rounded-3xl {
     border-radius: 1.5rem;
   /* 24px */
+}
+
+.tw-rounded-36-px {
+    border-radius: 36px;
+  /* 36px */
 }
 
 .tw-rounded-top-20-px {

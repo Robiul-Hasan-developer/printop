@@ -81,6 +81,15 @@
             }
         }
     }
+    &-white {
+        background-color: hsl(var(--white)) !important;
+        color: hsl(var(--heading-color)) !important;
+        &.button--stroke {
+            &::after {
+                border-color: transparent;
+            }
+        }
+    }
 }
 
 .btn-main-outline {
