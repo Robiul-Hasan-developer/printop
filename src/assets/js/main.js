@@ -251,6 +251,26 @@
     });
     // ========================= AOS Js End ===========================
 
+
+    // ================================= Banner slider Start =========================
+     var bannerOne = new Swiper(".banner-slider", {
+      slidesPerView: 1,
+      grabCursor: true,
+      loop: true,
+      speed: 1000,
+      effect: "fade",
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".banner-slider-pagination",
+        clickable: true,
+      },
+    });
+    // ================================= Banner slider Start =========================
+
+    
     // // ================================= Brand slider Start =========================
     // var brandSlider = new Swiper('.brand-slider', {
     //   autoplay: {
