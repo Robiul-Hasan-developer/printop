@@ -2195,6 +2195,10 @@ input:focus-visible {
     height: 320px;
 }
 
+.h-unset {
+    height: unset;
+}
+
 .tw-min-h-184-px {
     min-height: 184px;
 }
