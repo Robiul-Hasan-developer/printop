@@ -340,6 +340,41 @@
     });
     // ================================= Brand slider End =========================
 
+    // ================================= Product Shop slider End =========================
+    var productSlider = new Swiper(".product-slider", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true,
+      grabCursor: true,
+      loop: true,
+      autoplay: true,
+      speed: 1000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          centeredSlides: false,
+          slidesPerView: 1,
+        },
+        576: {
+          centeredSlides: true,
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    });
+    // ================================= Product Shop slider End =========================
+
     // // ================================= Brand slider Start =========================
     // var brandSlider = new Swiper('.brand-slider', {
     //   autoplay: {
