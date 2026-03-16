@@ -5520,6 +5520,27 @@ input:focus-visible {
 }
 
 /* whole banner section end */
+/* Brand Css start */
+.left-right-gradient::before,
+.left-right-gradient::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.left-right-gradient::after {
+    background: linear-gradient(90deg, transparent, #ffffff);
+    inset-inline-start: auto;
+    inset-inline-end: 0;
+}
+
+/* Brand Css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
