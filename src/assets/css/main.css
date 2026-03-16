@@ -1201,6 +1201,10 @@ input:focus-visible {
     background-color: #241636;
 }
 
+.section-bg {
+    background-color: #EEF3F4;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
