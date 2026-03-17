@@ -375,6 +375,41 @@
     });
     // ================================= Product Shop slider End =========================
 
+
+
+
+
+    // ====================== Marquee Js Start ========================
+    if ($(".marquee_left").length) {
+      $(".marquee_left").marquee({
+        speed: 300,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $("html").attr("dir") === "rtl" ? "right" : "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+        direction: "left",
+      });
+    }
+
+    if ($(".marquee_right").length) {
+      $(".marquee_right").marquee({
+        speed: 300,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: $("html").attr("dir") === "rtl" ? "right" : "left",
+        duplicated: true,
+        pauseOnHover: true,
+        startVisible: true,
+        direction: "right",
+      });
+    }
+    // ====================== Marquee Js End ========================
+    
+    
+    
+    
     // // ================================= Brand slider Start =========================
     // var brandSlider = new Swiper('.brand-slider', {
     //   autoplay: {
