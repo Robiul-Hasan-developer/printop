@@ -30,6 +30,11 @@
   visibility: hidden;
 }
 
+.text-invert-black {
+    filter: brightness(0) invert(0);
+}
+
+
 .group-item {
   &:hover {
     .group-hover-item-visible {
@@ -61,6 +66,9 @@
     }
     .group-hover-item-text-invert-black {
       filter: brightness(0) invert(0);
+    }
+    .group-hover-item-text-invert-main-600 {
+    filter: brightness(1) invert(0);
     }
   }
 }

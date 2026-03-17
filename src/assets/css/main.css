@@ -1938,6 +1938,10 @@ input:focus-visible {
     line-height: 1;
 }
 
+.tw-leading-155 {
+    line-height: 1.55;
+}
+
 .opacity-05 {
     opacity: 0.05;
 }
@@ -2413,6 +2417,10 @@ input:focus-visible {
     visibility: hidden;
 }
 
+.text-invert-black {
+    filter: brightness(0) invert(0);
+}
+
 .group-item:hover .group-hover-item-visible {
     visibility: visible;
 }
@@ -2451,6 +2459,10 @@ input:focus-visible {
 
 .group-item:hover .group-hover-item-text-invert-black {
     filter: brightness(0) invert(0);
+}
+
+.group-item:hover .group-hover-item-text-invert-main-600 {
+    filter: brightness(1) invert(0);
 }
 
 /* ======================== Group Css End =============================== */
@@ -3358,6 +3370,10 @@ input:focus-visible {
     max-width: 330px;
 }
 
+.max-w-230-px {
+    max-width: 230px;
+}
+
 .max-w-476-px {
     max-width: 520px;
 }
@@ -4122,6 +4138,10 @@ input:focus-visible {
     padding-inline-end: 150px;
 }
 
+.tw-px-36-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -4471,6 +4491,10 @@ input:focus-visible {
 /* Box shadow start */
 .common-shadow {
     box-shadow: 0 6px 30px 0px #0000000a;
+}
+
+.hover-shadow-one:hover {
+    box-shadow: 9px 10px 87.1px 0px #41071B14;
 }
 
 /* Box shadow End */

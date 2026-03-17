@@ -56,6 +56,9 @@
   &-pe-150-px {
     padding-inline-end: 150px;
   }
+  &-px-36-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);;
+  }
 }
 
 .py-120 {
