@@ -56,8 +56,14 @@
   &-pe-150-px {
     padding-inline-end: 150px;
   }
+  &-ps-80-px {
+    padding-inline-start: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
+  }
   &-px-36-px {
-    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);;
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+  }
+  &-px-44-px {
+    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
   }
 }
 
