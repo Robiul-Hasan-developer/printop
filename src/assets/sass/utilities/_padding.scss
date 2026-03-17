@@ -46,85 +46,115 @@
     &-36-px {
       padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
     }
+
     &-48-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
     }
+
     &-60-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
     }
   }
+
   &-pe-150-px {
     padding-inline-end: 150px;
   }
+
   &-ps-80-px {
     padding-inline-start: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
   }
+
   &-px-36-px {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
   }
+
   &-px-44-px {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
+  }
+}
+
+.md-ps-10 {
+  @media (min-width: 768px) {
+    padding-inline-start: 40px;
   }
 }
 
 .py-120 {
   padding-block-start: 60px;
   padding-block-end: 60px;
+
   @media (min-width: 576px) {
     padding-block-start: 80px;
     padding-block-end: 80px;
   }
+
   @media (min-width: 992px) {
     padding-block-start: 120px;
     padding-block-end: 120px;
   }
 }
+
 .pt-120 {
-    padding-block-start: 60px;
-    @media (min-width: 576px) {
-      padding-block-start: 80px;
-    }
-    @media (min-width: 992px) {
+  padding-block-start: 60px;
+
+  @media (min-width: 576px) {
+    padding-block-start: 80px;
+  }
+
+  @media (min-width: 992px) {
     padding-block-start: 120px;
   }
 }
+
 .pb-120 {
-    padding-block-end: 60px;
-    @media (min-width: 576px) {
-      padding-block-end: 80px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 120px;
-    }
+  padding-block-end: 60px;
+
+  @media (min-width: 576px) {
+    padding-block-end: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-end: 120px;
+  }
 }
+
 .py-60 {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-      padding-block-end: 60px;
-    }
+  padding-block-start: 30px;
+  padding-block-end: 30px;
+
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+    padding-block-end: 60px;
+  }
 }
+
 .pt-60 {
-    padding-block-start: 30px;
-    @media (min-width: 576px) {
-      padding-block-start: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-start: 60px;
-    }
+  padding-block-start: 30px;
+
+  @media (min-width: 576px) {
+    padding-block-start: 40px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-start: 60px;
+  }
 }
-  .pb-60 {
-    padding-block-end: 30px;
-    @media (min-width: 576px) {
-      padding-block-end: 40px;
-    }
-    @media (min-width: 992px) {
-      padding-block-end: 60px;
-    }
+
+.pb-60 {
+  padding-block-end: 30px;
+
+  @media (min-width: 576px) {
+    padding-block-end: 40px;
+  }
+
+  @media (min-width: 992px) {
+    padding-block-end: 60px;
+  }
 }
+
 /* ================================= Padding Css End =========================== */

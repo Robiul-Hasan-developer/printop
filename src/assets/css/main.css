@@ -3378,6 +3378,10 @@ input:focus-visible {
     max-width: 520px;
 }
 
+.max-w-400-px {
+    max-width: 400px;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
@@ -4150,6 +4154,12 @@ input:focus-visible {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
 }
 
+@media (min-width: 768px) {
+    .md-ps-10 {
+        padding-inline-start: 40px;
+    }
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -4360,6 +4370,11 @@ input:focus-visible {
     border-radius: 0 50px 0 50px;
 }
 
+@media (min-width: 768px) {
+    .md-rounded-pill {
+        border-radius: 50rem;
+    }
+}
 /* Border Radius Css End */
 /* Rotate Css Start */
 .tw-hover-rotate-360:hover {
