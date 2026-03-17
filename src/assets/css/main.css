@@ -2387,6 +2387,10 @@ input:focus-visible {
     gap: clamp(1.5rem, -24.8393rem + 28.0952vw, 4.625rem);
 }
 
+.tw-gap-130-px {
+    gap: clamp(2.5rem, -21.875rem + 30vw, 8.125rem);
+}
+
 /* Gap Css end */
 /* ======================== Group Css Start =============================== */
 .group:hover .group-hover-text-white {
@@ -4154,6 +4158,10 @@ input:focus-visible {
     padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
 }
 
+.tw-pt-100-px {
+    padding-top: clamp(3.75rem, -6.1013rem + 9.4763vw, 6.25rem);
+}
+
 @media (min-width: 768px) {
     .md-ps-10 {
         padding-inline-start: 40px;
@@ -5119,14 +5127,6 @@ input:focus-visible {
     display: flex;
     gap: 64px;
     min-width: max-content;
-}
-
-.cta-four .js-marquee-wrapper {
-    gap: 24px;
-}
-
-.cta-four .js-marquee {
-    gap: 24px;
 }
 
 /* Marquee css end */

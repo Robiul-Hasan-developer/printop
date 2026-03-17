@@ -343,8 +343,8 @@
     // ================================= Product Shop slider End =========================
     var productSlider = new Swiper(".product-slider", {
       slidesPerView: 1,
-      spaceBetween: 24,
-      centeredSlides: true,
+      spaceBetween: 30,
+      // centeredSlides: true,
       grabCursor: true,
       loop: true,
       autoplay: true,
@@ -355,11 +355,11 @@
       },
       breakpoints: {
         0: {
-          centeredSlides: false,
+          // centeredSlides: false,
           slidesPerView: 1,
         },
         576: {
-          centeredSlides: true,
+          // centeredSlides: true,
           slidesPerView: 3,
         },
         768: {
@@ -375,14 +375,10 @@
     });
     // ================================= Product Shop slider End =========================
 
-
-
-
-
     // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {
       $(".marquee_left").marquee({
-        speed: 300,
+        speed: 200,
         gap: 0,
         delayBeforeStart: 0,
         direction: $("html").attr("dir") === "rtl" ? "right" : "left",
@@ -395,7 +391,7 @@
 
     if ($(".marquee_right").length) {
       $(".marquee_right").marquee({
-        speed: 300,
+        speed: 200,
         gap: 0,
         delayBeforeStart: 0,
         direction: $("html").attr("dir") === "rtl" ? "right" : "left",
@@ -406,76 +402,39 @@
       });
     }
     // ====================== Marquee Js End ========================
-    
-    
-    
-    
-    // // ================================= Brand slider Start =========================
-    // var brandSlider = new Swiper('.brand-slider', {
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false
-    //   },
-    //   autoplay: true,
-    //   speed: 1500,
-    //   grabCursor: true,
-    //   loop: true,
-    //   slidesPerView: 7,
-    //   breakpoints: {
-    //       300: {
-    //           slidesPerView: 2,
-    //       },
-    //       575: {
-    //           slidesPerView: 3,
-    //       },
-    //       768: {
-    //           slidesPerView: 4,
-    //       },
-    //       992: {
-    //           slidesPerView: 5,
-    //       },
-    //       1200: {
-    //           slidesPerView: 6,
-    //       },
-    //       1400: {
-    //           slidesPerView: 7,
-    //       },
-    //   }
-    // });
-    // // ================================= Brand slider End =========================
 
     // ========================= Counter Up Js End ===================
-    // const counterUp = window.counterUp.default;
+    const counterUp = window.counterUp.default;
 
-    // const callback = (entries) => {
-    //   entries.forEach((entry) => {
-    //     const el = entry.target;
-    //     if (entry.isIntersecting && !el.classList.contains("is-visible")) {
-    //       counterUp(el, {
-    //         duration: 1500,
-    //         delay: 16,
-    //       });
-    //       el.classList.add("is-visible");
-    //     }
-    //   });
-    // };
-    // const IO = new IntersectionObserver(callback, { threshold: 1 });
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        const el = entry.target;
+        if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+          counterUp(el, {
+            duration: 1500,
+            delay: 16,
+          });
+          el.classList.add("is-visible");
+        }
+      });
+    };
+    const IO = new IntersectionObserver(callback, { threshold: 1 });
 
-    // // Banner statistics Counter
-    // const statisticsCounter = document.querySelectorAll(".counter");
-    // if (statisticsCounter.length > 0) {
-    //   statisticsCounter.forEach((counterNumber) => {
-    //     IO.observe(counterNumber);
-    //   });
-    // }
+    // Banner statistics Counter
+    const statisticsCounter = document.querySelectorAll(".counter");
+    if (statisticsCounter.length > 0) {
+      statisticsCounter.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
+    }
 
-    // // performance Count
-    // const performanceCount = document.querySelectorAll(".counter");
-    // if (performanceCount.length > 0) {
-    //   performanceCount.forEach((counterNumber) => {
-    //     IO.observe(counterNumber);
-    //   });
-    // }
+    // performance Count
+    const performanceCount = document.querySelectorAll(".counter");
+    if (performanceCount.length > 0) {
+      performanceCount.forEach((counterNumber) => {
+        IO.observe(counterNumber);
+      });
+    }
     // ========================= Counter Up Js End ===================
 
     // ========================== Add Attribute For Bg Image Js Start ====================

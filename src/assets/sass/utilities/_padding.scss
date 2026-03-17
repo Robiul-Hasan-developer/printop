@@ -64,12 +64,20 @@
     padding-inline-start: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
   }
 
-  &-px-36-px {
-    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+  &-px {
+    &-36-px {
+      padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.25rem);
+    }
+
+    &-44-px {
+      padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
+    }
   }
 
-  &-px-44-px {
-    padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
+  &-pt {
+    &-100-px {
+      padding-top: clamp(3.75rem, -6.1013rem + 9.4763vw, 6.25rem);
+    }
   }
 }
 
