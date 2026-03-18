@@ -1,0 +1,23 @@
+/* Testimonials slider css start  */
+.testimonials-slider {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+
+.testimonials-slider .swiper-slide {
+    filter: blur(1px);
+    transform-origin: bottom center;
+
+    &.swiper-slide-active {
+        filter: blur(0px);
+        box-shadow: 0px 12px 20px #e6e6e6c2;
+        border-radius: 20px;
+        z-index: 2;
+
+        &.testimonials-item {
+            background-color: var(--main-600) !important;
+            color: #fff;
+        }
+    }
+}
+/* Testimonials slider css end  */

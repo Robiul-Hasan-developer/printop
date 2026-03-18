@@ -295,7 +295,7 @@
     var bannerOne = new Swiper(".banner-slider", {
       slidesPerView: 1,
       grabCursor: true,
-      loop: true,
+      // loop: true,
       speed: 1000,
       effect: "fade",
       autoplay: {
@@ -376,53 +376,6 @@
     // ================================= Product Shop slider End =========================
 
     // ================================= testimonials slider End =========================
-    // var testimonialsSlider = new Swiper(".testimonials-slider", {
-    //   slidesPerView: 1,
-    //   spaceBetween: 0,
-    //   centeredSlides: false,
-    //   grabCursor: true,
-    //   loop: true,
-    //   autoplay: true,
-    //   speed: 1000,
-    //   pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //   },
-    //   effect: "creative",
-    //   creativeEffect: {
-    //     perspective: true,
-    //     limitProgress: 5,
-    //     prev: {
-    //       translate: ["-90%", "20%", -100],
-    //       rotate: [0, 0, -20],
-    //       origin: "bottom",
-    //     },
-    //     next: {
-    //       translate: ["90%", "20%", -100],
-    //       rotate: [0, 0, 20],
-    //       origin: "bottom",
-    //     },
-    //   },
-    //   breakpoints: {
-    //     0: {
-    //       slidesPerView: 1,
-    //     },
-    //     576: {
-    //       slidesPerView: 3,
-    //     },
-    //     768: {
-    //       slidesPerView: 4,
-    //     },
-    //     992: {
-    //       slidesPerView: 5,
-    //     },
-    //     1200: {
-    //       slidesPerView: 5,
-    //     },
-    //   },
-    // });
-
-    // JS
     var testimonialsSlider = new Swiper(".testimonials-slider", {
       slidesPerView: 1,
       spaceBetween: 0,
@@ -433,7 +386,7 @@
         delay: 3000,
         disableOnInteraction: false,
       },
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
       pagination: {
         el: ".swiper-pagination",
@@ -443,17 +396,16 @@
       creativeEffect: {
         limitProgress: 5,
         prev: {
-          translate: ["-80%", "10%", -100], // X, Y, Z
-          rotate: [2, 0, -20], // rotation
+          translate: ["-90%", "5%", -50], // X, Y, Z
+          rotate: [0, -0, -10], // rotation
           origin: "bottom center",
         },
         next: {
-          translate: ["80%", "10%", -100],
-          rotate: [2, 0, 20],
+          translate: ["90%", "5%", -50],
+          rotate: [0, 0, 10],
           origin: "bottom center",
         },
       },
-
       breakpoints: {
         0: { slidesPerView: 1 },
         576: { slidesPerView: 3 },
