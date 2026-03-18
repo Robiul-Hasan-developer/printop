@@ -5430,6 +5430,7 @@ input:focus-visible {
     max-height: 540px;
     overflow-y: auto;
     overflow-x: hidden;
+    cursor: auto;
 }
 
 @media (max-width: 991px) {
