@@ -5,19 +5,30 @@
 }
 
 .testimonials-slider .swiper-slide {
-    filter: blur(1px);
     transform-origin: bottom center;
+    box-shadow: 0px 12px 20px #e6e6e6c2;
+    border-radius: 20px;
 
     &.swiper-slide-active {
-        filter: blur(0px);
-        box-shadow: 0px 12px 20px #e6e6e6c2;
-        border-radius: 20px;
         z-index: 2;
 
-        &.testimonials-item {
+        .testimonials-item {
             background-color: var(--main-600) !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        span,
+        p,
+        i {
             color: #fff;
         }
+
     }
 }
+
 /* Testimonials slider css end  */

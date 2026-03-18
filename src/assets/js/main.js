@@ -397,21 +397,21 @@
         limitProgress: 5,
         prev: {
           translate: ["-90%", "5%", -50], // X, Y, Z
-          rotate: [0, -0, -10], // rotation
+          rotate: [2, -0, -10], // rotation
           origin: "bottom center",
         },
         next: {
           translate: ["90%", "5%", -50],
-          rotate: [0, 0, 10],
+          rotate: [2, 0, 10],
           origin: "bottom center",
         },
       },
       breakpoints: {
         0: { slidesPerView: 1 },
-        576: { slidesPerView: 3 },
-        768: { slidesPerView: 4 },
-        992: { slidesPerView: 5 },
-        1200: { slidesPerView: 5 },
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 },
+        1300: { slidesPerView: 5 },
       },
     });
     // ================================= testimonials slider End =========================
