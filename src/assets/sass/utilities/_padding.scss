@@ -63,6 +63,9 @@
   &-ps-80-px {
     padding-inline-start: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
   }
+  &-ps-40-px {
+    padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
+  }
 
   &-px {
     &-36-px {
