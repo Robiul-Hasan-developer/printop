@@ -2002,7 +2002,7 @@ input:focus-visible {
 }
 
 .text-160-px {
-    font-size: clamp(6rem, 0.3353rem + 2.1661vw, 10rem);
+    font-size: clamp(6rem, 0.3353rem + 10.1661vw, 10rem);
 }
 
 .tw-text-xs {
@@ -4229,6 +4229,12 @@ input:focus-visible {
 
 .tw-pt-48-px {
     padding-top: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
+}
+
+@media (min-width: 992px) {
+    .lg-pt-100-px {
+        padding-top: 100px;
+    }
 }
 
 @media (min-width: 768px) {

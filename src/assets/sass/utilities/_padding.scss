@@ -90,6 +90,12 @@
   }
 }
 
+.lg-pt-100-px {
+  @media (min-width: 992px) {
+    padding-top: 100px;
+  }
+}
+
 .md-ps-10 {
   @media (min-width: 768px) {
     padding-inline-start: 40px;
