@@ -835,6 +835,7 @@ h2,
 h3,
 .h3 {
     font-size: var(--heading-three);
+    line-height: 1.35714285;
 }
 
 h4,
@@ -1217,6 +1218,14 @@ input:focus-visible {
 
 .section-bg {
     background-color: #EEF3F4;
+}
+
+.bg-pink-50 {
+    background-color: #F8EFEA;
+}
+
+.bg-slate-100 {
+    background-color: #E3EAE5;
 }
 
 /* hover bg class end */
@@ -1970,6 +1979,10 @@ input:focus-visible {
     font-size: inherit;
 }
 
+.text-34-px {
+    font-size: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.125rem);
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -2232,6 +2245,10 @@ input:focus-visible {
 
 .tw-h-92-px {
     height: 92px;
+}
+
+.tw-h-160-px {
+    height: 160px;
 }
 
 .tw-h-320-px {
@@ -4777,6 +4794,10 @@ input:focus-visible {
 
 .tw-w-300-px {
     width: 300px;
+}
+
+.tw-w-160-px {
+    width: 160px;
 }
 
 .tw-w-w-max {
