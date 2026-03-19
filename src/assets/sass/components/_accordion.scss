@@ -1,56 +1,82 @@
-/* =========================== Accordion Css start ============================= */ 
+/* =========================== Accordion Css start ============================= */
 .common-accordion {
     .accordion-item {
+        border: 1px solid #E6E6E6;
+        border-radius: 10px;
+        overflow: hidden;
+
         &:not(:last-child) {
-            margin-block-end:20px;
+            margin-block-end: 20px;
         }
     }
+
     &:first-of-type .accordion-button.collapsed {
-        border-radius: 5px;  
+        border-radius: 5px;
     }
+
     &:last-of-type .accordion-button.collapsed {
-        border-radius: 5px;  
+        border-radius: 5px;
     }
-    .accordion-button { 
+
+    .accordion-button {
         &::after {
             background-image: none;
         }
+
         &:focus {
             box-shadow: none;
         }
+
         &:not(.collapsed) {
             background-color: transparent !important;
             box-shadow: none;
-            color: var(--main-600);
+
             &::after {
                 background-image: none;
                 color: var(--main-600);
             }
         }
-        &[aria-expanded="true"], &[aria-expanded="false"] {
+
+        &[aria-expanded="true"] {
+            background-color: #000 !important;
+            border-radius: 10px !important;
+            color: #fff !important;
+        }
+
+        &[aria-expanded="true"],
+        &[aria-expanded="false"] {
             &::after {
                 font-family: "Phosphor";
-                font-weight: 900;
-                content: "\f106";
-                color: var(--main-600);
-                display: inline-block;
+                font-weight: 400;
+                content: "\E32A";
+                color: #222222;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: absolute;
                 inset-block-start: 50%;
                 transform: translateY(-50%);
-                inset-inline-end: 30px;
-                height: unset;
+                inset-inline-end: 16px;
+                height: 32px;
+                width: 32px;
                 text-align: center;
-                @media (max-width: 991px) {
-                    inset-inline-end: 20px;
-                }
+                border: 1px solid #ddd;
+                border-radius: 50%;
+                font-size: 16px;
             }
         }
+
         &[aria-expanded="false"] {
             &::after {
-                content: "\f107";
-                color: hsl(var(--heading-color));
+                content: "\E3D4";
+            }
+        }
+        &[aria-expanded="true"] {
+            &::after {
+            background-color: #fff !important;
             }
         }
     }
 }
+
 /* ================================= Accordion Css End =========================== */

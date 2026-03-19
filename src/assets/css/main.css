@@ -171,6 +171,12 @@
 
 /* ========================= Variable Css End ======================== */
 /* =========================== Accordion Css start ============================= */
+.common-accordion .accordion-item {
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .common-accordion .accordion-item:not(:last-child) {
     margin-block-end: 20px;
 }
@@ -194,7 +200,6 @@
 .common-accordion .accordion-button:not(.collapsed) {
     background-color: transparent !important;
     box-shadow: none;
-    color: var(--main-600);
 }
 
 .common-accordion .accordion-button:not(.collapsed)::after {
@@ -202,29 +207,38 @@
     color: var(--main-600);
 }
 
+.common-accordion .accordion-button[aria-expanded=true] {
+    background-color: #000 !important;
+    border-radius: 10px !important;
+    color: #fff !important;
+}
+
 .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
     font-family: "Phosphor";
-    font-weight: 900;
-    content: "\f106";
-    color: var(--main-600);
-    display: inline-block;
+    font-weight: 400;
+    content: "\e32a";
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     inset-block-start: 50%;
     transform: translateY(-50%);
-    inset-inline-end: 30px;
-    height: unset;
+    inset-inline-end: 16px;
+    height: 32px;
+    width: 32px;
     text-align: center;
-}
-
-@media (max-width: 991px) {
-    .common-accordion .accordion-button[aria-expanded=true]::after, .common-accordion .accordion-button[aria-expanded=false]::after {
-        inset-inline-end: 20px;
-    }
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 16px;
 }
 
 .common-accordion .accordion-button[aria-expanded=false]::after {
-    content: "\f107";
-    color: hsl(var(--heading-color));
+    content: "\e3d4";
+}
+
+.common-accordion .accordion-button[aria-expanded=true]::after {
+    background-color: #fff !important;
 }
 
 /* ================================= Accordion Css End =========================== */
@@ -4417,6 +4431,10 @@ input:focus-visible {
     border-radius: 20px 20px 0 0px;
 }
 
+.tw-rounded-bottom-20-px {
+    border-radius: 0 0 20px 20px;
+}
+
 .tw-rounded-left-right-50-px {
     border-radius: 50px 0 50px 0;
 }
@@ -4569,6 +4587,10 @@ input:focus-visible {
 /* Box shadow start */
 .common-shadow {
     box-shadow: 0 6px 30px 0px #0000000a;
+}
+
+.common-shadow-one {
+    box-shadow: 9px 10px 87.1px 0px #41071B14;
 }
 
 .hover-shadow-one:hover {
@@ -5734,6 +5756,8 @@ input:focus-visible {
 }
 
 /* Testimonials slider css end  */
+/* FAQ css start */
+/* FAQ css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
