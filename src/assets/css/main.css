@@ -1816,6 +1816,10 @@ input:focus-visible {
     color: #F2F2F2;
 }
 
+.text-body-11 {
+    color: #AAAAAA;
+}
+
 /* Colors class End */
 /* Hover color class start */
 .hover-text-main-50:hover {
