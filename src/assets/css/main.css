@@ -2001,6 +2001,10 @@ input:focus-visible {
     font-size: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.125rem);
 }
 
+.text-38-px {
+    font-size: clamp(1.5rem, 0.3353rem + 2.1661vw, 2.375rem);
+}
+
 .text-160-px {
     font-size: clamp(6rem, 0.3353rem + 10.1661vw, 10rem);
 }
@@ -4241,6 +4245,11 @@ input:focus-visible {
     .md-ps-10 {
         padding-inline-start: 40px;
     }
+}
+
+.py-80 {
+    padding-block: 80px;
+    padding-block: 80px;
 }
 
 .py-120 {
