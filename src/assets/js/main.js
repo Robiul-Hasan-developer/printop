@@ -390,7 +390,7 @@
       autoplay: {
         delay: 0,
         enabled: true,
-        reverseDirection: false ,
+        reverseDirection: false,
         disableOnInteraction: false,
       },
     });
@@ -487,6 +487,27 @@
       };
       hoverAnimation();
     }
+    // let hoverAnimation = function () {
+    //   $(".tp--hover-img").each(function () {
+    //     let n = $(this);
+
+    //     // ✅ Prevent duplicate init
+    //     if (n.hasClass("hover-initialized")) return;
+
+    //     n.addClass("hover-initialized");
+
+    //     let e = n.find("img");
+    //     let i = e.eq(0);
+
+    //     if (i[0].complete) {
+    //       hoverAnimation__do(n, e);
+    //     } else {
+    //       i.on("load", function () {
+    //         hoverAnimation__do(n, e);
+    //       });
+    //     }
+    //   });
+    // };
     // ================================= Hover Image animation End =========================
 
     // ========================= Counter Up Js End ===================
