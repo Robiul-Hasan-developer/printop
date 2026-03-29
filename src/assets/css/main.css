@@ -1995,10 +1995,22 @@ input:focus-visible {
     opacity: 0.1;
 }
 
+.list-disc {
+    list-style: disc;
+}
+
+.list-decimal {
+    list-style: decimal;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
     font-size: inherit;
+}
+
+.text-28-px {
+    font-size: clamp(1.5rem, 0.3353rem + 2.1661vw, 1.75rem);
 }
 
 .text-34-px {
@@ -3457,6 +3469,10 @@ input:focus-visible {
 
 .max-w-790-px {
     max-width: 790px;
+}
+
+.max-w-730-px {
+    max-width: 730px;
 }
 
 /* Max width Css Class End */
