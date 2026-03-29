@@ -2486,6 +2486,10 @@ input:focus-visible {
     background-color: var(--main-600) !important;
 }
 
+.group:hover .group-hover-bg-main-two-600 {
+    background-color: var(--main-two-600) !important;
+}
+
 .group-hover-text-transition {
     transition: inherit;
 }
