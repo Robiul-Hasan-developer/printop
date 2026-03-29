@@ -4641,6 +4641,10 @@ input:focus-visible {
     transition-duration: 150ms;
 }
 
+.transition-timing-linear {
+    transition-timing-function: linear;
+}
+
 /* transition Css Class End */
 .tw-duration-75 {
     transition-duration: 75ms;

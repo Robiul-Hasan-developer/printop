@@ -376,6 +376,44 @@
     });
     // ================================= testimonials slider End =========================
 
+    // ====================== Blog Sidebar subscribe slider start ======================
+    var subscribeSliderOne = new Swiper(".subscribe-slider-one", {
+      slidesPerView: 3,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: false ,
+        disableOnInteraction: false,
+      },
+    });
+
+    var subscribeSliderTwo = new Swiper(".subscribe-slider-two", {
+      slidesPerView: 3,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: true,
+        disableOnInteraction: false,
+      },
+    });
+    // ====================== Blog Sidebar subscribe slider start ======================
+
     // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {
       $(".marquee_left").marquee({
@@ -404,7 +442,7 @@
     }
     // ====================== Marquee Js End ========================
 
-      // ========================== Add Attribute For Bg Image Js Start ====================
+    // ========================== Add Attribute For Bg Image Js Start ====================
     $(".background-img").css("background", function () {
       var bg = "url(" + $(this).data("background-image") + ")";
       return bg;
