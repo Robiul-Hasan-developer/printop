@@ -5838,6 +5838,32 @@ input:focus-visible {
 }
 
 /* FAQ css end */
+/* Team Css start */
+.on-hover-animation-item li {
+    transform: translateY(80px);
+}
+
+.on-hover-animation-item li:nth-child(1) {
+    transition-delay: 0.1s !important;
+}
+
+.on-hover-animation-item li:nth-child(2) {
+    transition-delay: 0.2s !important;
+}
+
+.on-hover-animation-item li:nth-child(3) {
+    transition-delay: 0.3s !important;
+}
+
+.on-hover-animation-item li:nth-child(4) {
+    transition-delay: 0.4s !important;
+}
+
+.on-hover-item:hover .on-hover-animation-item li {
+    transform: translateY(0px);
+}
+
+/* Team Css end */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
