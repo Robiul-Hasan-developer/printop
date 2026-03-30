@@ -2003,6 +2003,11 @@ input:focus-visible {
     list-style: decimal;
 }
 
+.google-map iframe {
+    filter: grayscale(1);
+    min-height: 300px;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
