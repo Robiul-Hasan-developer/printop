@@ -150,7 +150,7 @@
     --main-two-800: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.2));
     --main-two-900: hsl(var(--main-two-h), var(--main-two-s), calc(var(--main-two-l) - var(--main-two-l) * 0.3));
     --neutral-50: #f9fafb;
-    --neutral-100: #f3f4f6;
+    --neutral-100: #00000014;
     --neutral-200: #D4D4D4;
     --neutral-300: #d1d5db;
     --neutral-400: #9ca3af;
