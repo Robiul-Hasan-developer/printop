@@ -5,28 +5,37 @@
             <div class="header-menu d-lg-block d-none">
                 @@include('../partials/_nav-menu.html', { "class" : "tw-gap-10" })
             </div>
-            <div class="d-flex align-items-center tw-gap-4">
-                <a href="javascript:void(0)"
-                    class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-4">
-                    <i class="ph ph-heart-straight"></i>
-                    <span
-                        class="tw-w-6 tw-h-6 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xs position-absolute top-0 tw-end-0 tw--me-16-px tw--mt-10-px">0</span>
-                </a>
-                <a href="javascript:void(0)"
-                    class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-4">
-                    <i class="ph ph-shopping-cart"></i>
-                    <span
-                        class="tw-w-6 tw-h-6 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xs position-absolute top-0 tw-end-0 tw--me-16-px tw--mt-10-px">0</span>
-                </a>
-                <a href="javascript:void(0)"
-                    class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">
-                    <i class="ph ph-user"></i>
+            <!-- Logo Start -->
+            <div class="logo d-lg-none d-flex">
+                <a href="index.html" class="link">
+                    <img src="assets/images/logo/logo.png" alt="Logo" class="max-w-200-px">
                 </a>
             </div>
-            <div class="d-lg-none d-flex">
-                <button type="button" class="toggle-mobileMenu leading-none ms-3 text-neutral-800 tw-text-9">
-                    <i class="ph ph-list"></i>
-                </button>
+            <!-- Logo End  -->
+            <div class="d-flex align-items-center gap-sm-3 gap-2">
+                <div class="d-flex align-items-center gap-sm-3 gap-2">
+                    <a href="javascript:void(0)"
+                        class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-4">
+                        <i class="ph ph-heart-straight"></i>
+                        <span
+                            class="tw-w-6 tw-h-6 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xs position-absolute top-0 tw-end-0 tw--me-16-px tw--mt-10-px">0</span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9 tw-me-4">
+                        <i class="ph ph-shopping-cart"></i>
+                        <span
+                            class="tw-w-6 tw-h-6 d-flex align-items-center justify-content-center rounded-circle bg-main-600 text-white tw-text-xs position-absolute top-0 tw-end-0 tw--me-16-px tw--mt-10-px">0</span>
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="d-flex align-items-center justify-content-center gap-4 tw-text-3xl text-heading tw-leading-none position-relative hover-text-main-600 hover--translate-y-1 active--translate-y-scale-9">
+                        <i class="ph ph-user"></i>
+                    </a>
+                </div>
+                <div class="d-lg-none d-flex">
+                    <button type="button" class="toggle-mobileMenu leading-none text-neutral-800 tw-text-9 d-flex">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
