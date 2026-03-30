@@ -413,6 +413,53 @@
       },
     });
     // ====================== Blog Sidebar subscribe slider start ======================
+    
+    // ========================= Shop Details Slider Js Start =====================
+    var shopSmallThumbs = new Swiper(".shop-small-thumbs", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var shopThumbs = new Swiper(".shop-thumbs", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: shopSmallThumbs,
+      },
+    });
+    // ========================= Shop Details Slider Js End =====================
+    
+     // ========================= Color Picker Js Start =====================
+    $(document).on("click", ".color-picker", function () {
+      $(".color-picker__color").css("transform", "scale(1)");
+
+      $(this).find(".color-picker__color").css("transform", "scale(2)");
+    });
+    // ========================= Color Picker Js End =====================
+ 
+       // ========================= Increment & Decrement Js Start =====================
+    $(document).on("click", ".increment-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      $input.val(count + 1);
+    });
+
+    $(document).on("click", ".decrement-btn", function () {
+      const $input = $(this).siblings(".input-value");
+      let count = parseInt($input.val(), 10);
+      if (count > 0) {
+        $input.val(count - 1);
+      }
+    });
+    // ========================= Increment & Decrement Js End =====================
+
+    
 
     // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {
