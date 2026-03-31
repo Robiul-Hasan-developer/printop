@@ -3,7 +3,7 @@
     .nav-item {
         .nav-link {
             &.active {
-                color: var(--main-600) !important; 
+                color: hsl(var(--heading-color)) !important;
             }
         }
     }

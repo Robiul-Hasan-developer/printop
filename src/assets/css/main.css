@@ -575,7 +575,7 @@ input[type=number] {
 /* ================================= Form Css End =========================== */
 /* ================================= Tab Css Start =========================== */
 .common-tab .nav-item .nav-link.active {
-    color: var(--main-600) !important;
+    color: hsl(var(--heading-color)) !important;
 }
 
 /* ================================= Tab Css End =========================== */
