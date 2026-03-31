@@ -9,7 +9,71 @@
 })
 
 <!-- ======================== Checkout Page Start ========================== -->
-
+<section class="pt-120">
+    <div class="container">
+        <div
+            class="tw-mb-14 bg-main-50 border-bottom border-3 border-main-600 tw-py-5 tw-px-9 d-flex align-items-center tw-gap-3">
+            <span class="">
+                <img src="assets/images/icons/coupon-icon.png" alt="Icon">
+            </span>
+            <p class="text-body">Have a coupon? <a href="javascript:void(0)"
+                    class="text-main-600 hover-underline hover-text-main-700">Click here to enter your code</a></p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-6">
+                <div class="">
+                    <h2 class="h3 tw-mb-7 fw-bold">Billing details</h2>
+                    <div class="row gy-4">
+                        <div class="col-sm-6">
+                            <input type="text"
+                                class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium"
+                                placeholder="Your Name" id="name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email"
+                                class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium"
+                                placeholder="Email Address" id="email">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="tel"
+                                class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium"
+                                placeholder="Phone Number" id="name">
+                        </div>
+                        <div class="col-sm-6">
+                            <select
+                                class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium">
+                                <option value="Select Subject">Select Subject</option>
+                                <option value="Select Subject 01">Select Subject 01</option>
+                                <option value="Select Subject 03">Select Subject 03</option>
+                                <option value="Select Subject 04">Select Subject 04</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea
+                                class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium tw-h-160-px"
+                                placeholder="Your comment" id="comment"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="tw-mt-4">
+                                <button type="submit"
+                                    class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 rounded-pill tw-py-5"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span class="button__label">Send Your Message</span>
+                                    <span class="d-flex position-relative tw-text-xl">
+                                        <span class="btn-down-arrow">
+                                            <i class="ph-bold ph-arrow-down-right"></i>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- ======================== Checkout Page End ========================== -->
 
 @@include('../partials/_instagram-post.html')
