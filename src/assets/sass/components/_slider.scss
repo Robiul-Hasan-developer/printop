@@ -11,3 +11,13 @@
     width: 80px;
     background-color: var(--main-600);
 }
+
+
+.shop-small-thumbs .swiper-slide-thumb-active > div {
+    border-color: var(--main-600) !important;
+    outline: 3px solid var(--main-600) !important;
+}
+
+.shop-small-thumbs .swiper-slide {
+    padding: 4px;
+}

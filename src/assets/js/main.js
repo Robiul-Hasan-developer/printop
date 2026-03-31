@@ -417,14 +417,15 @@
     // ========================= Shop Details Slider Js Start =====================
     var shopSmallThumbs = new Swiper(".shop-small-thumbs", {
       loop: true,
-      spaceBetween: 10,
+      spaceBetween: 0,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
     });
     var shopThumbs = new Swiper(".shop-thumbs", {
       loop: true,
-      spaceBetween: 10,
+      spaceBetween: 0,
+      effect: "fade",
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -439,7 +440,7 @@
     $(document).on("click", ".color-picker", function () {
       $(".color-picker__color").css("transform", "scale(1)");
 
-      $(this).find(".color-picker__color").css("transform", "scale(2)");
+      $(this).find(".color-picker__color").css("transform", "scale(1.5)");
     });
     // ========================= Color Picker Js End =====================
  

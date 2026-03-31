@@ -781,6 +781,15 @@ input[type=number] {
     background-color: var(--main-600);
 }
 
+.shop-small-thumbs .swiper-slide-thumb-active > div {
+    border-color: var(--main-600) !important;
+    outline: 3px solid var(--main-600) !important;
+}
+
+.shop-small-thumbs .swiper-slide {
+    padding: 4px;
+}
+
 /* ================================= Typography Css Start =========================== */
 * {
     margin: 0;
@@ -2303,6 +2312,10 @@ input:focus-visible {
 
 .tw-h-92-px {
     height: 92px;
+}
+
+.tw-h-150-px {
+    height: 150px;
 }
 
 .tw-h-160-px {
