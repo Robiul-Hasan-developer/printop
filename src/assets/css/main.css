@@ -4264,6 +4264,10 @@ input:focus-visible {
     padding: clamp(1rem, -6.1013rem + 9.4763vw, 2.25rem);
 }
 
+.tw-p-44-px {
+    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
+}
+
 .tw-p-48-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
 }
@@ -4928,6 +4932,10 @@ input:focus-visible {
 
 .tw-w-100-px {
     width: 100px;
+}
+
+.tw-w-130-px {
+    width: 130px;
 }
 
 .tw-w-160-px {
