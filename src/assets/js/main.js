@@ -413,7 +413,7 @@
       },
     });
     // ====================== Blog Sidebar subscribe slider start ======================
-    
+
     // ========================= Shop Details Slider Js Start =====================
     var shopSmallThumbs = new Swiper(".shop-small-thumbs", {
       loop: true,
@@ -435,16 +435,16 @@
       },
     });
     // ========================= Shop Details Slider Js End =====================
-    
-     // ========================= Color Picker Js Start =====================
+
+    // ========================= Color Picker Js Start =====================
     $(document).on("click", ".color-picker", function () {
       $(".color-picker__color").css("transform", "scale(1)");
 
       $(this).find(".color-picker__color").css("transform", "scale(1.5)");
     });
     // ========================= Color Picker Js End =====================
- 
-       // ========================= Increment & Decrement Js Start =====================
+
+    // ========================= Increment & Decrement Js Start =====================
     $(document).on("click", ".increment-btn", function () {
       const $input = $(this).siblings(".input-value");
       let count = parseInt($input.val(), 10);
@@ -460,7 +460,20 @@
     });
     // ========================= Increment & Decrement Js End =====================
 
-    
+    // ========================= Custom accordion Js start =====================
+    $(".custom-accordion-item__button").on("click", function () {
+      let $parent = $(this).closest(".custom-accordion-item");
+
+      // Remove active from all
+      $(".custom-accordion-item").removeClass("active");
+
+      // Add active to current
+      $parent.addClass("active");
+
+      // Optional: check the radio input
+      $parent.find("input[type='radio']").prop("checked", true);
+    });
+    // ========================= Custom accordion Js End =====================
 
     // ====================== Marquee Js Start ========================
     if ($(".marquee_left").length) {

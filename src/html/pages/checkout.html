@@ -21,7 +21,7 @@
         </div>
         <form action="#" class="">
             <div class="row gy-4">
-                <div class="col-lg-6">
+                <div class="col-lg-6 pe-lg-4">
                     <div class="">
                         <h2 class="h3 tw-mb-7 fw-bold">Billing details</h2>
                         <div class="row gy-4">
@@ -83,10 +83,11 @@
                         </div>
                         <div class="tw-mt-10">
                             <h2 class="h4 tw-mb-5">Additional information</h2>
-                             <div class="">
+                            <div class="">
                                 <textarea
                                     class="border border-neutral-100 focus-border-main-600 tw-rounded-md tw-px-4 tw-py-305 w-100 focus-outline-0 text-body fw-medium tw-h-160-px"
-                                    placeholder="Notes about your order, e.g. special notes for delivery." id="comment"></textarea>
+                                    placeholder="Notes about your order, e.g. special notes for delivery."
+                                    id="comment"></textarea>
                             </div>
                         </div>
                     </div>
@@ -99,44 +100,128 @@
                             <div class="border border-neutral-100 tw-rounded-lg">
                                 <div class="d-flex justify-content-between border-bottom border-neutral-100">
                                     <span class="tw-py-5 tw-text-lg text-heading fw-medium tw-px-5">Product</span>
-                                    <span class="tw-py-5 tw-text-lg text-heading fw-medium tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">Subtotal</span>
+                                    <span
+                                        class="tw-py-5 tw-text-lg text-heading fw-medium tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">Subtotal</span>
                                 </div>
                                 <div class="d-flex justify-content-between border-bottom border-neutral-100">
                                     <span class="tw-py-6 tw-text-base text-body fw-medium tw-px-5">Product</span>
-                                    <span class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$65.00</span>
+                                    <span
+                                        class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$65.00</span>
                                 </div>
                                 <div class="d-flex justify-content-between border-bottom border-neutral-100">
-                                    <span class="tw-py-6 tw-text-base text-body fw-medium tw-px-5">iPhone 16 Pro Max  x  1</span>
-                                    <span class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$35.00</span>
+                                    <span class="tw-py-6 tw-text-base text-body fw-medium tw-px-5">iPhone 16 Pro Max x
+                                        1</span>
+                                    <span
+                                        class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$35.00</span>
                                 </div>
                                 <div class="d-flex justify-content-between border-bottom border-neutral-100">
-                                    <span class="tw-py-6 tw-text-base text-body fw-medium tw-px-5">Xbox Series  x  1</span>
-                                    <span class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$50.00</span>
+                                    <span class="tw-py-6 tw-text-base text-body fw-medium tw-px-5">Xbox Series x
+                                        1</span>
+                                    <span
+                                        class="tw-py-6 tw-text-base text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$50.00</span>
                                 </div>
                                 <div class="d-flex justify-content-between border-bottom border-neutral-100">
                                     <span class="tw-py-6 tw-text-lg text-heading fw-medium tw-px-5">Total:</span>
-                                    <span class="tw-py-6 tw-text-lg text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$150.00</span>
-                                </div>
-                            </div>
-                             
-                            <div class="col-12">
-                                <div class="tw-mt-4">
-                                    <button type="submit"
-                                        class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 rounded-pill tw-py-5"
-                                        data-block="button">
-                                        <span class="button__flair"></span>
-                                        <span class="button__label">PLACE YOUR ORDER</span>
-                                        <span class="d-flex position-relative tw-text-xl">
-                                            <span class="btn-down-arrow">
-                                                <i class="ph-bold ph-arrow-down-right"></i>
-                                            </span>
-                                        </span>
-                                    </button>
+                                    <span
+                                        class="tw-py-6 tw-text-lg text-main-600 fw-semibold tw-ps-4 tw-pe-2 tw-w-130-px border-start border-neutral-100">$150.00</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="tw-mt-10 tw-p-44-px">
+                        <div class="tw-mt-10 tw-p-44-px shadow">
+                            <div class="custom-accordion d-flex flex-column tw-gap-6">
+                                <div class="custom-accordion-item">
+                                    <div
+                                        class="custom-accordion-item__button form-check common-check common-radio ps-0 tw-gap-3 mb-0">
+                                        <input class="form-check-input border-main-two-600" type="radio"
+                                            name="placeOder" id="directbanktransfer">
+                                        <label class="form-check-label tw-text-lg fw-semibold text-heading"
+                                            for="directbanktransfer">
+                                            Direct bank transfer
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="custom-accordion-item__content bg-neutral-100 tw-rounded-lg tw-py-6 tw-px-9 tw-mt-4">
+                                        <p class="text-body">Make your payment directly into our bank account. Please
+                                            use your Order ID as the payment reference. Your order will not be shipped
+                                            until the funds have cleared in our account.</p>
+                                    </div>
+                                </div>
+                                <div class="custom-accordion-item">
+                                    <div
+                                        class="custom-accordion-item__button form-check common-check common-radio ps-0 tw-gap-3 mb-0">
+                                        <input class="form-check-input border-main-two-600" type="radio"
+                                            name="placeOder" id="checkpayments">
+                                        <label class="form-check-label tw-text-lg fw-semibold text-heading"
+                                            for="checkpayments">
+                                            Check payments
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="custom-accordion-item__content bg-neutral-100 tw-rounded-lg tw-py-6 tw-px-9 tw-mt-4">
+                                        <p class="text-body">Make your payment directly into our bank account. Please
+                                            use your Order ID as the payment reference. Your order will not be shipped
+                                            until the funds have cleared in our account.</p>
+                                    </div>
+                                </div>
+                                <div class="custom-accordion-item">
+                                    <div
+                                        class="custom-accordion-item__button form-check common-check common-radio ps-0 tw-gap-3 mb-0">
+                                        <input class="form-check-input border-main-two-600" type="radio"
+                                            name="placeOder" id="cashondeliver">
+                                        <label class="form-check-label tw-text-lg fw-semibold text-heading"
+                                            for="cashondeliver">
+                                            Cash on deliver
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="custom-accordion-item__content bg-neutral-100 tw-rounded-lg tw-py-6 tw-px-9 tw-mt-4">
+                                        <p class="text-body">Make your payment directly into our bank account. Please
+                                            use your Order ID as the payment reference. Your order will not be shipped
+                                            until the funds have cleared in our account.</p>
+                                    </div>
+                                </div>
+                                <div class="custom-accordion-item">
+                                    <div
+                                        class="custom-accordion-item__button form-check common-check common-radio ps-0 tw-gap-3 mb-0">
+                                        <input class="form-check-input border-main-two-600" type="radio"
+                                            name="placeOder" id="payPalCheck">
+                                        <label
+                                            class="form-check-label tw-text-lg fw-semibold text-heading d-flex tw-gap-5 align-items-center"
+                                            for="payPalCheck">
+                                            <span class="">PayPal</span>
+                                            <span class="">
+                                                <img src="assets/images/thumbs/payment-img-two.png"
+                                                    alt="Payment Images">
+                                            </span>
+                                            <a href="javascript:void(0)"
+                                                class="text-main-600 hover-underline hover-text-main-800">What is
+                                                PayPal?</a>
+                                        </label>
+                                    </div>
+                                    <div
+                                        class="custom-accordion-item__content bg-neutral-100 tw-rounded-lg tw-py-6 tw-px-9 tw-mt-4">
+                                        <p class="text-body">Make your payment directly into our bank account. Please
+                                            use your Order ID as the payment reference. Your order will not be shipped
+                                            until the funds have cleared in our account.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="d-block border-bottom border-neutral-200 border-top-0 border-start-0 border-end-0 tw-my-10"></span>
+                            <p class="text-body">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
 
+                            <div class="tw-mt-8">
+                                <button type="submit"
+                                    class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 tw-rounded-xl tw-py-5"
+                                    data-block="button">
+                                    <span class="button__flair"></span>
+                                    <span class="button__label">PLACE YOUR ORDER</span>
+                                    <span class="d-flex position-relative tw-text-xl">
+                                        <span class="btn-down-arrow">
+                                            <i class="ph-bold ph-arrow-down-right"></i>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

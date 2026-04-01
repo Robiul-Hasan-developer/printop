@@ -71,12 +71,23 @@
                 content: "\E3D4";
             }
         }
+
         &[aria-expanded="true"] {
             &::after {
-            background-color: #fff !important;
+                background-color: #fff !important;
             }
         }
     }
+}
+
+
+
+.custom-accordion-item__content {
+    display: none;
+}
+
+.custom-accordion-item.active .custom-accordion-item__content {
+    display: block;
 }
 
 /* ================================= Accordion Css End =========================== */
