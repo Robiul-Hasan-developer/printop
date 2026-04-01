@@ -2036,6 +2036,10 @@ input:focus-visible {
     min-height: 300px;
 }
 
+.aspect-ratio-1 {
+    aspect-ratio: 1;
+}
+
 /* ================================= Classes Css End =========================== */
 /* Font Size Class Start */
 .text-inherit {
