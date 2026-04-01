@@ -50,6 +50,7 @@
     &-44-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
     }
+
     &-48-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
     }
@@ -66,6 +67,7 @@
   &-ps-80-px {
     padding-inline-start: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
   }
+
   &-ps-40-px {
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
   }
@@ -78,8 +80,18 @@
     &-44-px {
       padding-inline: clamp(1.5rem, -6.1013rem + 9.4763vw, 2.75rem);
     }
+
     &-40-px {
       padding-inline: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
+    }
+
+    &-80-px {
+      padding-inline: clamp(2rem, -6.1013rem + 11.4763vw, 5rem);
+    }
+  }
+  &-py {
+    &-80-px {
+      padding-block: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
     }
   }
 
@@ -87,6 +99,7 @@
     &-100-px {
       padding-top: clamp(3.75rem, -6.1013rem + 9.4763vw, 6.25rem);
     }
+
     &-48-px {
       padding-top: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
     }
