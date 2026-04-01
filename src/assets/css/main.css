@@ -2334,6 +2334,10 @@ input:focus-visible {
     height: 150px;
 }
 
+.tw-h-116-px {
+    height: 116px;
+}
+
 .tw-h-160-px {
     height: 160px;
 }
@@ -2620,6 +2624,10 @@ input:focus-visible {
 
 .tw-start-100 {
     inset-inline-start: 100%;
+}
+
+.tw-start-75-percent {
+    inset-inline-start: 75%;
 }
 
 .tw-start-auto {
@@ -3514,6 +3522,10 @@ input:focus-visible {
 
 .max-w-270-px {
     max-width: 270px;
+}
+
+.max-w-380-px {
+    max-width: 380px;
 }
 
 .max-w-476-px {
@@ -4820,6 +4832,10 @@ input:focus-visible {
     transform: translateX(-8px);
 }
 
+.translate-y--8-px {
+    transform: translateY(-8px);
+}
+
 /*================================== Translate Css End  ==================================*/
 /* Transform Css Start */
 .origin-left {
@@ -4960,6 +4976,10 @@ input:focus-visible {
 
 .tw-w-100-px {
     width: 100px;
+}
+
+.tw-w-116-px {
+    width: 116px;
 }
 
 .tw-w-130-px {
@@ -5241,11 +5261,11 @@ input:focus-visible {
 }
 
 .animation-delay-2 {
-    animation-delay: 2s;
+    animation-delay: 2s !important;
 }
 
 .animation-delay-3 {
-    animation-delay: 3s;
+    animation-delay: 3s !important;
 }
 
 .animation-rotate-right {
