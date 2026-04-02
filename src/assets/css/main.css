@@ -3556,6 +3556,10 @@ input:focus-visible {
     max-width: 730px;
 }
 
+.max-w-1100-px {
+    max-width: 1100px;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
@@ -5631,22 +5635,27 @@ input:focus-visible {
 /* Submenu End */
 /* Header Menu and Submenu Css End */
 .nav-menu__item.activePage {
-    background-color: var(--main-600);
-    color: #fff !important;
-    padding-inline-start: 14px;
-    padding-inline-end: 18px;
-    border-radius: 8px;
-    cursor: pointer;
+    color: var(--main-600);
 }
 
-.nav-menu__item.activePage > a {
-    color: inherit !important;
-}
+@media (min-width: 992px) {
+    .nav-menu__item.activePage {
+        background-color: var(--main-600);
+        color: #fff !important;
+        padding-inline-start: 14px;
+        padding-inline-end: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
 
-.nav-menu__item.activePage > a::before {
-    color: #fff;
-}
+    .nav-menu__item.activePage > a {
+        color: inherit !important;
+    }
 
+    .nav-menu__item.activePage > a::before {
+        color: #fff;
+    }
+}
 /* ================================= Header Css End =========================== */
 /* Mega menu css start */
 .mega-menu {

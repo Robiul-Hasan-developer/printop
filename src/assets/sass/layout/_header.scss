@@ -139,18 +139,21 @@
 /* Header Menu and Submenu Css End */
 
 .nav-menu__item.activePage {
-  background-color: var(--main-600);
-  color: #fff !important;
-  padding-inline-start: 14px;
-  padding-inline-end: 18px;
-  border-radius: 8px;
-  cursor: pointer;
+  color: var(--main-600);
+  @media (min-width: 992px) {
+    background-color: var(--main-600);
+    color: #fff !important;
+    padding-inline-start: 14px;
+    padding-inline-end: 18px;
+    border-radius: 8px;
+    cursor: pointer;
 
-  >a {
-    color: inherit !important;
+    >a {
+      color: inherit !important;
 
-    &::before {
-      color: #fff;
+      &::before {
+        color: #fff;
+      }
     }
   }
 }
