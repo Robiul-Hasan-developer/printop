@@ -303,7 +303,7 @@
     // ================================= Product Shop slider End =========================
     var productSlider = new Swiper(".product-slider", {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 10,
       // centeredSlides: true,
       grabCursor: true,
       loop: true,
