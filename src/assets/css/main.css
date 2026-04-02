@@ -2618,6 +2618,10 @@ input:focus-visible {
     inset-inline-start: 0;
 }
 
+.tw-start-45-percent {
+    inset-inline-start: 45%;
+}
+
 .tw-start-50 {
     inset-inline-start: 50%;
 }
