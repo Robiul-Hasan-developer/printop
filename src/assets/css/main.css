@@ -80,7 +80,7 @@
     --heading-font: "Plus Jakarta Sans", sans-serif;
     --body-font: "Gabarito", sans-serif;
   /* Font Size Variable Start */
-    --heading-one: clamp(2.5rem, -0.0733rem + 6.3692vw, 3.625rem);
+    --heading-one: clamp(2.5rem, -0.0733rem + 4.5vw, 3.625rem);
     --heading-two: clamp(2rem, 0.7133rem + 2.8846vw, 3rem);
     --heading-three: clamp(1.5rem, 0.3353rem + 2.1661vw, 1.75rem);
     --heading-four: clamp(1.25rem, 0.5569rem + 1.444vw, 1.375rem);

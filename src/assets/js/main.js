@@ -315,11 +315,12 @@
       },
       breakpoints: {
         0: {
-          // centeredSlides: false,
           slidesPerView: 1,
         },
+        425: {
+          slidesPerView: 2,
+        },
         576: {
-          // centeredSlides: true,
           slidesPerView: 3,
         },
         768: {
