@@ -1270,6 +1270,10 @@ input:focus-visible {
     background-color: #FFCDD0;
 }
 
+.banner-bg-light {
+    background-color: #FCF6F9;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -5935,6 +5939,14 @@ input:focus-visible {
 
 .sidebar-dropdown-menu.active {
     display: block;
+}
+
+.banner-demand {
+    padding: 142px 0;
+}
+
+.banner-demand__thumb {
+    max-width: 50%;
 }
 
 /* whole banner section end */
