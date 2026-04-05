@@ -446,6 +446,24 @@
     });
     // ========================= Shop Details Slider Js End =====================
 
+    // ========================= Category sidebar show hide Js Start =====================
+    $('.category-btn').on('click', function () {
+      $('.banner-inner__sidebar').toggleClass('active');
+      $('.side-overlay').toggleClass('show');
+    });
+    
+    $('.side-overlay').on('click', function () {
+      $('.banner-inner__sidebar').removeClass('active');
+      $('.side-overlay').removeClass('show');
+    });
+    // ========================= Category sidebar show hide Js End =====================
+
+    // ========================= Category Dropdown on mobile device Js Start =====================
+    $('.sidebar-list-item').on('click', function () {
+      $(this).children('.sidebar-dropdown-menu').slideToggle(300);
+    });
+    // ========================= Category Dropdown on mobile device Js End =====================
+
     // ========================= Color Picker Js Start =====================
     $(document).on("click", ".color-picker", function () {
       $(".color-picker__color").css("transform", "scale(1)");

@@ -5910,7 +5910,22 @@ input:focus-visible {
         z-index: 999;
         max-height: 100vh;
         overflow-y: auto;
-        box-shadow: 0px 0px 20px 0 #cbcbcb;
+        transform: translateX(-100%);
+        transition: 0.3s linear;
+    }
+}
+
+.banner-inner__sidebar.active {
+    transform: translateX(0);
+}
+
+@media (max-width: 1199px) {
+    .sidebar-dropdown-menu {
+        position: static !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        box-shadow: none !important;
+        display: none;
     }
 }
 /* whole banner section end */

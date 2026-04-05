@@ -2,7 +2,7 @@
 <section class="banner tw-pt-5 overflow-hidden">
     <div class="container max-w-1752-px">
         <div class="banner-inner d-flex tw-gap-52-px position-relative w-auto">
-            <div class="banner-inner__sidebar max-w-330-px w-100 flex-shrink-0 d-none">
+            <div class="banner-inner__sidebar max-w-330-px w-100 flex-shrink-0">
                 <div class="bg-gradient-sidebar tw-rounded-20-px d-inline-block w-100">
                     @@include('../partials/_sidebar-dropdown.html')
                 </div>
@@ -33,10 +33,17 @@
                                 <i class="ph ph-user"></i>
                             </a>
                         </div>
-                        <button type="button"
-                            class="toggle-mobileMenu leading-none d-lg-none d-flex ms-3 text-neutral-800 tw-text-9">
-                            <i class="ph ph-list"></i>
-                        </button>
+                        
+                        <div class="d-xl-none d-flex align-items-center tw-gap-3 tw-me-6">
+                            <button type="button"
+                                class="category-btn leading-none d-xl-none d-flex text-neutral-800 tw-text-9">
+                                <i class="ph ph-square"></i>
+                            </button>
+                            <button type="button"
+                                class="toggle-mobileMenu leading-none d-lg-none d-flex text-neutral-800 tw-text-9">
+                                <i class="ph ph-list"></i>
+                            </button>
+                        </div>
                     </div>
                 </header>
                 <!-- Header End  -->

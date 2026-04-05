@@ -33,7 +33,6 @@
     }
 }
 
-.banner-inner {}
 
 .banner-inner__sidebar {
     @media (max-width: 1199px) {
@@ -45,10 +44,22 @@
         z-index: 999;
         max-height: 100vh;
         overflow-y: auto;
-        box-shadow: 0px 0px 20px 0 #cbcbcb;
+        transform: translateX(-100%);
+        transition: .3s linear;
+    }
+
+    &.active {
+        transform: translateX(0);
     }
 }
 
-.banner-inner__content {}
-
+.sidebar-dropdown-menu {
+    @media (max-width: 1199px) {
+        position: static !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        box-shadow: none !important;
+        display: none;
+    }
+}
 /* whole banner section end */
