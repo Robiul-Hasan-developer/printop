@@ -460,7 +460,7 @@
 
     // ========================= Category Dropdown on mobile device Js Start =====================
     $('.sidebar-list-item').on('click', function () {
-      $(this).children('.sidebar-dropdown-menu').slideToggle(300);
+      $(this).children('.sidebar-dropdown-menu').toggleClass('active');
     });
     // ========================= Category Dropdown on mobile device Js End =====================
 

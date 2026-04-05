@@ -5928,6 +5928,11 @@ input:focus-visible {
         display: none;
     }
 }
+
+.sidebar-dropdown-menu.active {
+    display: block;
+}
+
 /* whole banner section end */
 /* Brand Css start */
 .left-right-gradient::before,
