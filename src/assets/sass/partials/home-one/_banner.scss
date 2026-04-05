@@ -12,7 +12,9 @@
 }
 
 .mash-gradient-shape {
-    &::before, &::after {
+
+    &::before,
+    &::after {
         position: absolute;
         content: "";
         width: 309px;
@@ -24,18 +26,29 @@
         filter: blur(244px);
         z-index: -1;
     }
+
     &::after {
         background: #1EE8FF7A;
         inset-inline-start: 50%;
     }
 }
 
-// .bg-gradient-sidebar::before {
-//   content: "";
-//   position: absolute;
-//   inset: 0;
-//   background: linear-gradient(80.26deg, #FFDCE9 25.59%, #DDE5FE 108.77%);
-//   opacity: 0.44;
-//   z-index: -1;
-// }
+.banner-inner {}
+
+.banner-inner__sidebar {
+    @media (max-width: 1199px) {
+        background-color: #fff;
+        position: fixed;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        width: 100%;
+        z-index: 999;
+        max-height: 100vh;
+        overflow-y: auto;
+        box-shadow: 0px 0px 20px 0 #cbcbcb;
+    }
+}
+
+.banner-inner__content {}
+
 /* whole banner section end */

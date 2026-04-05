@@ -4340,8 +4340,8 @@ input:focus-visible {
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
 }
 
-.tw-lg-ps-74-px {
-    padding-inline-start: clamp(4.6875rem, -6.1013rem + 11.4763vw, 4.6875rem);
+.tw-xl-ps-74-px {
+    padding-inline-start: 64px;
 }
 
 .tw-px-36-px {
@@ -5898,6 +5898,19 @@ input:focus-visible {
     inset-inline-start: 50%;
 }
 
+@media (max-width: 1199px) {
+    .banner-inner__sidebar {
+        background-color: #fff;
+        position: fixed;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        width: 100%;
+        z-index: 999;
+        max-height: 100vh;
+        overflow-y: auto;
+        box-shadow: 0px 0px 20px 0 #cbcbcb;
+    }
+}
 /* whole banner section end */
 /* Brand Css start */
 .left-right-gradient::before,
