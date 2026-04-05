@@ -5941,8 +5941,22 @@ input:focus-visible {
     display: block;
 }
 
-.banner-demand {
-    padding: 142px 0;
+@media (min-width: 922px) {
+    .banner-demand {
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 922px) {
+    .banner-demand {
+        padding: 120px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner-demand {
+        padding: 142px 0;
+    }
 }
 
 .banner-demand__thumb {
