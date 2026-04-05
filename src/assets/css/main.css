@@ -4340,8 +4340,10 @@ input:focus-visible {
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
 }
 
-.tw-xl-ps-74-px {
-    padding-inline-start: 64px;
+@media (min-width: 768px) {
+    .tw-xl-ps-74-px {
+        padding-inline-start: 64px;
+    }
 }
 
 .tw-px-36-px {

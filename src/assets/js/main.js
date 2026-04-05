@@ -271,6 +271,10 @@
         nextEl: ".banner-print-btn-next",
         prevEl: ".banner-print-btn-prev",
       },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
     // ================================= Banner slider Start =========================
 

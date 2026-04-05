@@ -72,9 +72,9 @@
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
   }
   &-xl-ps-74-px {
-    // @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       padding-inline-start: 64px;
-    // }
+    }
   }
 
   &-px {
