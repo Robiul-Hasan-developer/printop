@@ -68,7 +68,15 @@
 
 
 .banner-demand {
-    padding: 142px 0;
+    @media (min-width: 922px) {
+        padding: 100px 0;
+    }
+    @media (min-width: 922px) {
+        padding: 120px 0;
+    }
+    @media (min-width: 1200px) {
+        padding: 142px 0;
+    }
 }
 .banner-demand__thumb {
     max-width: 50%;
