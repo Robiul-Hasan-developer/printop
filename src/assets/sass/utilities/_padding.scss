@@ -71,6 +71,11 @@
   &-ps-40-px {
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
   }
+  &-lg-ps-74-px {
+    // @media (min-width: 1200px) {
+      padding-inline-start: clamp(4.6875rem, -6.1013rem + 11.4763vw, 4.6875rem);
+    // }
+  }
 
   &-px {
     &-36-px {

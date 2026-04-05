@@ -255,16 +255,21 @@
     var bannerOne = new Swiper(".banner-slider", {
       slidesPerView: 1,
       grabCursor: true,
-      // loop: true,
+      loop: true,
       speed: 1000,
-      effect: "fade",
+      // effect: "fade",
       autoplay: {
         delay: 6000,
         disableOnInteraction: false,
       },
+      autoplay: false,
       pagination: {
         el: ".banner-slider-pagination",
         clickable: true,
+      },
+      navigation: {
+        nextEl: ".banner-print-btn-next",
+        prevEl: ".banner-print-btn-prev",
       },
     });
     // ================================= Banner slider Start =========================

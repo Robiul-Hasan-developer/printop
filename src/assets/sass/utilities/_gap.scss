@@ -6,6 +6,9 @@
 }
 
 .tw-gap {
+  &-40-px {
+    gap: clamp(1.5rem, -2.1667rem + 5.3333vw, 2.5rem);
+  }
   &-42-px {
     gap: clamp(1.5rem, 0.0938rem + 4.5vw, 2.625rem);
   }
