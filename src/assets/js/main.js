@@ -389,7 +389,7 @@
     // ================================= Testimonials Demand slider End =========================
     var testimonialsDemandSlider = new Swiper(".testimonials-demand-slider", {
       slidesPerView: 6,
-      spaceBetween: 12,
+      spaceBetween: 24,
       grabCursor: true,
       loop: true,
       autoplay: {
@@ -407,12 +407,38 @@
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        425: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1500: {
+          slidesPerView: 5,
+        },
+        1700: {
+          slidesPerView: 6,
+        },
       },
     });
 
     var testimonialsDemandSliderTwo = new Swiper(".testimonials-demand-slider-two", {
       slidesPerView: 6,
-      spaceBetween: 12,
+      spaceBetween: 24,
       grabCursor: true,
       loop: true,
       autoplay: {
@@ -424,12 +450,38 @@
       autoplay: {
         delay: 0,
         enabled: true,
-        reverseDirection: false,
+        reverseDirection: true,
         disableOnInteraction: false,
       },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        425: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+        1500: {
+          slidesPerView: 5,
+        },
+        1700: {
+          slidesPerView: 6,
+        },
       },
     });
     // ================================= Testimonials Demand slider End =========================
