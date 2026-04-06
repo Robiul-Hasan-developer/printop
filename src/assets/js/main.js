@@ -386,6 +386,54 @@
     });
     // ================================= testimonials slider End =========================
 
+    // ================================= Testimonials Demand slider End =========================
+    var testimonialsDemandSlider = new Swiper(".testimonials-demand-slider", {
+      slidesPerView: 6,
+      spaceBetween: 12,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: false,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var testimonialsDemandSliderTwo = new Swiper(".testimonials-demand-slider-two", {
+      slidesPerView: 6,
+      spaceBetween: 12,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 6000,
+      autoplay: {
+        delay: 0,
+        enabled: true,
+        reverseDirection: false,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    // ================================= Testimonials Demand slider End =========================
+
     // ====================== Blog Sidebar subscribe slider start ======================
     var subscribeSliderOne = new Swiper(".subscribe-slider-one", {
       slidesPerView: 3,
@@ -447,20 +495,20 @@
     // ========================= Shop Details Slider Js End =====================
 
     // ========================= Category sidebar show hide Js Start =====================
-    $('.category-btn').on('click', function () {
-      $('.banner-inner__sidebar').toggleClass('active');
-      $('.side-overlay').toggleClass('show');
+    $(".category-btn").on("click", function () {
+      $(".banner-inner__sidebar").toggleClass("active");
+      $(".side-overlay").toggleClass("show");
     });
-    
-    $('.side-overlay').on('click', function () {
-      $('.banner-inner__sidebar').removeClass('active');
-      $('.side-overlay').removeClass('show');
+
+    $(".side-overlay").on("click", function () {
+      $(".banner-inner__sidebar").removeClass("active");
+      $(".side-overlay").removeClass("show");
     });
     // ========================= Category sidebar show hide Js End =====================
 
     // ========================= Category Dropdown on mobile device Js Start =====================
-    $('.sidebar-list-item').on('click', function () {
-      $(this).children('.sidebar-dropdown-menu').toggleClass('active');
+    $(".sidebar-list-item").on("click", function () {
+      $(this).children(".sidebar-dropdown-menu").toggleClass("active");
     });
     // ========================= Category Dropdown on mobile device Js End =====================
 
