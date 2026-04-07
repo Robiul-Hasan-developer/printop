@@ -1274,6 +1274,14 @@ input:focus-visible {
     background-color: #FCF6F9;
 }
 
+.promo-banner-service-bg-one {
+    background-color: #E3EAE5;
+}
+
+.promo-banner-service-bg-two {
+    background-color: #F8EFEA;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -3534,6 +3542,10 @@ input:focus-visible {
 
 .max-w-270-px {
     max-width: 270px;
+}
+
+.max-w-250-px {
+    max-width: 250px;
 }
 
 .max-w-380-px {
