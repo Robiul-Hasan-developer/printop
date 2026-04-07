@@ -3588,6 +3588,10 @@ input:focus-visible {
     max-width: 1720px;
 }
 
+.max-w-45-percent {
+    max-width: 45%;
+}
+
 /* Max width Css Class End */
 /* Overlay Start */
 .overlay {
