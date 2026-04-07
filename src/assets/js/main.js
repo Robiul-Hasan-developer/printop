@@ -361,18 +361,24 @@
           slidesPerView: 1,
         },
         425: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         576: {
-          slidesPerView: 3,
+          slidesPerView: 2,
         },
         768: {
-          slidesPerView: 4,
+          slidesPerView: 3,
         },
         992: {
-          slidesPerView: 5,
+          slidesPerView: 3,
         },
         1200: {
+          slidesPerView: 4,
+        },
+        1400: {
+          slidesPerView: 5,
+        },
+        1600: {
           slidesPerView: 6,
         },
       },
