@@ -61,6 +61,7 @@
         box-shadow: none !important;
         display: none;
     }
+
     &.active {
         display: block;
     }
@@ -71,14 +72,35 @@
     @media (min-width: 922px) {
         padding: 100px 0;
     }
+
     @media (min-width: 922px) {
         padding: 120px 0;
     }
+
     @media (min-width: 1200px) {
         padding: 142px 0;
     }
 }
+
 .banner-demand__thumb {
     max-width: 50%;
 }
+
+
+
+.mash-gradient-bottom {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 309px;
+        height: 309px;
+        bottom: 80px;
+        inset-inline-start: 38%;
+        opacity: 1;
+        background: #FEAE007D;
+        filter: blur(244px);
+        z-index: -1;
+    }
+}
+
 /* whole banner section end */

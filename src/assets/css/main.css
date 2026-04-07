@@ -5968,6 +5968,31 @@ input:focus-visible {
     max-width: 50%;
 }
 
+@media (max-width: 992px) {
+    .banner-home-service {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 575px) {
+    .button-responsive-class .btn {
+        padding-inline: 20px;
+    }
+}
+
+.mash-gradient-bottom::before {
+    position: absolute;
+    content: "";
+    width: 309px;
+    height: 309px;
+    bottom: 80px;
+    inset-inline-start: 38%;
+    opacity: 1;
+    background: #FEAE007D;
+    filter: blur(244px);
+    z-index: -1;
+}
+
 /* whole banner section end */
 /* Brand Css start */
 .left-right-gradient::before,
