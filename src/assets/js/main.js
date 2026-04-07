@@ -319,6 +319,40 @@
       autoplay: false,
       speed: 1000,
       pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        425: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 5,
+        },
+        1200: {
+          slidesPerView: 6,
+        },
+      },
+    });
+    // ================================= Product Shop slider End =========================
+    // ================================= Product Shop slider End =========================
+    var productCategorySlider = new Swiper(".product-category-slider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      grabCursor: true,
+      loop: true,
+      autoplay: false,
+      speed: 1000,
+      pagination: {
         el: ".product-slider-pagination",
         clickable: true,
       },
