@@ -319,7 +319,7 @@
       autoplay: false,
       speed: 1000,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".product-slider-pagination",
         clickable: true,
       },
       breakpoints: {
