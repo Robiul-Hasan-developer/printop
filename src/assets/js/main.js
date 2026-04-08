@@ -526,6 +526,45 @@
     });
     // ================================= Testimonials Demand slider End =========================
 
+    // ================================= Testimonials Services slider End =========================
+        var testimonialsHomeServiceSlider = new Swiper(".testimonials-home-service-slider", {
+      slidesPerView: 6,
+      spaceBetween: 24,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 6000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        425: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    // ================================= Testimonials Services slider End =========================
+
     // ====================== Blog Sidebar subscribe slider start ======================
     var subscribeSliderOne = new Swiper(".subscribe-slider-one", {
       slidesPerView: 3,
