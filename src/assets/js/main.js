@@ -527,7 +527,7 @@
     // ================================= Testimonials Demand slider End =========================
 
     // ================================= Testimonials Services slider End =========================
-        var testimonialsHomeServiceSlider = new Swiper(".testimonials-home-service-slider", {
+    var testimonialsHomeServiceSlider = new Swiper(".testimonials-home-service-slider", {
       slidesPerView: 6,
       spaceBetween: 24,
       grabCursor: true,
@@ -537,9 +537,9 @@
         disableOnInteraction: false,
       },
       autoplay: true,
-      speed: 6000,
+      speed: 2000,
       pagination: {
-        el: ".swiper-pagination",
+        el: ".testimonials-home-service-slider-pagination",
         clickable: true,
       },
       breakpoints: {
@@ -550,7 +550,7 @@
           slidesPerView: 1,
         },
         576: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
         768: {
           slidesPerView: 2,
