@@ -2342,6 +2342,10 @@ input:focus-visible {
     height: 92px;
 }
 
+.tw-h-100-px {
+    height: 100px;
+}
+
 .tw-h-150-px {
     height: 150px;
 }
@@ -5435,6 +5439,47 @@ input:focus-visible {
 }
 
 /* Marquee css end */
+/* Play Animation css start */
+.play-button::before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 50%;
+    inset-inline-start: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-animation: animate 2.3s ease-out infinite;
+    animation: animate 2.3s ease-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    30% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+    }
+
+    60% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+/* Play Animation css end */
 /* ================================= preload Css Start =========================== */
 .loader-mask {
     position: fixed;
