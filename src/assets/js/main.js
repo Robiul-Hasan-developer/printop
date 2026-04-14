@@ -476,93 +476,99 @@
       },
     });
 
-    var testimonialsDemandSliderTwo = new Swiper(".testimonials-demand-slider-two", {
-      slidesPerView: 6,
-      spaceBetween: 24,
-      grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    var testimonialsDemandSliderTwo = new Swiper(
+      ".testimonials-demand-slider-two",
+      {
+        slidesPerView: 6,
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        autoplay: true,
+        speed: 6000,
+        autoplay: {
+          delay: 0,
+          enabled: true,
+          reverseDirection: true,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+          1500: {
+            slidesPerView: 5,
+          },
+          1700: {
+            slidesPerView: 6,
+          },
+        },
       },
-      autoplay: true,
-      speed: 6000,
-      autoplay: {
-        delay: 0,
-        enabled: true,
-        reverseDirection: true,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        425: {
-          slidesPerView: 1,
-        },
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4,
-        },
-        1500: {
-          slidesPerView: 5,
-        },
-        1700: {
-          slidesPerView: 6,
-        },
-      },
-    });
+    );
     // ================================= Testimonials Demand slider End =========================
 
     // ================================= Testimonials Services slider End =========================
-    var testimonialsHomeServiceSlider = new Swiper(".testimonials-home-service-slider", {
-      slidesPerView: 6,
-      spaceBetween: 24,
-      grabCursor: true,
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    var testimonialsHomeServiceSlider = new Swiper(
+      ".testimonials-home-service-slider",
+      {
+        slidesPerView: 6,
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        autoplay: true,
+        speed: 2000,
+        pagination: {
+          el: ".testimonials-home-service-slider-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        },
       },
-      autoplay: true,
-      speed: 2000,
-      pagination: {
-        el: ".testimonials-home-service-slider-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        425: {
-          slidesPerView: 1,
-        },
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 2,
-        },
-        1200: {
-          slidesPerView: 3,
-        },
-      },
-    });
+    );
     // ================================= Testimonials Services slider End =========================
 
     // ====================== Blog Sidebar subscribe slider start ======================
@@ -810,4 +816,24 @@
     }
   });
   // ========================= Header Sticky Js End===================
+  
+  //  ==================== bottom blur shadow js start ====================
+  $(window).on("scroll", function () {
+    if (
+      $(window).scrollTop() + $(window).height() >=
+      $(document).height() - 5
+    ) {
+      $(".blur-bottom-shadow").css({
+        opacity: "0",
+        visibility: "hidden",
+      });
+    } else {
+      $(".blur-bottom-shadow").css({
+        opacity: "1",
+        visibility: "visible",
+      });
+    }
+  });
+  //  ==================== bottom blur shadow js end ====================
+
 })(jQuery);
