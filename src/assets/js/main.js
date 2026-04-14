@@ -316,7 +316,7 @@
       // centeredSlides: true,
       grabCursor: true,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
       pagination: {
         el: ".swiper-pagination",
@@ -350,7 +350,7 @@
       spaceBetween: 10,
       grabCursor: true,
       loop: true,
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
       pagination: {
         el: ".product-slider-pagination",
