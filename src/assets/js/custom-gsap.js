@@ -171,79 +171,79 @@ mmm.add("(max-width: 991px)", () => {
 //   });
 // }
 
-if ($(".splitTextStyleOne").length) {
-  let staggerAmount = 0.03,
-    translateXValue = 20,
-    delayValue = 0.1,
-    easeType = "power2.out",
-    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
+// if ($(".splitTextStyleOne").length) {
+//   let staggerAmount = 0.03,
+//     translateXValue = 20,
+//     delayValue = 0.1,
+//     easeType = "power2.out",
+//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
 
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.chars, {
-      duration: 1,
-      delay: delayValue,
-      x: translateXValue,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      ease: easeType,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
+//   animatedTextElements.forEach((element) => {
+//     let animationSplitText = new SplitText(element, { type: "chars, words" });
+//     gsap.from(animationSplitText.chars, {
+//       duration: 1,
+//       delay: delayValue,
+//       x: translateXValue,
+//       autoAlpha: 0,
+//       stagger: staggerAmount,
+//       ease: easeType,
+//       scrollTrigger: { trigger: element, start: "top 85%" },
+//     });
+//   });
+// }
 
-if ($(".splitTextStyleTwo").length) {
-  let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
+// if ($(".splitTextStyleTwo").length) {
+//   let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
 
-  animatedTextElements.forEach((element) => {
-    //Reset if needed
-    if (element.animation) {
-      element.animation.progress(1).kill();
-      element.split.revert();
-    }
+//   animatedTextElements.forEach((element) => {
+//     //Reset if needed
+//     if (element.animation) {
+//       element.animation.progress(1).kill();
+//       element.split.revert();
+//     }
 
-    element.split = new SplitText(element, {
-      type: "lines,words,chars",
-      linesClass: "split-line",
-    });
-    gsap.set(element, { perspective: 400 });
+//     element.split = new SplitText(element, {
+//       type: "lines,words,chars",
+//       linesClass: "split-line",
+//     });
+//     gsap.set(element, { perspective: 400 });
 
-    gsap.set(element.split.chars, {
-      opacity: 0,
-      x: "50",
-    });
+//     gsap.set(element.split.chars, {
+//       opacity: 0,
+//       x: "50",
+//     });
 
-    element.animation = gsap.to(element.split.chars, {
-      scrollTrigger: { trigger: element, start: "top 90%" },
-      x: "0",
-      y: "0",
-      rotateX: "0",
-      opacity: 1,
-      duration: 1,
-      ease: Back.easeOut,
-      stagger: 0.02,
-    });
-  });
-}
+//     element.animation = gsap.to(element.split.chars, {
+//       scrollTrigger: { trigger: element, start: "top 90%" },
+//       x: "0",
+//       y: "0",
+//       rotateX: "0",
+//       opacity: 1,
+//       duration: 1,
+//       ease: Back.easeOut,
+//       stagger: 0.02,
+//     });
+//   });
+// }
 
-if ($(".splitTextStyleThree").length) {
-  let staggerAmount = 0.05,
-    translateXValue = 0,
-    delayValue = 0.5,
-    animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
+// if ($(".splitTextStyleThree").length) {
+//   let staggerAmount = 0.05,
+//     translateXValue = 0,
+//     delayValue = 0.5,
+//     animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
 
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.words, {
-      duration: 1,
-      delay: delayValue,
-      x: 20,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
+//   animatedTextElements.forEach((element) => {
+//     let animationSplitText = new SplitText(element, { type: "chars, words" });
+//     gsap.from(animationSplitText.words, {
+//       duration: 1,
+//       delay: delayValue,
+//       x: 20,
+//       autoAlpha: 0,
+//       stagger: staggerAmount,
+//       scrollTrigger: { trigger: element, start: "top 85%" },
+//     });
+//   });
+// }
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
@@ -272,12 +272,12 @@ class Button {
 
     const xTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, width, 0, 100),
-      gsap.utils.clamp(0, 100)
+      gsap.utils.clamp(0, 100),
     );
 
     const yTransformer = gsap.utils.pipe(
       gsap.utils.mapRange(0, height, 0, 100),
-      gsap.utils.clamp(0, 100)
+      gsap.utils.clamp(0, 100),
     );
 
     return {
@@ -368,6 +368,41 @@ if ($(".split-reveal").length) {
   });
 }
 // **************************** split Reveal js End ****************************
+
+// **************************** Text Reveal js Start ****************************
+function tp_scrollBg($wrap) {
+  $wrap = $wrap || jQuery("body");
+  $wrap.find(".text-reveal").each(function () {
+    var $el = jQuery(this);
+    var tpSplit = new SplitText($el[0], { type: "words, chars" });
+    jQuery(tpSplit.words).children().first().addClass("tp-first-char");
+    gsap.fromTo(
+      tpSplit.chars,
+      {
+        position: "relative",
+        display: "inline-block",
+        opacity: 0.2,
+        x: -5,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        stagger: 0.1,
+        scrollTrigger: {
+          trigger: $el[0],
+          toggleActions: "play pause reverse pause",
+          start: "top 70%",
+          end: "top 40%",
+          scrub: 0.7,
+        },
+      },
+    );
+  });
+}
+window.addEventListener("DOMContentLoaded", function () {
+  tp_scrollBg();
+});
+// **************************** Text Reveal js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
