@@ -321,6 +321,64 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 // **************************** Text Reveal js End ****************************
 
+// **************************** Text hover animation js End ****************************
+const headings = document.querySelectorAll(".text-hover-animation-scale");
+headings.forEach((heading) => {
+  const textNodes = [];
+
+  heading.childNodes.forEach((node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      node.textContent.split(" ").forEach((word, index, array) => {
+        const wordSpan = document.createElement("span");
+        wordSpan.classList.add("top-word-span");
+        word.split("").forEach((letter) => {
+          const letterSpan = document.createElement("span");
+          letterSpan.classList.add("top-text-span");
+          letterSpan.textContent = letter;
+          wordSpan.appendChild(letterSpan);
+        });
+        textNodes.push(wordSpan);
+        if (index < array.length - 1) {
+          textNodes.push(document.createTextNode(" "));
+        }
+      });
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      textNodes.push(node.cloneNode(true));
+    }
+  });
+
+  heading.innerHTML = "";
+  textNodes.forEach((node) => heading.appendChild(node));
+
+  const letters = heading.querySelectorAll(".top-text-span");
+  letters.forEach((letter) => {
+    $(letter).on("mouseenter", () => {
+      gsap.to(letter, {
+        scaleY: 1.3,
+        y: "-14%",
+        duration: 0.2,
+        ease: "sine",
+      });
+    });
+
+    $(letter).on("mouseleave", () => {
+      gsap.to(letter, {
+        scaleY: 1,
+        y: "0%",
+        duration: 0.2,
+        ease: "sine",
+      });
+    });
+  });
+});
+// **************************** Text hover animation js End ****************************
+
+
+
+
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
