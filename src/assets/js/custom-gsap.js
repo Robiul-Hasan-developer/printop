@@ -143,107 +143,24 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length > 0) {
-//   let character = gsap.utils.toArray(".splitTextStyleOne");
-//   character.forEach((character) => {
-//     let split_char = new SplitText(character, {
-//       type: "chars, words",
-//       lineThreshold: 0.3,
-//     });
-//     const tl2 = gsap.timeline({
-//       scrollTrigger: {
-//         trigger: character,
-//         start: "top 90%",
-//         end: "bottom 60%",
-//         scrub: false,
-//         markers: false,
-//         toggleActions: "play none none none",
-//       },
-//     });
-//     tl2.from(split_char.chars, {
-//       autoAlpha: 0,
-//       x: 40,
-//       duration: 0.3,
-//       opacity: 0,
-//       stagger: 0.03,
-//       ease: "back.out(1.7)",
-//     });
-//   });
-// }
+if ($(".splitTextStyleOne").length) {
+  let staggerAmount = 0.05,
+    translateXValue = 0,
+    delayValue = 0,
+    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
 
-// if ($(".splitTextStyleOne").length) {
-//   let staggerAmount = 0.03,
-//     translateXValue = 20,
-//     delayValue = 0.1,
-//     easeType = "power2.out",
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
-
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.chars, {
-//       duration: 1,
-//       delay: delayValue,
-//       x: translateXValue,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       ease: easeType,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
-
-// if ($(".splitTextStyleTwo").length) {
-//   let animatedTextElements = document.querySelectorAll(".splitTextStyleTwo");
-
-//   animatedTextElements.forEach((element) => {
-//     //Reset if needed
-//     if (element.animation) {
-//       element.animation.progress(1).kill();
-//       element.split.revert();
-//     }
-
-//     element.split = new SplitText(element, {
-//       type: "lines,words,chars",
-//       linesClass: "split-line",
-//     });
-//     gsap.set(element, { perspective: 400 });
-
-//     gsap.set(element.split.chars, {
-//       opacity: 0,
-//       x: "50",
-//     });
-
-//     element.animation = gsap.to(element.split.chars, {
-//       scrollTrigger: { trigger: element, start: "top 90%" },
-//       x: "0",
-//       y: "0",
-//       rotateX: "0",
-//       opacity: 1,
-//       duration: 1,
-//       ease: Back.easeOut,
-//       stagger: 0.02,
-//     });
-//   });
-// }
-
-// if ($(".splitTextStyleThree").length) {
-//   let staggerAmount = 0.05,
-//     translateXValue = 0,
-//     delayValue = 0.5,
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleThree");
-
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.words, {
-//       duration: 1,
-//       delay: delayValue,
-//       x: 20,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
+  animatedTextElements.forEach((element) => {
+    let animationSplitText = new SplitText(element, { type: "chars, words" });
+    gsap.from(animationSplitText.words, {
+      duration: .6,
+      delay: delayValue,
+      y: 100,
+      autoAlpha: 0,
+      stagger: staggerAmount,
+      scrollTrigger: { trigger: element, start: "top 85%" },
+    });
+  });
+}
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
