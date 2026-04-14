@@ -5866,8 +5866,9 @@ input:focus-visible {
     transform: translateY(15px);
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
+    background-color: var(--main-two-600);
     background-color: #fff;
-    mix-blend-mode: difference;
+    padding: 2px;
 }
 
 @media screen and (max-width: 991px) {
@@ -5907,7 +5908,7 @@ input:focus-visible {
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    color: hsl(var(--main)) !important;
+    color: var(--main-600) !important;
 }
 
 @media screen and (max-width: 991px) {
