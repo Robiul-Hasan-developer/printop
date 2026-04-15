@@ -19,15 +19,15 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** Smooth Scroll js Start ****************************
-  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
-  if ($("#smooth-wrapper").length && $("#smooth-content").length) {
-    ScrollSmoother.create({
-      smooth: 1.35,
-      effects: true,
-      smoothTouch: 0.15,
-      ignoreMobileResize: true,
-    });
-  }
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+if ($("#smooth-wrapper").length && $("#smooth-content").length) {
+  ScrollSmoother.create({
+    smooth: 1.35,
+    effects: true,
+    smoothTouch: 0.15,
+    ignoreMobileResize: true,
+  });
+}
 // **************************** Smooth Scroll js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************
@@ -158,13 +158,13 @@ mmm.add("(max-width: 991px)", () => {
 if ($(".splitTextStyleOne").length) {
   let staggerAmount = 0.05,
     translateXValue = 0,
-    delayValue = .3,
+    delayValue = 0.3,
     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
 
   animatedTextElements.forEach((element) => {
     let animationSplitText = new SplitText(element, { type: "chars, words" });
     gsap.from(animationSplitText.words, {
-      duration: .3,
+      duration: 0.3,
       delay: delayValue,
       y: 20,
       autoAlpha: 0,
@@ -334,64 +334,80 @@ window.addEventListener("DOMContentLoaded", function () {
 // **************************** Text Reveal js End ****************************
 
 // **************************** Title Animation js start ****************************
- if (document.querySelector('.animated-title')) {
-    gsap.set('.animated-title', {
-        opacity: 0
+if (document.querySelector(".animated-title")) {
+  gsap.set(".animated-title", {
+    opacity: 0,
+  });
+  gsap.to(".animated-title", {
+    opacity: 1,
+    duration: 1,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".animated-title",
+      start: "top 80%",
+      toggleActions: "play none none none",
+      once: true,
+    },
+    onComplete: runAnimation,
+  });
+  function runAnimation() {
+    const mySplitText = new SplitText(".animated-title", {
+      type: "words,chars",
     });
-    gsap.to('.animated-title', {
-        opacity: 1,
-        duration: 1,
-        ease: 'power1.out',
-        scrollTrigger: {
-            trigger: '.animated-title',
-            start: 'top 80%',
-            toggleActions: 'play none none none',
-            once: true
+    const chars = mySplitText.chars;
+    const cta = gsap.timeline({ repeat: -1, delay: 0.5 });
+    cta.to(chars, {
+      duration: 0.5,
+      scaleY: 0.6,
+      ease: "power1.out",
+      stagger: 0.04,
+      transformOrigin: "center bottom",
+    });
+    cta.to(
+      chars,
+      {
+        yPercent: -20,
+        ease: "elastic.out(1, 0.3)",
+        stagger: 0.03,
+        duration: 0.8,
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        scaleY: 1,
+        ease: "elastic.out(1, 0.3)",
+        stagger: 0.03,
+        duration: 1.5,
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        onStart: () => {
+          chars.forEach((char) => char.classList.add("char-animated"));
         },
-        onComplete: runAnimation
+      },
+      0.5,
+    );
+    cta.to(
+      chars,
+      {
+        yPercent: 0,
+        ease: "back.out(1.7)",
+        stagger: 0.03,
+        duration: 0.8,
+      },
+      0.7,
+    );
+    cta.to(chars, {
+      onStart: () => {
+        chars.forEach((char) => char.classList.remove("char-animated"));
+      },
     });
-    function runAnimation() {
-        const mySplitText = new SplitText(".animated-title", {
-            type: "words,chars"
-        });
-        const chars = mySplitText.chars;
-        const cta = gsap.timeline({ repeat: -1, delay: 0.5 });
-        cta.to(chars, {
-            duration: 0.5,
-            scaleY: 0.6,
-            ease: "power1.out",
-            stagger: 0.04,
-            transformOrigin: 'center bottom'
-        });
-        cta.to(chars, {
-            yPercent: -20,
-            ease: "elastic.out(1, 0.3)",
-            stagger: 0.03,
-            duration: 0.8
-        }, 0.5);
-        cta.to(chars, {
-            scaleY: 1,
-            ease: "elastic.out(1, 0.3)",
-            stagger: 0.03,
-            duration: 1.5
-        }, 0.5);
-        cta.to(chars, {
-            onStart: () => {
-                chars.forEach(char => char.classList.add('char-animated'));
-            }
-        }, 0.5);
-        cta.to(chars, {
-            yPercent: 0,
-            ease: "back.out(1.7)",
-            stagger: 0.03,
-            duration: 0.8
-        }, 0.7);
-        cta.to(chars, {
-            onStart: () => {
-                chars.forEach(char => char.classList.remove('char-animated'));
-            }
-        });
-    }
+  }
 }
 // **************************** Title Animation js End ****************************
 
@@ -476,54 +492,134 @@ headings.forEach((heading) => {
 //   }
 // });
 
-
-
-
-
 // **************************** Section to title zoom and item upper js End ****************************
-  gsap.matchMedia().add("(min-width: 1200px)", () => {
-    const portfolioArea = document.querySelector(".portfolio-area");
-    const portfolioText = document.querySelector(".portfolio-text");
+gsap.matchMedia().add("(min-width: 1200px)", () => {
+  const portfolioArea = document.querySelector(".sticky-section");
+  const portfolioText = document.querySelector(".sticky-section-text");
 
-    if (portfolioArea && portfolioText) {
-      // Timeline
-      let portfolioline = gsap.timeline({
-        scrollTrigger: {
-          trigger: portfolioArea,
-          start: "top center-=200",
-          pin: portfolioText,
-          end: "bottom bottom+=10",
-          markers: false,
-          pinSpacing: false,
-          scrub: 1,
-        },
+  if (portfolioArea && portfolioText) {
+    // Timeline
+    let portfolioline = gsap.timeline({
+      scrollTrigger: {
+        trigger: portfolioArea,
+        start: "top center-=200",
+        pin: portfolioText,
+        end: "bottom bottom+=10",
+        markers: false,
+        pinSpacing: false,
+        scrub: 1,
+      },
+    });
+
+    portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+    portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+    portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+    portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+    portfolioline.to(portfolioText, { scale: 1.2, duration: 1 }, "+=2");
+
+    // Opacity scroll animation
+    gsap.to(portfolioText, {
+      scrollTrigger: {
+        trigger: portfolioArea,
+        start: "top center-=100",
+        end: "bottom bottom+=10",
+        scrub: 1,
+      },
+      opacity: 0,
+    });
+  }
+});
+// **************************** Section to title zoom and item upper js End ****************************
+
+//**************************** clip animation image js Start ****************************
+document.addEventListener("DOMContentLoaded", () => {
+  const initialClipPaths = [
+    "polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%)",
+    "polygon(33.33% 0%, 33.33% 0%, 33.33% 0%, 33.33% 0%)",
+    "polygon(65.66% 0%, 66.66% 0%, 66.66% 0%, 66.66% 0%)",
+    "polygon(0% 33.33%, 0% 33.33%, 0% 33.33%, 0% 33.33%)",
+    "polygon(33.33% 33.33%, 33.33% 33.33%, 33.33% 33.33%, 33.33% 33.33%)",
+    "polygon(65.66% 33.33%, 66.66% 33.33%, 66.66% 33.33%, 66.66% 33.33%)",
+    "polygon(0% 66.66%, 0% 66.66%, 0% 66.66%, 0% 66.66%)",
+    "polygon(33.33% 66.66%, 33.33% 66.66%, 33.33% 66.66%, 33.33% 66.66%)",
+    "polygon(65.66% 66.66%, 66.66% 66.66%, 66.66% 66.66%, 66.66% 66.66%)",
+  ];
+
+  const finalClipPaths = [
+    "polygon(0% 0%, 34.33% 0%, 34.33% 34.33%, 0% 34.33%)",
+    "polygon(32.33% 0%, 66.66% 0%, 66.66% 33.33%, 33.33% 34.33%)",
+    "polygon(65.66% 0%, 100% 0%, 100% 33.33%, 65.66% 34.33%)",
+    "polygon(0% 33.33%, 33.33% 33.33%, 33.33% 66.66%, 0% 66.66%)",
+    "polygon(30.33% 33.33%, 66.66% 33.33%, 66.66% 66.66%, 33.33% 66.66%)",
+    "polygon(65.66% 33.33%, 100% 32.33%, 100% 66.66%, 65.66% 66.66%)",
+    "polygon(0% 65.66%, 33.33% 66.66%, 33.33% 100%, 0% 100%)",
+    "polygon(30.33% 66.66%, 66.66% 65.66%, 66.66% 100%, 33.33% 100%)",
+    "polygon(65.66% 66.66%, 100% 65.66%, 100% 100%, 65.66% 100%)",
+  ];
+
+  // Create mask divs for each wrapper
+  document.querySelectorAll(".clip-animation").forEach((wrapper) => {
+    const img = wrapper.querySelector(".clip-animation-img[data-animate='true']");
+    if (!img) return;
+    const url = img.src;
+
+    // Remove old masks if any (reuse safe)
+    wrapper.querySelectorAll(".mask").forEach((m) => m.remove());
+
+    for (let i = 0; i < 9; i++) {
+      const mask = document.createElement("div");
+      mask.className = `mask mask-${i + 1}`;
+      Object.assign(mask.style, {
+        backgroundImage: `url(${url})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "absolute",
+        inset: "0",
       });
-
-      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
-      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
-      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
-      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
-      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 }, "+=2");
-
-      // Opacity scroll animation
-      gsap.to(portfolioText, {
-        scrollTrigger: {
-          trigger: portfolioArea,
-          start: "top center-=100",
-          end: "bottom bottom+=10",
-          scrub: 1,
-        },
-        opacity: 0,
-      });
+      wrapper.appendChild(mask);
     }
   });
-// **************************** Section to title zoom and item upper js End ****************************
 
+  // Animate masks
+  gsap.utils.toArray(".clip-animation").forEach((wrapper) => {
+    const masks = wrapper.querySelectorAll(".mask");
+    if (!masks.length) return;
 
+    gsap.set(masks, { clipPath: (i) => initialClipPaths[i] });
 
+    const order = [
+      [".mask-1"],
+      [".mask-2", ".mask-4"],
+      [".mask-3", ".mask-5", ".mask-7"],
+      [".mask-6", ".mask-8"],
+      [".mask-9"],
+    ];
 
+    const tl = gsap.timeline({
+      scrollTrigger: { trigger: wrapper, start: "top 75%" },
+    });
 
+    order.forEach((targets, i) => {
+      const validTargets = targets
+        .map((c) => wrapper.querySelector(c))
+        .filter((el) => el); // filter out nulls
 
+      if (validTargets.length) {
+        tl.to(
+          validTargets,
+          {
+            clipPath: (j, el) => finalClipPaths[Array.from(masks).indexOf(el)],
+            duration: 1,
+            ease: "power4.out",
+            stagger: 0.1,
+          },
+          i * 0.125,
+        );
+      }
+    });
+  });
+});
+//**************************** clip animation image js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
