@@ -19,18 +19,6 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** Smooth Scroll js Start ****************************
-// gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
-// 	if($('#smooth-wrapper').length && $('#smooth-content').length){
-// 		ScrollSmoother.create({
-// 			smooth: 1.35,
-// 			effects: true,
-// 			smoothTouch: .1,
-// 			ignoreMobileResize: true
-// 		})
-// 	}
-
-
-    // let tl = gsap.timeline();
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
   if ($("#smooth-wrapper").length && $("#smooth-content").length) {
     ScrollSmoother.create({
@@ -513,7 +501,9 @@ headings.forEach((heading) => {
 
       portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
       portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
-      portfolioline.to(portfolioText, { scale: 1, duration: 1 }, "+=2");
+      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 }, "+=2");
 
       // Opacity scroll animation
       gsap.to(portfolioText, {
