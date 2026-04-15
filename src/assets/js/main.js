@@ -761,6 +761,39 @@
     //   };
     //   hoverAnimation();
     // }
+
+    // $(".ar-service-item").on("mouseenter", function () {
+    //   $(this)
+    //     .addClass("active")
+    //     .siblings(".ar-service-item")
+    //     .removeClass("active");
+    // });
+
+    // $(".anim-zoomin").each(function () {
+    //   // Add wrap <div>.
+    //   $(this).wrap('<div class="anim-zoomin-wrap"></div>');
+
+    //   // Add overflow hidden.
+    //   $(".anim-zoomin-wrap").css({ overflow: "hidden" });
+
+    //   let $this = $(this);
+    //   let $asiWrap = $this.parents(".anim-zoomin-wrap");
+
+    //   let tp_ZoomIn = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: $asiWrap,
+    //       start: "top 100%",
+    //       markers: false,
+    //     },
+    //   });
+    //   tp_ZoomIn.from($this, {
+    //     duration: 2,
+    //     autoAlpha: 0,
+    //     scale: 1.2,
+    //     ease: Power2.easeOut,
+    //     clearProps: "all",
+    //   });
+    // });
     // ================================= Hover Image animation End =========================
 
     // ========================= Counter Up Js End ===================
@@ -816,7 +849,7 @@
     }
   });
   // ========================= Header Sticky Js End===================
-  
+
   //  ==================== bottom blur shadow js start ====================
   $(window).on("scroll", function () {
     if (
@@ -835,5 +868,4 @@
     }
   });
   //  ==================== bottom blur shadow js end ====================
-
 })(jQuery);

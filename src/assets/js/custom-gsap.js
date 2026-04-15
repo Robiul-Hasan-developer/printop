@@ -18,6 +18,18 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // });
 // **************************** Nav Menu js End ****************************
 
+// **************************** Smooth Scroll js Start ****************************
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+	if($('#smooth-wrapper').length && $('#smooth-content').length){
+		ScrollSmoother.create({
+			smooth: 1.35,
+			effects: true,
+			smoothTouch: .1,
+			ignoreMobileResize: true
+		})
+	}
+// **************************** Smooth Scroll js End ****************************
+
 // **************************** Custom Cursor Js Start ****************************
 var body = document.body;
 var cursor = document.querySelector(".cursor");
@@ -143,24 +155,38 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-if ($(".splitTextStyleOne").length) {
-  let staggerAmount = 0.05,
-    translateXValue = 0,
-    delayValue = 0,
-    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
+// if ($(".splitTextStyleOne").length) {
+//   let staggerAmount = 0.05,
+//     translateXValue = 0,
+//     delayValue = 0,
+//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
 
-  animatedTextElements.forEach((element) => {
-    let animationSplitText = new SplitText(element, { type: "chars, words" });
-    gsap.from(animationSplitText.words, {
-      duration: .6,
-      delay: delayValue,
-      y: 100,
-      autoAlpha: 0,
-      stagger: staggerAmount,
-      scrollTrigger: { trigger: element, start: "top 85%" },
-    });
-  });
-}
+//   animatedTextElements.forEach((element) => {
+//     let animationSplitText = new SplitText(element, { type: "chars, words" });
+//     gsap.from(animationSplitText.words, {
+//       duration: .6,
+//       delay: delayValue,
+//       y: 100,
+//       autoAlpha: 0,
+//       stagger: staggerAmount,
+//       scrollTrigger: { trigger: element, start: "top 85%" },
+//     });
+//   });
+// }
+
+
+// 1. Create the split instance
+let split = SplitText.create(".splitTextStyleOne", { type: "chars,words" });
+
+// 2. Animate the split characters
+gsap.from(split.chars, {
+  duration: 0.8,
+  y: 100,
+  autoAlpha: 0,
+  stagger: 0.05,
+  ease: "back.out"
+});
+
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
@@ -434,6 +460,76 @@ headings.forEach((heading) => {
   });
 });
 // **************************** Text hover animation js End ****************************
+
+// const text = document.querySelector(".text");
+
+// gsap.registerPlugin(SplitText);
+
+// const Split = SplitText.create(text, {
+//   splitBy: "chars,words",
+//   wordsClass: "word",
+//   charsClass: "char",
+//   mask: "words",
+//   autoSplit: true,
+//   onSplit: (self) => {
+//     self.words.forEach((word) => {
+//       // Get all the characters
+//       const content = word.innerHTML;
+//       word.innerHTML = "";
+//       // Add the original characters back in
+//       const chars = document.createElement("div");
+//       chars.classList.add("before");
+//       chars.innerHTML = content;
+//       // Duplicate the characters with aria-hidden, so that screen-readers don't read duplicate content
+//       const dupe = document.createElement("div");
+//       dupe.classList.add("after");
+//       dupe.innerHTML = content;
+
+//       word.append(chars, dupe);
+//     });
+//   }
+// });
+
+
+
+
+
+// **************************** Section to title zoom and item upper js End ****************************
+  gsap.matchMedia().add("(min-width: 1200px)", () => {
+    const portfolioArea = document.querySelector(".portfolio-area");
+    const portfolioText = document.querySelector(".portfolio-text");
+
+    if (portfolioArea && portfolioText) {
+      // Timeline
+      let portfolioline = gsap.timeline({
+        scrollTrigger: {
+          trigger: portfolioArea,
+          start: "top center-=200",
+          pin: portfolioText,
+          end: "bottom bottom+=10",
+          markers: false,
+          pinSpacing: false,
+          scrub: 1,
+        },
+      });
+
+      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+      portfolioline.to(portfolioText, { scale: 1.2, duration: 1 });
+      portfolioline.to(portfolioText, { scale: 1, duration: 1 }, "+=2");
+
+      // Opacity scroll animation
+      gsap.to(portfolioText, {
+        scrollTrigger: {
+          trigger: portfolioArea,
+          start: "top center-=100",
+          end: "bottom bottom+=10",
+          scrub: 1,
+        },
+        opacity: 0,
+      });
+    }
+  });
+// **************************** Section to title zoom and item upper js End ****************************
 
 
 
