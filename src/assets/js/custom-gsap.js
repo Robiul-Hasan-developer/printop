@@ -621,6 +621,88 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //**************************** clip animation image js End ****************************
 
+
+//**************************** Button Hover animation js Start ****************************
+// Button text animation
+	document.querySelectorAll(".btn .btn-text").forEach(el => {
+		const text = el.textContent.trim();
+		el.innerHTML = "";
+
+		const block = document.createElement("div");
+		block.classList.add("btn-anim__block");
+
+		[...text].forEach(char => {
+			const span = document.createElement("span");
+			span.className = "btn-anim__letter";
+			span.textContent = char === " " ? "\u00A0" : char; // Non-breaking space
+			block.appendChild(span);
+		});
+
+		el.appendChild(block);
+		el.appendChild(block.cloneNode(true));
+	});
+
+
+	// button hover animation
+	// $('.tp-hover-btn').on('mouseenter', function (e) {
+	// 	var x = e.pageX - $(this).offset().left;
+	// 	var y = e.pageY - $(this).offset().top;
+
+	// 	$(this).find('.tp-btn-circle-dot').css({
+	// 		top: y,
+	// 		left: x
+	// 	});
+	// });
+
+	// $('.tp-hover-btn').on('mouseout', function (e) {
+	// 	var x = e.pageX - $(this).offset().left;
+	// 	var y = e.pageY - $(this).offset().top;
+
+	// 	$(this).find('.tp-btn-circle-dot').css({
+	// 		top: y,
+	// 		left: x
+	// 	});
+	// });
+
+
+	// var hoverBtns = gsap.utils.toArray(".tp-hover-btn-wrapper");
+
+	// const hoverBtnItem = gsap.utils.toArray(".tp-hover-btn-item");
+	// hoverBtns.forEach((btn, i) => {
+	// 	$(btn).mousemove(function (e) {
+	// 		callParallax(e);
+	// 	});
+	// 	function callParallax(e) {
+	// 		parallaxIt(e, hoverBtnItem[i], 60);
+	// 	}
+
+	// 	function parallaxIt(e, target, movement) {
+	// 		var $this = $(btn);
+	// 		var relX = e.pageX - $this.offset().left;
+	// 		var relY = e.pageY - $this.offset().top;
+
+	// 		gsap.to(target, 1, {
+	// 			x: ((relX - $this.width() / 2) / $this.width()) * movement,
+	// 			y: ((relY - $this.height() / 2) / $this.height()) * movement,
+	// 			ease: Power2.easeOut,
+	// 		});
+	// 	}
+	// 	$(btn).mouseleave(function (e) {
+	// 		gsap.to(hoverBtnItem[i], 1, {
+	// 			x: 0,
+	// 			y: 0,
+	// 			ease: Power2.easeOut,
+	// 		});
+	// 	});
+	// });
+	// button hover end
+//**************************** Button Hover animation js End ****************************
+
+
+
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */

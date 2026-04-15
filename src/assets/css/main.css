@@ -251,67 +251,19 @@
 
 /* ================================= Accordion Css End =========================== */
 /* ========================== Button Css Start =============== */
-.button__label {
-    position: relative;
-    text-align: center;
-    transition: color 0.05s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.button--stroke:hover {
-    color: #0e100f;
-}
-
-.button--stroke::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 0.125rem solid #fffce1;
-    border-radius: inherit;
-    pointer-events: none;
-}
-
-.button--stroke .button__flair {
-    transform: scale(0);
-    transform-origin: 0 0;
-}
-
-.button--stroke .button__label {
-    transition: color 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.button__flair {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-}
-
-.button__flair::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    aspect-ratio: 1/1;
-    background-color: #fffce1;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
 .btn {
+    gap: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-600);
     border: 0;
     color: hsl(var(--white));
     line-height: 1;
     padding: 18px 32px;
     position: relative;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 50rem;
     z-index: 1;
     transition: 0.2s linear;
 }
@@ -320,75 +272,259 @@
     box-shadow: none !important;
 }
 
-.btn-main {
-    background-color: var(--main-600) !important;
-    color: hsl(var(--white)) !important;
+.btn:hover {
+    color: #fff;
 }
 
-.btn-main.button--stroke::after {
-    border-color: transparent;
+.hover-bg-animation {
+    position: relative;
 }
 
-.btn-main-two {
-    background-color: var(--main-two-600) !important;
-    color: hsl(var(--white)) !important;
+.hover-bg-animation::before {
+    background-color: var(--main-600);
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.5s;
 }
 
-.btn-main-two.button--stroke::after {
-    border-color: transparent;
+.hover-bg-animation:hover::before {
+    height: 100%;
 }
 
-.btn-white {
-    background-color: hsl(var(--white)) !important;
-    color: hsl(var(--heading-color)) !important;
-}
-
-.btn-white.button--stroke::after {
-    border-color: transparent;
-}
-
-.btn-main-outline {
-    background-color: transparent !important;
-    color: var(--main-600) !important;
-    border: 1px solid var(--main-600) !important;
-}
-
-.btn-main-outline.button--stroke::after {
-    border-color: transparent;
-}
-
-.btn-main-two-outline {
-    background-color: transparent !important;
-    color: var(--main-two-600) !important;
-    border: 1px solid var(--main-two-600) !important;
-}
-
-.btn-main-two-outline.button--stroke::after {
-    border-color: transparent;
-}
-
-.hover-style-one:hover, .hover-style-one:active {
+.hover-bg-animation-main-600::before {
     background-color: var(--main-600);
 }
 
-.hover-style-one:hover.button--stroke::after, .hover-style-one:active.button--stroke::after {
-    border-color: transparent;
-}
-
-.hover-style-one .button__flair::before {
+.hover-bg-animation-main-two-600::before {
     background-color: var(--main-two-600);
 }
 
-.hover-style-two:hover, .hover-style-two:active {
-    color: hsl(var(--white)) !important;
+.hover-bg-animation-white::before {
+    background-color: hsl(var(--white));
 }
 
-.hover-style-two:hover.button--stroke::after, .hover-style-two:active.button--stroke::after {
-    border-color: transparent;
+.btn:hover .btn-anim__letter {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
 }
 
-.hover-style-two .button__flair::before {
-    background-color: var(--main-600);
+.btn .btn-text {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    display: block !important;
+}
+
+.btn:hover .btn-icon-animation {
+    animation: tfLeftToRight 0.5s forwards;
+}
+
+@keyframes tfLeftToRight {
+    49% {
+        transform: translateX(30%);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+.btn .btn-text .btn-anim__letter {
+    margin-right: 1px;
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.024, 1);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.76, 0, 0.024, 1);
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0.76, 0, 0.024, 1);
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(1) {
+    transition-delay: 0ms;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(2) {
+    transition-delay: 30ms;
+    -webkit-transition-delay: 30ms;
+    -moz-transition-delay: 30ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(3) {
+    transition-delay: 60ms;
+    -webkit-transition-delay: 60ms;
+    -moz-transition-delay: 60ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(4) {
+    transition-delay: 90ms;
+    -webkit-transition-delay: 90ms;
+    -moz-transition-delay: 90ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(5) {
+    transition-delay: 120ms;
+    -webkit-transition-delay: 120ms;
+    -moz-transition-delay: 120ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(6) {
+    transition-delay: 150ms;
+    -webkit-transition-delay: 150ms;
+    -moz-transition-delay: 150ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(7) {
+    transition-delay: 180ms;
+    -webkit-transition-delay: 180ms;
+    -moz-transition-delay: 180ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(8) {
+    transition-delay: 210ms;
+    -webkit-transition-delay: 210ms;
+    -moz-transition-delay: 210ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(9) {
+    transition-delay: 240ms;
+    -webkit-transition-delay: 240ms;
+    -moz-transition-delay: 240ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(10) {
+    transition-delay: 270ms;
+    -webkit-transition-delay: 270ms;
+    -moz-transition-delay: 270ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(11) {
+    transition-delay: 300ms;
+    -webkit-transition-delay: 300ms;
+    -moz-transition-delay: 300ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(12) {
+    transition-delay: 330ms;
+    -webkit-transition-delay: 330ms;
+    -moz-transition-delay: 330ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(13) {
+    transition-delay: 360ms;
+    -webkit-transition-delay: 360ms;
+    -moz-transition-delay: 360ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(14) {
+    transition-delay: 390ms;
+    -webkit-transition-delay: 390ms;
+    -moz-transition-delay: 390ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(15) {
+    transition-delay: 420ms;
+    -webkit-transition-delay: 420ms;
+    -moz-transition-delay: 420ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(16) {
+    transition-delay: 450ms;
+    -webkit-transition-delay: 450ms;
+    -moz-transition-delay: 450ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(17) {
+    transition-delay: 480ms;
+    -webkit-transition-delay: 480ms;
+    -moz-transition-delay: 480ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(18) {
+    transition-delay: 510ms;
+    -webkit-transition-delay: 510ms;
+    -moz-transition-delay: 510ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(19) {
+    transition-delay: 540ms;
+    -webkit-transition-delay: 540ms;
+    -moz-transition-delay: 540ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(20) {
+    transition-delay: 570ms;
+    -webkit-transition-delay: 570ms;
+    -moz-transition-delay: 570ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(21) {
+    transition-delay: 600ms;
+    -webkit-transition-delay: 600ms;
+    -moz-transition-delay: 600ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(22) {
+    transition-delay: 630ms;
+    -webkit-transition-delay: 630ms;
+    -moz-transition-delay: 630ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(23) {
+    transition-delay: 660ms;
+    -webkit-transition-delay: 660ms;
+    -moz-transition-delay: 660ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(24) {
+    transition-delay: 690ms;
+    -webkit-transition-delay: 690ms;
+    -moz-transition-delay: 690ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(25) {
+    transition-delay: 720ms;
+    -webkit-transition-delay: 720ms;
+    -moz-transition-delay: 720ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(26) {
+    transition-delay: 750ms;
+    -webkit-transition-delay: 750ms;
+    -moz-transition-delay: 750ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(27) {
+    transition-delay: 780ms;
+    -webkit-transition-delay: 780ms;
+    -moz-transition-delay: 780ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(28) {
+    transition-delay: 810ms;
+    -webkit-transition-delay: 810ms;
+    -moz-transition-delay: 810ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(29) {
+    transition-delay: 840ms;
+    -webkit-transition-delay: 840ms;
+    -moz-transition-delay: 840ms;
+}
+
+.btn .btn-text .btn-anim__letter:nth-child(30) {
+    transition-delay: 870ms;
+    -webkit-transition-delay: 870ms;
+    -moz-transition-delay: 870ms;
 }
 
 /* =========================== Button Css End =================== */
@@ -2006,28 +2142,6 @@ input:focus-visible {
 
 .cursor-grab {
     cursor: grab;
-}
-
-.clip-animation {
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.clip-animation .clip-animation-img {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.clip-animation > * {
-    grid-area: 1/1/2/2;
-    width: 100%;
-    height: 100%;
-    max-height: 100%;
 }
 
 .focus-outline-0:focus-visible, .focus-outline-0:focus {
@@ -4951,24 +5065,6 @@ input:focus-visible {
 }
 
 /* Text Decoration End */
-.hover-common-underline {
-    background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
-    background-size: 0 1px, 0 1px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s linear;
-    -webkit-transition: all 0.4s ease 0.3s ease-out;
-    -moz-transition: all 0.4s ease 0.3s ease-out;
-    -ms-transition: all 0.4s ease 0.3s ease-out;
-    -o-transition: all 0.4s ease 0.3s ease-out;
-    transition: all 0.4s ease 0.3s ease-out;
-    display: inline;
-}
-
-.hover-common-underline:hover {
-    background-size: 0 1px, 100% 1px;
-}
-
 /* width Css Class start */
 .tw-w-05 {
     width: 0.125rem;
@@ -5449,17 +5545,6 @@ input:focus-visible {
 }
 
 /* ======================== Animation Css End ==================================== */
-/* Hover effect css start */
-.tp--hover-img canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-}
-
-/* Hover effect css end */
 /* Marquee css start */
 .marquee {
     display: flex;
@@ -5520,6 +5605,46 @@ input:focus-visible {
     }
 }
 /* Play Animation css end */
+.clip-animation {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.clip-animation .clip-animation-img {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.clip-animation > * {
+    grid-area: 1/1/2/2;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.hover-common-underline {
+    background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+    background-size: 0 1px, 0 1px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s linear;
+    -webkit-transition: all 0.4s ease 0.3s ease-out;
+    -moz-transition: all 0.4s ease 0.3s ease-out;
+    -ms-transition: all 0.4s ease 0.3s ease-out;
+    -o-transition: all 0.4s ease 0.3s ease-out;
+    transition: all 0.4s ease 0.3s ease-out;
+    display: inline;
+}
+
+.hover-common-underline:hover {
+    background-size: 0 1px, 100% 1px;
+}
+
 /* image double animation css start */
 .image-double-animation {
     position: relative;

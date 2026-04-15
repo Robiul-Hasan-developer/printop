@@ -13,8 +13,6 @@
 @import "colors-hover";
 // cursor
 @import "cursor";
-// clip animation
-@import "clip-animation";
 // outline
 @import "outline";
 //  Classes
@@ -71,19 +69,22 @@
 @import "transform";
 // underline
 @import "underline";
-// hover common underline
-@import "hover-common-underline";
 // width
  @import "width";
 // Z index
  @import "z-index";
 // animation
 @import "animation";
-// hover effect
-@import "hover-effect";
 // marquee
 @import "marquee";
 // play animation
 @import "play-animation";
+
+
+
+// clip animation
+@import "clip-animation";
+// hover common underline
+@import "hover-common-underline";
 // image double animation
 @import "image-double-animation";
