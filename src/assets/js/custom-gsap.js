@@ -19,15 +19,27 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // **************************** Nav Menu js End ****************************
 
 // **************************** Smooth Scroll js Start ****************************
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
-	if($('#smooth-wrapper').length && $('#smooth-content').length){
-		ScrollSmoother.create({
-			smooth: 1.35,
-			effects: true,
-			smoothTouch: .1,
-			ignoreMobileResize: true
-		})
-	}
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+// 	if($('#smooth-wrapper').length && $('#smooth-content').length){
+// 		ScrollSmoother.create({
+// 			smooth: 1.35,
+// 			effects: true,
+// 			smoothTouch: .1,
+// 			ignoreMobileResize: true
+// 		})
+// 	}
+
+
+    // let tl = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+  if ($("#smooth-wrapper").length && $("#smooth-content").length) {
+    ScrollSmoother.create({
+      smooth: 1.35,
+      effects: true,
+      smoothTouch: 0.15,
+      ignoreMobileResize: true,
+    });
+  }
 // **************************** Smooth Scroll js End ****************************
 
 // **************************** Custom Cursor Js Start ****************************

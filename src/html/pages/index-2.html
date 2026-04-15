@@ -1,44 +1,51 @@
 @@include('../partials/_template-top.html')
 
-    @@include('../partials/_header-two.html')
+
+<div id="smooth-wrapper">
+  @@include('../partials/_header-two.html')
+  
+  <div id="smooth-content">
 
     @@include('../partials/_banner-demand.html')
 
     @@include('../partials/_about-home-demand.html')
 
     @@include('../partials/_brand.html', {
-      'sectionClass': ''
+    'sectionClass': ''
     })
 
     @@include('../partials/_shop-product-home-demand.html')
 
     @@include('../partials/_working-process-home-demand.html', {
-      'sectionClass': 'pb-120'
+    'sectionClass': 'pb-120'
     })
 
     @@include('../partials/_choose-us-home-demand.html')
 
     @@include('../partials/_marquee.html', {
-        'sectionClass': ''
+    'sectionClass': ''
     })
 
     @@include('../partials/_pricing-plan.html', {
-      'sectionClass': 'py-120'
+    'sectionClass': 'py-120'
     })
-    
+
     @@include('../partials/_product-range.html')
 
     @@include('../partials/_testimonials-home-demand.html')
 
     @@include('../partials/_blog-demand.html', {
-      'sectionClass': 'pt-120'
+    'sectionClass': 'pt-120'
     })
 
     @@include('../partials/_instagram-post.html')
 
     @@include('../partials/_footer.html')
+  </div>
+</div>
 
-    @@include('../partials/_template-bottom.html')
+@@include('../partials/_template-bottom.html')
 
-    </body>
+</body>
+
 </html>
