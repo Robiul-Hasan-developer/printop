@@ -155,38 +155,24 @@ mmm.add("(max-width: 991px)", () => {
 // **************************** Mobile Menu js End ****************************
 
 // **************************** Custom Split text Js Start ****************************
-// if ($(".splitTextStyleOne").length) {
-//   let staggerAmount = 0.05,
-//     translateXValue = 0,
-//     delayValue = 0,
-//     animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
+if ($(".splitTextStyleOne").length) {
+  let staggerAmount = 0.05,
+    translateXValue = 0,
+    delayValue = .3,
+    animatedTextElements = document.querySelectorAll(".splitTextStyleOne");
 
-//   animatedTextElements.forEach((element) => {
-//     let animationSplitText = new SplitText(element, { type: "chars, words" });
-//     gsap.from(animationSplitText.words, {
-//       duration: .6,
-//       delay: delayValue,
-//       y: 100,
-//       autoAlpha: 0,
-//       stagger: staggerAmount,
-//       scrollTrigger: { trigger: element, start: "top 85%" },
-//     });
-//   });
-// }
-
-
-// 1. Create the split instance
-let split = SplitText.create(".splitTextStyleOne", { type: "chars,words" });
-
-// 2. Animate the split characters
-gsap.from(split.chars, {
-  duration: 0.8,
-  y: 100,
-  autoAlpha: 0,
-  stagger: 0.05,
-  ease: "back.out"
-});
-
+  animatedTextElements.forEach((element) => {
+    let animationSplitText = new SplitText(element, { type: "chars, words" });
+    gsap.from(animationSplitText.words, {
+      duration: .3,
+      delay: delayValue,
+      y: 20,
+      autoAlpha: 0,
+      stagger: staggerAmount,
+      scrollTrigger: { trigger: element, start: "top 85%" },
+    });
+  });
+}
 // **************************** Custom Split text Js End ****************************
 
 // **************************** Position Aware button hover js start ****************************
