@@ -245,12 +245,6 @@
     });
     // ========================= Password Show Hide Js End ===========================
 
-    // ========================= AOS Js Start ===========================
-    AOS.init({
-      once: false,
-    });
-    // ========================= AOS Js End ===========================
-
     // ================================= Banner slider Start =========================
     var bannerOne = new Swiper(".banner-slider", {
       slidesPerView: 1,
@@ -657,6 +651,13 @@
     });
     // ========================= Color Picker Js End =====================
 
+    // ========================= AOS Js Start ===========================
+    AOS.init({
+      once: false,
+    });
+    // ========================= AOS Js End ===========================
+
+    
     // ========================= Increment & Decrement Js Start =====================
     $(document).on("click", ".increment-btn", function () {
       const $input = $(this).siblings(".input-value");
