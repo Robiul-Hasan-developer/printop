@@ -657,29 +657,6 @@
     });
     // ========================= AOS Js End ===========================
 
-    // ========================= Remove Cursor from link or button Js Start ===========================
-    // $(document).on("mouseenter", "a, button", function () {
-    //   $(".cursor").addClass("d-none");
-    //   $(".dot").addClass("d-none");
-    // });
-
-  //  $(document)
-  // .on('mouseenter', 'a, button', function () {
-  //   $('.cursor, .dot').addClass('cursor-hidden');
-  // })
-  // .on('mouseleave', 'a, button', function () {
-  //   $('.cursor, .dot').removeClass('cursor-hidden');
-  // });
-    
-    // $(document)
-    //   .on("mouseenter", "a, button", function () {
-    //     $(".cursor, .dot").addClass("d-none");
-    //   })
-    //   .on("mouseleave", "a, button", function () {
-    //     $(".cursor, .dot").removeClass("d-none");
-    //   });
-    // ========================= Remove Cursor from link or button Js End ===========================
-
     // ========================= Increment & Decrement Js Start =====================
     $(document).on("click", ".increment-btn", function () {
       const $input = $(this).siblings(".input-value");
