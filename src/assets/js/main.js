@@ -247,7 +247,7 @@
 
     // ========================= AOS Js Start ===========================
     AOS.init({
-      once: true,
+      once: false,
     });
     // ========================= AOS Js End ===========================
 
@@ -722,79 +722,6 @@
       return bg;
     });
     // ========================== Add Attribute For Bg Image Js End =====================
-
-    // ================================= Hover Image animation Start =========================
-    // if ($(".tp--hover-item").length) {
-    //   let hoverAnimation__do = function (t, n) {
-    //     let a = new hoverEffect({
-    //       parent: t.get(0),
-    //       intensity: t.data("intensity") || void 0,
-    //       speedIn: t.data("speedin") || void 0,
-    //       speedOut: t.data("speedout") || void 0,
-    //       easing: t.data("easing") || void 0,
-    //       hover: t.data("hover") || void 0,
-    //       image1: n.eq(0).attr("src"),
-    //       image2: n.eq(0).attr("src"),
-    //       displacementImage: t.data("displacement"),
-    //       imagesRatio: n[0].height / n[0].width,
-    //       hover: !1,
-    //     });
-    //     t.closest(".tp--hover-item")
-    //       .on("mouseenter", function () {
-    //         a.next();
-    //       })
-    //       .on("mouseleave", function () {
-    //         a.previous();
-    //       });
-    //   };
-    //   let hoverAnimation = function () {
-    //     $(".tp--hover-img").each(function () {
-    //       let n = $(this);
-    //       let e = n.find("img");
-    //       let i = e.eq(0);
-    //       i[0].complete
-    //         ? hoverAnimation__do(n, e)
-    //         : i.on("load", function () {
-    //             hoverAnimation__do(n, e);
-    //           });
-    //     });
-    //   };
-    //   hoverAnimation();
-    // }
-
-    // $(".ar-service-item").on("mouseenter", function () {
-    //   $(this)
-    //     .addClass("active")
-    //     .siblings(".ar-service-item")
-    //     .removeClass("active");
-    // });
-
-    // $(".anim-zoomin").each(function () {
-    //   // Add wrap <div>.
-    //   $(this).wrap('<div class="anim-zoomin-wrap"></div>');
-
-    //   // Add overflow hidden.
-    //   $(".anim-zoomin-wrap").css({ overflow: "hidden" });
-
-    //   let $this = $(this);
-    //   let $asiWrap = $this.parents(".anim-zoomin-wrap");
-
-    //   let tp_ZoomIn = gsap.timeline({
-    //     scrollTrigger: {
-    //       trigger: $asiWrap,
-    //       start: "top 100%",
-    //       markers: false,
-    //     },
-    //   });
-    //   tp_ZoomIn.from($this, {
-    //     duration: 2,
-    //     autoAlpha: 0,
-    //     scale: 1.2,
-    //     ease: Power2.easeOut,
-    //     clearProps: "all",
-    //   });
-    // });
-    // ================================= Hover Image animation End =========================
 
     // ========================= Counter Up Js End ===================
     const counterUp = window.counterUp.default;
