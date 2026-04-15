@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 if ($("#smooth-wrapper").length && $("#smooth-content").length) {
   ScrollSmoother.create({
-    smooth: 1.35,
+    smooth: 2.35,
     effects: true,
     smoothTouch: 0.15,
     ignoreMobileResize: true,
@@ -164,7 +164,7 @@ if ($(".splitTextStyleOne").length) {
   animatedTextElements.forEach((element) => {
     let animationSplitText = new SplitText(element, { type: "chars, words" });
     gsap.from(animationSplitText.words, {
-      duration: 0.3,
+      duration: 0.6,
       delay: delayValue,
       y: 20,
       autoAlpha: 0,
@@ -559,7 +559,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create mask divs for each wrapper
   document.querySelectorAll(".clip-animation").forEach((wrapper) => {
-    const img = wrapper.querySelector(".clip-animation-img[data-animate='true']");
+    const img = wrapper.querySelector(
+      ".clip-animation-img[data-animate='true']",
+    );
     if (!img) return;
     const url = img.src;
 
@@ -621,87 +623,63 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 //**************************** clip animation image js End ****************************
 
+//**************************** Button text Hover animation js Start ****************************
+document.querySelectorAll(".btn .btn-text").forEach((el) => {
+  const text = el.textContent.trim();
+  el.innerHTML = "";
 
-//**************************** Button Hover animation js Start ****************************
-// Button text animation
-	document.querySelectorAll(".btn .btn-text").forEach(el => {
-		const text = el.textContent.trim();
-		el.innerHTML = "";
+  const block = document.createElement("div");
+  block.classList.add("btn-anim__block");
 
-		const block = document.createElement("div");
-		block.classList.add("btn-anim__block");
+  [...text].forEach((char) => {
+    const span = document.createElement("span");
+    span.className = "btn-anim__letter";
+    span.textContent = char === " " ? "\u00A0" : char; // Non-breaking space
+    block.appendChild(span);
+  });
 
-		[...text].forEach(char => {
-			const span = document.createElement("span");
-			span.className = "btn-anim__letter";
-			span.textContent = char === " " ? "\u00A0" : char; // Non-breaking space
-			block.appendChild(span);
-		});
+  el.appendChild(block);
+  el.appendChild(block.cloneNode(true));
+});
+//**************************** Button text Hover animation js End ****************************
 
-		el.appendChild(block);
-		el.appendChild(block.cloneNode(true));
-	});
-
-
-	// button hover animation
-	// $('.tp-hover-btn').on('mouseenter', function (e) {
-	// 	var x = e.pageX - $(this).offset().left;
-	// 	var y = e.pageY - $(this).offset().top;
-
-	// 	$(this).find('.tp-btn-circle-dot').css({
-	// 		top: y,
-	// 		left: x
-	// 	});
-	// });
-
-	// $('.tp-hover-btn').on('mouseout', function (e) {
-	// 	var x = e.pageX - $(this).offset().left;
-	// 	var y = e.pageY - $(this).offset().top;
-
-	// 	$(this).find('.tp-btn-circle-dot').css({
-	// 		top: y,
-	// 		left: x
-	// 	});
-	// });
-
-
-	// var hoverBtns = gsap.utils.toArray(".tp-hover-btn-wrapper");
-
-	// const hoverBtnItem = gsap.utils.toArray(".tp-hover-btn-item");
-	// hoverBtns.forEach((btn, i) => {
-	// 	$(btn).mousemove(function (e) {
-	// 		callParallax(e);
-	// 	});
-	// 	function callParallax(e) {
-	// 		parallaxIt(e, hoverBtnItem[i], 60);
-	// 	}
-
-	// 	function parallaxIt(e, target, movement) {
-	// 		var $this = $(btn);
-	// 		var relX = e.pageX - $this.offset().left;
-	// 		var relY = e.pageY - $this.offset().top;
-
-	// 		gsap.to(target, 1, {
-	// 			x: ((relX - $this.width() / 2) / $this.width()) * movement,
-	// 			y: ((relY - $this.height() / 2) / $this.height()) * movement,
-	// 			ease: Power2.easeOut,
-	// 		});
-	// 	}
-	// 	$(btn).mouseleave(function (e) {
-	// 		gsap.to(hoverBtnItem[i], 1, {
-	// 			x: 0,
-	// 			y: 0,
-	// 			ease: Power2.easeOut,
-	// 		});
-	// 	});
-	// });
-	// button hover end
-//**************************** Button Hover animation js End ****************************
-
-
-
-
-
+//**************************** Button text Hover animation js End ****************************
+if ($(".custom-fade-animation").length > 0) {
+  gsap.utils.toArray(".custom-fade-animation").forEach((item) => {
+    let tp_fade_offset = item.getAttribute("data-fade-offset") || 40,
+      tp_duration_value = item.getAttribute("data-duration") || 0.75,
+      tp_fade_direction = item.getAttribute("data-fade-from") || "bottom",
+      tp_onscroll_value = item.getAttribute("data-on-scroll") || 1,
+      tp_delay_value = item.getAttribute("data-delay") || 0.15,
+      tp_ease_value = item.getAttribute("data-ease") || "power2.out",
+      tp_anim_setting = {
+        opacity: 0,
+        ease: tp_ease_value,
+        duration: tp_duration_value,
+        delay: tp_delay_value,
+        x:
+          tp_fade_direction == "left"
+            ? -tp_fade_offset
+            : tp_fade_direction == "right"
+              ? tp_fade_offset
+              : 0,
+        y:
+          tp_fade_direction == "top"
+            ? -tp_fade_offset
+            : tp_fade_direction == "bottom"
+              ? tp_fade_offset
+              : 0,
+      };
+    if (tp_onscroll_value == 1) {
+      tp_anim_setting.scrollTrigger = {
+        trigger: item,
+        start: "top 99%",
+      };
+    }
+    gsap.from(item, tp_anim_setting);
+  });
+}
+//**************************** Button text Hover animation js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 
