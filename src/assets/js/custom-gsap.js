@@ -551,7 +551,7 @@ gsap.matchMedia().add("(min-width: 1200px)", () => {
     let portfolioline = gsap.timeline({
       scrollTrigger: {
         trigger: portfolioArea,
-        start: "top center-=200",
+        start: "top center-=400",
         pin: portfolioText,
         end: "bottom bottom+=10",
         markers: false,
