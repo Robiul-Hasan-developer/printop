@@ -776,6 +776,47 @@ if ($(".custom-fade-animation").length > 0) {
 }
 //**************************** Button text Hover animation js End ****************************
 
+
+//**************************** Scale Item animation js Start ****************************
+if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
+  var tl = gsap.timeline({
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scale-section-wrapper",
+      pin: true,
+      pinSpacing: true,
+      scrub: 2,
+      start: "bottom 100%",
+      end: "120%",
+    }
+  });
+
+  // scale background
+  tl.to(".scale-item", {
+    scale: 20,
+    duration: 4,
+    zIndex: 8,
+    ease: "power2.in"
+  });
+
+  tl.to(".scale-text", {
+    scale: 20,
+    duration: 4,
+    zIndex: 8,
+    xPercent: -50,
+    yPercent: -50,
+    autoAlpha: 0, // ✅ hides completely
+    ease: "power2.in"
+  }, "<"); // run at same time
+  
+  tl.to(".area-bg", {
+    backgroundColor: "#000"
+  });
+}
+//**************************** Scale Item animation js End ****************************
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */

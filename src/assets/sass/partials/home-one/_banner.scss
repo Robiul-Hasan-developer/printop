@@ -99,6 +99,7 @@
         padding-inline: 20px;
     }
 }
+
 .mash-gradient-bottom {
     &::before {
         position: absolute;
@@ -112,6 +113,19 @@
         filter: blur(244px);
         z-index: -1;
     }
+}
+
+
+.area-bg {
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    background-color: var(--main-600);
+    border-radius: 100%;
+    z-index: -1;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
 }
 
 /* whole banner section end */

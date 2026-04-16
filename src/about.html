@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body class="tp-magic-cursor">
   <!--==================== Preloader Start ====================-->
   <div class="loader-mask">
     <div class="loader">
@@ -104,12 +104,17 @@
   <span class="dot"></span>
   <!-- Custom Cursor End -->
 
+  <!-- custom-cursor start -->
+  <div id="magic-cursor" class="cursor-white-bg">
+    <div id="ball"></div>
+  </div>
+  <!-- custom-cursor end -->
 
   <!-- ==================== bottom blur shadow start Here ==================== -->
   <div class="blur-bottom-shadow tw-duration-300"></div>
   <!-- ==================== bottom blur shadow End Here ==================== -->
 
-  
+
   <!-- ==================== Mobile Menu Start Here ==================== -->
 <div class="mobile-menu d-lg-none d-block scroll-sm position-fixed bg-white tw-w-300-px tw-h-screen overflow-y-auto tw-p-6 tw-z-999 tw--translate-x-full tw-pb-68 ">
 
@@ -2211,11 +2216,12 @@
 <!-- ============================ Download app section end ================================== -->
 
     <!-- ========================= promo banner section start ============================ -->
-<section class="promo-banner pt-120">
+<section class="promo-banner pt-120 scale-section-wrapper tw-h-screen overflow-hidden">
     <div class="container">
         <div class="row gy-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                <div class="tw-pt-12 tw-ps-40-px position-relative bg-pink-50 tw-rounded-20-px overflow-hidden z-1 h-100 d-flex flex-column justify-content-between">
+            <div class="col-lg-6 z-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div
+                    class="tw-pt-12 tw-ps-40-px position-relative bg-pink-50 tw-rounded-20-px z-2 h-100 d-flex flex-column justify-content-between">
                     <div class="max-w-330-px">
                         <div class="d-inline-flex align-items-center tw-gap-105">
                             <span class="text-body d-flex">
@@ -2223,7 +2229,8 @@
                             </span>
                             <span class="text-body text-uppercase">DESIGN YOUR OWN</span>
                         </div>
-                        <h2 class="h3 tw-mt-4 text-reveal">Birthday Invitation, Selfie Frame, Wedding cards and more.</h2>
+                        <h2 class="h3 tw-mt-4 text-reveal">Birthday Invitation, Selfie Frame, Wedding cards and more.
+                        </h2>
                         <a href="service-details.html"
                             class="text-heading fw-semibold d-inline-flex align-items-center tw-gap-3 hover-text-heading tw-mt-10 hover-common-underline">
                             Shop Now
@@ -2232,29 +2239,40 @@
                             </span>
                         </a>
                     </div>
-                    <div class="tw-mt-9 w-100 min-w-max custom-fade-animation" data-delay=".6" data-fade-from="bottom" data-ease="bounce">
+                    <div class="tw-mt-9 w-100 min-w-max custom-fade-animation" data-delay=".6" data-fade-from="bottom"
+                        data-ease="bounce">
                         <img src="assets/images/thumbs/promo-banner-img1.png" alt="Promo Banner Image">
                     </div>
 
-                    <div class="position-absolute bottom-0 tw-end-0 z-n1 custom-fade-animation" data-delay=".8" data-fade-from="right" data-ease="bounce">
+                    <div class="position-absolute bottom-0 tw-end-0 z-n1 custom-fade-animation" data-delay=".8"
+                        data-fade-from="right" data-ease="bounce">
                         <img src="assets/images/thumbs/promo-banner-img2.png" alt="Promo Banner Image">
                     </div>
-                    <div class="position-absolute tw-end-0 bottom-0  tw-pe-16 tw-pb-12 me-xl-5 mb-xl-5 position-relative z-1">
-                        <div class="tw-w-160-px tw-h-160-px d-flex align-items-center justify-content-center z-1 min-w-max">
-                            <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 z-n1">
-                                <img src="assets/images/shapes/rounded-star.png" alt="Rounded Shape Image" class="animation-rotate-right">
-                            </div>
-                            <div class="text-center">
-                                <h2 class="text-white text-uppercase fw-normal h5">UP TO</h2>
-                                <h2 class="text-white text-uppercase text-34-px tw-my-1">50%</h2>
-                                <h2 class="text-white text-uppercase fw-normal tw-text-lg">OFF</h2>
+
+                    <div
+                        class="position-absolute tw-end-0 bottom-0 tw-pe-16 me-xl-5 tw-pb-12 mb-xl-5 z-1">
+                        <div class="position-relative">
+                            <div class="area-bg scale-item"></div>
+                            <div
+                                class="tw-w-160-px tw-h-160-px d-flex align-items-center justify-content-center z- min-w-max  ">
+                                <div class="position-absolute top-50 start-50 translate-middle w-100 h-100 z-n1">
+                                    <img src="assets/images/shapes/rounded-star.png" alt="Rounded Shape Image"
+                                        class="animation-rotate-right">
+                                </div>
+                                <div class="text-center scale-text">
+                                    <h2 class="text-white text-uppercase fw-normal h5">UP TO</h2>
+                                    <h2 class="text-white text-uppercase text-34-px tw-my-1">50%</h2>
+                                    <h2 class="text-white text-uppercase fw-normal tw-text-lg">OFF</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                <div class="tw-pt-12 tw-px-40-px position-relative bg-slate-100 tw-rounded-20-px overflow-hidden z-1 h-100 d-flex flex-column justify-content-between">
+                <div
+                    class="tw-pt-12 tw-px-40-px position-relative bg-slate-100 tw-rounded-20-px overflow-hidden z-1 h-100 d-flex flex-column justify-content-between">
                     <div class="max-w-330-px mx-auto text-center">
                         <div class="d-inline-flex align-items-center tw-gap-105">
                             <span class="text-body d-flex">
@@ -2264,34 +2282,44 @@
                         </div>
                         <h2 class="h3 tw-mt-4 text-reveal">Green With Sustainably Responsible</h2>
                     </div>
-                    <div class="tw-mt-9 w-100 min-w-max d-flex justify-content-center custom-fade-animation" data-delay=".99" data-fade-from="bottom" data-ease="bounce">
+                    <div class="tw-mt-9 w-100 min-w-max d-flex justify-content-center custom-fade-animation"
+                        data-delay=".99" data-fade-from="bottom" data-ease="bounce">
                         <img src="assets/images/thumbs/promo-banner-img3.png" alt="Promo Banner Image">
                     </div>
 
-                    <div class="position-absolute bottom-0 tw-start-0 w-100 tw-mb-15 tw-pb-5 tw-px-40-px d-sm-block d-none">
+                    <div
+                        class="position-absolute bottom-0 tw-start-0 w-100 tw-mb-15 tw-pb-5 tw-px-40-px d-sm-block d-none">
                         <div class="d-flex align-items-center justify-content-between tw-gap-6 tw-px-9">
-                            <div class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
-                                <span class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
+                            <div
+                                class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
+                                <span
+                                    class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
                                     <i class="ph ph-check"></i>
                                 </span>
                                 <span class="text-body-6">Plastic Free</span>
                             </div>
-                            <div class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
-                                <span class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
+                            <div
+                                class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
+                                <span
+                                    class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
                                     <i class="ph ph-check"></i>
                                 </span>
                                 <span class="text-body-6">Recyclable</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center justify-content-between tw-gap-6 tw-pt-48-px">
-                            <div class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
-                                <span class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
+                            <div
+                                class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
+                                <span
+                                    class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
                                     <i class="ph ph-check"></i>
                                 </span>
                                 <span class="text-body-6">Compose table</span>
                             </div>
-                            <div class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
-                                <span class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
+                            <div
+                                class="bg-white tw-rounded-md d-inline-flex tw-p-105 tw-pe-5 align-items-center tw-gap-2">
+                                <span
+                                    class="bg-main-600 text-white tw-w-6 tw-h-6 tw-rounded d-inline-flex justify-content-center align-items-center flex-shrink-0">
                                     <i class="ph ph-check"></i>
                                 </span>
                                 <span class="text-body-6">Eco-labels</span>
