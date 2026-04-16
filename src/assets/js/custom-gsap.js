@@ -30,84 +30,38 @@ if ($("#smooth-wrapper").length && $("#smooth-content").length) {
 }
 // **************************** Smooth Scroll js End ****************************
 
+// **************************** Preloader js Start ****************************
+if ($(".preloader").length) {
+  const tl = gsap.timeline();
+  tl.from(".preloader .block", {
+    scaleX: 0,
+    duration: 0.8,
+    ease: "power1.in",
+    delay: 2,
+    stagger: 0.04,
+  })
+    .to(".preloader", {
+      yPercent: -100,
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.set(".preloader", { display: "none" });
+      },
+    })
+    .from(
+      ".hero-section.four",
+      {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      "-=0.2",
+    );
+}
+// **************************** Preloader js End ****************************
+
 // **************************** Custom Cursor Js Start ****************************
-// var body = document.body;
-// var cursor = document.querySelector(".cursor");
-// var dot = document.querySelector(".dot");
-// var cursorSmalls = document.querySelectorAll(".cursor-small");
-// var cursorBigs = document.querySelectorAll(".cursor-big");
-
-// body.addEventListener("mousemove", function (event) {
-//   gsap.to(cursor, {
-//     x: event.x,
-//     y: event.y,
-//     duration: 1.5,
-//     delay: 0.1,
-//     visibility: "visible",
-//     ease: "expo.out",
-//   });
-// });
-
-// body.addEventListener("mousemove", function (event) {
-//   gsap.to(dot, {
-//     x: event.x,
-//     y: event.y,
-//     duration: 1,
-//     visibility: "visible",
-//     ease: "expo.out",
-//   });
-// });
-
-// // Small Cursor
-// cursorSmalls.forEach((cursorSmall) => {
-//   cursorSmall.addEventListener("mouseenter", function () {
-//     gsap.to(dot, {
-//       scale: 8,
-//       backgroundColor: "#fff",
-//     });
-//     gsap.to(cursor, {
-//       visibility: "hidden",
-//       opacity: 0,
-//     });
-//   });
-
-//   cursorSmall.addEventListener("mouseleave", function () {
-//     gsap.to(dot, {
-//       scale: 1,
-//       backgroundColor: "#fff",
-//     });
-//     gsap.to(cursor, {
-//       visibility: "visible",
-//       opacity: 1,
-//     });
-//   });
-// });
-
-// // Big Cursor
-// cursorBigs.forEach((cursorBig) => {
-//   cursorBig.addEventListener("mouseenter", function () {
-//     gsap.to(dot, {
-//       scale: 30,
-//       backgroundColor: "#fff",
-//     });
-//     gsap.to(cursor, {
-//       visibility: "hidden",
-//       opacity: 0,
-//     });
-//   });
-
-//   cursorBig.addEventListener("mouseleave", function () {
-//     gsap.to(dot, {
-//       scale: 1,
-//       backgroundColor: "#fff",
-//     });
-//     gsap.to(cursor, {
-//       visibility: "visible",
-//       opacity: 1,
-//     });
-//   });
-// });
-
 var body = document.body;
 var cursor = document.querySelector(".cursor");
 var dot = document.querySelector(".dot");
@@ -776,7 +730,6 @@ if ($(".custom-fade-animation").length > 0) {
 }
 //**************************** Button text Hover animation js End ****************************
 
-
 //**************************** Scale Item animation js Start ****************************
 if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
   var tl = gsap.timeline({
@@ -788,7 +741,7 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
       scrub: 2,
       start: "bottom 100%",
       end: "120%",
-    }
+    },
   });
 
   // scale background
@@ -796,26 +749,28 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
     scale: 20,
     duration: 4,
     zIndex: 8,
-    ease: "power2.in"
+    ease: "power2.in",
   });
 
-  tl.to(".scale-text", {
-    scale: 20,
-    duration: 4,
-    zIndex: 8,
-    xPercent: -50,
-    yPercent: -50,
-    autoAlpha: 0, // ✅ hides completely
-    ease: "power2.in"
-  }, "<"); // run at same time
-  
+  tl.to(
+    ".scale-text",
+    {
+      scale: 20,
+      duration: 4,
+      zIndex: 8,
+      xPercent: -50,
+      yPercent: -50,
+      autoAlpha: 0, // ✅ hides completely
+      ease: "power2.in",
+    },
+    "<",
+  ); // run at same time
+
   tl.to(".area-bg", {
-    backgroundColor: "#000"
+    backgroundColor: "#000",
   });
 }
 //**************************** Scale Item animation js End ****************************
-
-
 
 /* **************************************************************************** 
                           Custom GSAP js start 

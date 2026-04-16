@@ -5689,74 +5689,124 @@ input:focus-visible {
 
 /* image double animation css end */
 /* ================================= preload Css Start =========================== */
-.loader-mask {
+.preloader {
     position: fixed;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inset-inline-end: 0;
-    inset-block-end: 0;
-    background-color: #fff;
+    top: 0;
+    left: 0;
+    background-color: var(--main-600);
+    width: 100%;
+    height: 100%;
     z-index: 99999;
 }
 
-.loader {
+.preloader__text {
     position: absolute;
-    inset-inline-start: 50%;
-    inset-block-start: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 0;
-    display: inline-block;
-    margin: -25px 0 0 -25px;
-    text-indent: -9999em;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    z-index: 100;
+    color: #000;
+    font-family: var(--heading-font) !important;
+    font-weight: 700;
 }
 
-.loader div {
-    background-color: var(--main-600);
-    display: inline-block;
-    float: none;
+.preloader__overlay {
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    width: 60px;
-    height: 60px;
-    opacity: 0.5;
-    border-radius: 50%;
-    -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
-    animation: ballPulseDouble 2s ease-in-out infinite;
+    top: 0;
+    left: 0;
 }
 
-.loader div:last-child {
-    -webkit-animation-delay: -1s;
-    animation-delay: -1s;
+.preloader .block {
+    position: fixed;
+    width: 5.1%;
+    height: 100%;
+    background: #000;
+    transform-origin: left;
 }
 
-@-webkit-keyframes ballPulseDouble {
-    0%, 100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.preloader .block-1 {
+    left: 0;
 }
 
-@keyframes ballPulseDouble {
-    0%, 100% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-
-    50% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.preloader .block-2 {
+    left: 5%;
 }
+
+.preloader .block-3 {
+    left: 10%;
+}
+
+.preloader .block-4 {
+    left: 15%;
+}
+
+.preloader .block-5 {
+    left: 20%;
+}
+
+.preloader .block-6 {
+    left: 25%;
+}
+
+.preloader .block-7 {
+    left: 30%;
+}
+
+.preloader .block-8 {
+    left: 35%;
+}
+
+.preloader .block-9 {
+    left: 40%;
+}
+
+.preloader .block-10 {
+    left: 45%;
+}
+
+.preloader .block-11 {
+    left: 50%;
+}
+
+.preloader .block-12 {
+    left: 55%;
+}
+
+.preloader .block-13 {
+    left: 60%;
+}
+
+.preloader .block-14 {
+    left: 65%;
+}
+
+.preloader .block-15 {
+    left: 70%;
+}
+
+.preloader .block-16 {
+    left: 75%;
+}
+
+.preloader .block-17 {
+    left: 80%;
+}
+
+.preloader .block-18 {
+    left: 85%;
+}
+
+.preloader .block-19 {
+    left: 90%;
+}
+
+.preloader .block-20 {
+    left: 95%;
+}
+
 /* ================================= preload Css End ===========================  */
 /* ========================== Settings panel css start =========================== */
 .settings-button {

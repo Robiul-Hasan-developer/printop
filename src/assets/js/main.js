@@ -762,9 +762,10 @@
   // ==========================================
 
   // ========================= Preloader Js Start =====================
-  $(window).on("load", function () {
-    $(".loader-mask").fadeOut();
-  });
+  // $(window).on("load", function () {
+  //   $(".loader-mask").fadeOut();
+  // });
+ 
   // ========================= Preloader Js End=====================
 
   // ========================= Header Sticky Js Start ==============
