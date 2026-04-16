@@ -6475,6 +6475,11 @@ body.tp-magic-cursor #magic-cursor {
         transform: translateY(24px);
     }
 }
+
+.row.card-animation-wrapper:hover .card-animation > div {
+    background: transparent;
+}
+
 /* ================================= Features home service section end ================================= */
 /* Team Css start */
 .on-hover-animation-item li {

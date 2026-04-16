@@ -773,37 +773,88 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
 //**************************** Scale Item animation js End ****************************
 
 //**************************** Card Item animation js End ****************************
+// mmm.add("(min-width: 1200px)", () => {
+//   if ($(".item-animation-wrapper").length) {
+//     const sections = document.querySelectorAll(".item-animation-wrapper");
 
-mmm.add("(min-width: 1200px)", () => {
-  if ($(".testimonial--inner.four").length) {
-    const sections = document.querySelectorAll(".testimonial--inner.four");
+//     sections.forEach((section) => {
+//       const item1 = $("#item1").get(0);
+//       const item2 = $("#item2").get(0);
+//       const item3 = $("#item3").get(0);
 
-    sections.forEach((section) => {
-      const item1 = $("#item1").get(0);
-      const item2 = $("#item2").get(0);
-      const item3 = $("#item3").get(0);
+//       gsap.set(item1, { x: "90%", duration: 10, backgroundColor: "#EEF3F4" });
+//       gsap.set(item2, { x: "10%", duration: 10, backgroundColor: "#EEF3F4" });
+//       gsap.set(item3, { x: "-70%", duration: 10, backgroundColor: "#EEF3F4" });
+//       gsap.set(item4, { x: "-140%", duration: 10, backgroundColor: "#EEF3F4" });
 
-      gsap.set(item1, { x: "90%" });
-      gsap.set(item2, { x: "10%" });
-      gsap.set(item3, { x: "-70%" });
+//       let tlll = gsap.timeline({
+//         scrollTrigger: {
+//           trigger: section,
+//           pin: true,
+//           start: "top 130px",
+//           end: "bottom 150%",
+//           scrub: 2,
+//           pinSpacing: false,
+//           markers: false,
+//           transition: '3s'
+//         },
+//       });
 
-      let tlll = gsap.timeline({
+//       tlll
+//         .to(item1, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
+//         .to(item2, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
+//         .to(item3, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
+//         .to(item4, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0);
+//     });
+//   }
+// });
+document.addEventListener("DOMContentLoaded", function () {
+  if ($(".card-animation").length) {
+    if (window.innerWidth > 1200) {
+      const items = document.querySelectorAll(".card-animation");
+
+      const itemAnimation = gsap.timeline({
         scrollTrigger: {
-          trigger: section,
-          pin: true,
-          start: "top 130px",
-          end: "bottom 150%",
-          scrub: 2,
-          pinSpacing: false,
+          trigger: ".card-animation-wrapper",
+          start: "top 60%",
+          toggleActions: "play none none reverse",
           markers: false,
         },
+        defaults: {
+          ease: "ease1",
+          duration: 1,
+        },
       });
-
-      tlll
-        .to(item1, { x: "0%", duration: 1 }, 0)
-        .to(item2, { x: "0%", duration: 1 }, 0)
-        .to(item3, { x: "0%", duration: 1 }, 0);
-    });
+      itemAnimation
+        .from(items[0], {
+          xPercent: 100,
+          rotate: 8,
+        })
+        .from(
+          items[1],
+          {
+            xPercent: 30,
+            rotate: 4.13,
+          },
+          "<"
+        )
+        .from(
+          items[2],
+          {
+            xPercent: -30,
+            rotate: -6.42,
+          },
+          "<"
+        )
+        .from(
+          items[3],
+          {
+            xPercent: -100,
+            rotate: -8.15,
+          },
+          "<"
+        );
+    }
   }
 });
 //**************************** Card Item animation js End ****************************
