@@ -761,13 +761,6 @@
   //      End Document Ready function
   // ==========================================
 
-  // ========================= Preloader Js Start =====================
-  // $(window).on("load", function () {
-  //   $(".loader-mask").fadeOut();
-  // });
- 
-  // ========================= Preloader Js End=====================
-
   // ========================= Header Sticky Js Start ==============
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 260) {

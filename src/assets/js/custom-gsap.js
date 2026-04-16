@@ -772,6 +772,42 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
 }
 //**************************** Scale Item animation js End ****************************
 
+//**************************** Card Item animation js End ****************************
+
+mmm.add("(min-width: 1200px)", () => {
+  if ($(".testimonial--inner.four").length) {
+    const sections = document.querySelectorAll(".testimonial--inner.four");
+
+    sections.forEach((section) => {
+      const item1 = $("#item1").get(0);
+      const item2 = $("#item2").get(0);
+      const item3 = $("#item3").get(0);
+
+      gsap.set(item1, { x: "90%" });
+      gsap.set(item2, { x: "10%" });
+      gsap.set(item3, { x: "-70%" });
+
+      let tlll = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          pin: true,
+          start: "top 130px",
+          end: "bottom 150%",
+          scrub: 2,
+          pinSpacing: false,
+          markers: false,
+        },
+      });
+
+      tlll
+        .to(item1, { x: "0%", duration: 1 }, 0)
+        .to(item2, { x: "0%", duration: 1 }, 0)
+        .to(item3, { x: "0%", duration: 1 }, 0);
+    });
+  }
+});
+//**************************** Card Item animation js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
