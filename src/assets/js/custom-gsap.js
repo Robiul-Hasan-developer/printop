@@ -772,8 +772,6 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
 }
 //**************************** Scale Item animation js End ****************************
 
-
-
 //**************************** scale little bit onscroll animation js Start ****************************
 if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
   var tl = gsap.timeline({
@@ -796,7 +794,6 @@ if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
   });
 }
 //**************************** scale little bit onscroll animation js End ****************************
-
 
 //**************************** Card Item animation js End ****************************
 // mmm.add("(min-width: 1200px)", () => {
@@ -834,53 +831,62 @@ if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
 //     });
 //   }
 // });
-document.addEventListener("DOMContentLoaded", function () {
-  if ($(".card-animation").length) {
-    if (window.innerWidth > 1200) {
-      const items = document.querySelectorAll(".card-animation");
 
-      const itemAnimation = gsap.timeline({
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth > 1200) {
+    const wrappers = document.querySelectorAll(".card-animation-wrapper");
+
+    wrappers.forEach((wrapper) => {
+      const items = wrapper.querySelectorAll(".card-animation");
+
+      const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: ".card-animation-wrapper",
+          trigger: wrapper, // ✅ each section individually
           start: "top 60%",
           toggleActions: "play none none reverse",
           markers: false,
         },
         defaults: {
-          ease: "ease1",
+          ease: "power2.out",
           duration: 1,
         },
       });
-      itemAnimation
-        .from(items[0], {
-          xPercent: 100,
-          rotate: 8,
-        })
-        .from(
-          items[1],
-          {
-            xPercent: 30,
-            rotate: 4.13,
-          },
-          "<"
-        )
-        .from(
+
+      tl.from(items[0], {
+        xPercent: 100,
+        rotate: 8,
+      }).from(
+        items[1],
+        {
+          xPercent: 30,
+          rotate: 4.13,
+        },
+        "<",
+      );
+
+      // check if items exist (important for promo section)
+      if (items[2]) {
+        tl.from(
           items[2],
           {
             xPercent: -30,
             rotate: -6.42,
           },
-          "<"
-        )
-        .from(
+          "<",
+        );
+      }
+
+      if (items[3]) {
+        tl.from(
           items[3],
           {
             xPercent: -100,
             rotate: -8.15,
           },
-          "<"
+          "<",
         );
-    }
+      }
+    });
   }
 });
 //**************************** Card Item animation js End ****************************
