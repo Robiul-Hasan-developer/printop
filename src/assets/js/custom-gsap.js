@@ -772,6 +772,32 @@ if (document.querySelectorAll(".scale-section-wrapper").length > 0) {
 }
 //**************************** Scale Item animation js End ****************************
 
+
+
+//**************************** scale little bit onscroll animation js Start ****************************
+if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
+  var tl = gsap.timeline({
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".scale-littlebit-onscroll",
+      pin: true,
+      pinSpacing: true,
+      scrub: 2,
+      start: "bottom 95%",
+      end: "+=400",
+    },
+  });
+
+  tl.to(".scale-littlebit-onscroll", {
+    scale: 1.5,
+    duration: 1,
+    zIndex: 8,
+    ease: "power2.in",
+  });
+}
+//**************************** scale little bit onscroll animation js End ****************************
+
+
 //**************************** Card Item animation js End ****************************
 // mmm.add("(min-width: 1200px)", () => {
 //   if ($(".item-animation-wrapper").length) {
