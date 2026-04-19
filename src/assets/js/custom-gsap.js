@@ -891,6 +891,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //**************************** Card Item animation js End ****************************
 
+//**************************** Move on cursor hover js Start ****************************
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+  document.querySelectorAll(".move-on-cursor-hover").forEach(function (move) {
+    var movingValue = move.getAttribute("data-value");
+    var x = (e.clientX * movingValue) / 250;
+    var y = (e.clientY * movingValue) / 250;
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
+}
+//**************************** Move on cursor hover js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
