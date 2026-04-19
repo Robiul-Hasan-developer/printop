@@ -1,42 +1,48 @@
 @@include('../partials/_template-top.html')
 
-    @@include('../partials/_top-header.html')
+@@include('../partials/_top-header.html')
 
-    @@include('../partials/_header-inner.html')
-    
-     @@include('../partials/_breadcrumb.html', {
+@@include('../partials/_header-inner.html')
+
+<div id="smooth-wrapper">
+    <div id="smooth-content" class="inner-pages-bottom-space">
+
+        @@include('../partials/_breadcrumb.html', {
         'breadcrumbText': 'About Printop'
-    })
+        })
 
-    @@include('../partials/_about-home-demand.html')
+        @@include('../partials/_about-home-demand.html')
 
-    @@include('../partials/_brand.html', {
+        @@include('../partials/_brand.html', {
         'sectionClass': 'pb-120'
-    })
+        })
 
-    @@include('../partials/_contact-section.html')
+        @@include('../partials/_contact-section.html')
 
-    @@include('../partials/_working-process-home-demand.html', {
+        @@include('../partials/_working-process-home-demand.html', {
         'sectionClass': 'py-120'
-    })
+        })
 
-    @@include('../partials/_product-range.html')
-    
-    @@include('../partials/_testimonials.html')
+        @@include('../partials/_product-range.html')
 
-    @@include('../partials/_download-app.html', {
+        @@include('../partials/_testimonials.html')
+
+        @@include('../partials/_download-app.html', {
         'sectionClass': 'pt-120'
-    })
+        })
 
-    @@include('../partials/_promo-banner.html', {
+        @@include('../partials/_promo-banner.html', {
         'sectionClass': 'pt-120'
-    })
+        })
 
-    @@include('../partials/_instagram-post.html')
+        @@include('../partials/_instagram-post.html')
 
-    @@include('../partials/_footer.html')
+        @@include('../partials/_footer.html')
+    </div>
+</div>
 
-    @@include('../partials/_template-bottom.html')
+@@include('../partials/_template-bottom.html')
 
-    </body>
+</body>
+
 </html>

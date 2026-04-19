@@ -1,26 +1,32 @@
 @@include('../partials/_template-top.html')
 
-    @@include('../partials/_top-header.html')
+@@include('../partials/_top-header.html')
 
-    @@include('../partials/_header-inner.html')
-    
-     @@include('../partials/_breadcrumb.html', {
+@@include('../partials/_header-inner.html')
+
+<div id="smooth-wrapper">
+    <div id="smooth-content" class="inner-pages-bottom-space">
+
+        @@include('../partials/_breadcrumb.html', {
         'breadcrumbText': 'Our Services'
-    })
-    
-    @@include('../partials/_shop-product-home-demand.html')
-    
-    @@include('../partials/_product-range.html')
-    
-    @@include('../partials/_graphics.html', {
+        })
+        
+        @@include('../partials/_shop-product-home-demand.html')
+        
+        @@include('../partials/_product-range.html')
+        
+        @@include('../partials/_graphics.html', {
         'sectionClass': 'pt-120'
-    })
+        })
+        
+        @@include('../partials/_instagram-post.html')
+        
+        @@include('../partials/_footer.html')
+    </div>
+</div>
 
-    @@include('../partials/_instagram-post.html')
+@@include('../partials/_template-bottom.html')
 
-    @@include('../partials/_footer.html')
+</body>
 
-    @@include('../partials/_template-bottom.html')
-
-    </body>
 </html>

@@ -454,7 +454,7 @@
 <!-- ============================ Top header End ============================ -->
 
 <!-- Header Start  -->
-<header class="position-relative tw-py-3">
+<header class="header sticky-bg-white tw-py-3 tw-transition-all tw-z-99">
     <div class="container max-w-1752-px">
         <div class="d-flex align-items-center justify-content-between tw-gap-6">
             <div class="header-menu d-lg-block d-none">
@@ -740,7 +740,10 @@
 </header>
 <!-- Header End  -->
 
-<!-- ==================== Breadcrumb Start Here ==================== -->
+<div id="smooth-wrapper">
+    <div id="smooth-content" class="inner-pages-bottom-space">
+
+        <!-- ==================== Breadcrumb Start Here ==================== -->
 <section class="breadcrumb py-80 background-img bg-img" data-background-image="assets/images/bg/breadcrumb-gradient-bg.png">
     <div class="container">
         <div class="row justify-content-center">
@@ -748,7 +751,7 @@
                 <div>
                     <h1 class="text-38-px text-center tw-mb-4"> Our Services</h1>
                     <ul class="d-flex align-items-center justify-content-center tw-gap-5">
-                        <li><a href="index.html" class="hover--translate-y-1 hover-common-underline text-neutral-600 hover-text-main-800 text-uppercase"> <i class="las la-home"></i> HOMEPAGE</a> </li>
+                        <li><a href="index.html" class="hover--translate-y-1 hover-common-underline text-neutral-600 hover-text-heading text-uppercase"> <i class="las la-home"></i> HOMEPAGE</a> </li>
                         <li class="text-neutral-400 d-flex"><i class="ph-fill ph-caret-double-right"></i></li>
                         <li> <span class="text-main-600 text-uppercase"> Our Services </span> </li>
                     </ul>
@@ -759,189 +762,226 @@
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
 
-<!-- ====================================== Service Details section start =============================== -->
-<section class="service-details pt-120">
-    <div class="container max-w-1100-px">
-        <div class="">
-            <div class="tp--hover-item position-relative d-block h-100">
-                <div class="tp--hover-img tw-rounded-xl overflow-hidden h-100"
-                    data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6" data-speedin="1"
-                    data-speedout="1">
-                    <img src="assets/images/thumbs/service-details-img.png" alt="Contact Image">
-                </div>
-            </div>
-            <div class="tw-mt-8">
-                <h2 class="text-reveal">Shop Deals</h2>
-                <p class="text-body tw-text-lg tw-mt-6">At tempus aenean sapien torquent sed diam class efficitur mus morbi eros
-                    dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat
-                    justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat
-                    mauris mollis primis imperdiet posu ere ex enim gravida cras congue pellentesque vulputate malesuada
-                    dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer
-                    venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin
-                    sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum
-                    inceptos nam felis penatibus feugiat</p>
-            </div>
-            <div class="tw-mt-15 tw-pt-3">
-                <div class="row gy-5">
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="tw-duration-200 group group-item pb-sm-0 pb-4">
-                            <div class="max-w-230-px ">
-                                <span class="d-flex">
-                                    <img src="assets/images/icons/choose-us-icon1.png" alt="Choose Us Icon"
-                                        class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200">
-                                </span>
-                                <div class="tw-mt-12">
-                                    <h2 class="tw-text-xl tw-leading-155 text-capitalize">High quality offset printing
-                                    </h2>
-                                    <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will need to receive
-                                        fast, reliable printing services.</p>
+        <!-- ====================================== Service Details section start =============================== -->
+        <section class="service-details pt-120">
+            <div class="container max-w-1100-px">
+                <div class="">
+                    <div
+                        class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-lg">
+                        <img src="assets/images/thumbs/service-details-img.png" alt="Image" data-animate="true"
+                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                        <img src="assets/images/thumbs/service-details-img.png" alt="Image"
+                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                    </div>
+                    <div class="tw-mt-8">
+                        <h2 class="text-reveal">Shop Deals</h2>
+                        <p class="text-body tw-text-lg tw-mt-6">At tempus aenean sapien torquent sed diam class
+                            efficitur mus morbi eros
+                            dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra
+                            consequat
+                            justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum
+                            volutpat
+                            mauris mollis primis imperdiet posu ere ex enim gravida cras congue pellentesque vulputate
+                            malesuada
+                            dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing
+                            integer
+                            venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae
+                            sollicitudin
+                            sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque
+                            elementum
+                            inceptos nam felis penatibus feugiat</p>
+                    </div>
+                    <div class="tw-mt-15 tw-pt-3">
+                        <div class="row gy-5">
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="tw-duration-200 group group-item pb-sm-0 pb-4 animation-item">
+                                    <div class="max-w-230-px ">
+                                        <span class="d-flex">
+                                            <img src="assets/images/icons/choose-us-icon1.png" alt="Choose Us Icon"
+                                                class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200 animate__bounce">
+                                        </span>
+                                        <div class="tw-mt-12">
+                                            <h2 class="tw-text-xl tw-leading-155 text-capitalize">High quality offset
+                                                printing
+                                            </h2>
+                                            <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will
+                                                need to receive
+                                                fast, reliable printing services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="tw-duration-200 group group-item pb-sm-0 pb-4 animation-item">
+                                    <div class="max-w-230-px ">
+                                        <span class="d-flex">
+                                            <img src="assets/images/icons/choose-us-icon2.png" alt="Choose Us Icon"
+                                                class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200 animate__bounce">
+                                        </span>
+                                        <div class="tw-mt-12">
+                                            <h2 class="tw-text-xl tw-leading-155 text-capitalize">Low minimums &amp;
+                                                easily
+                                                customizable</h2>
+                                            <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will
+                                                need to receive
+                                                fast, reliable printing services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="tw-duration-200 group group-item pb-sm-0 pb-4 animation-item">
+                                    <div class="max-w-230-px ">
+                                        <span class="d-flex">
+                                            <img src="assets/images/icons/choose-us-icon3.png" alt="Choose Us Icon"
+                                                class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200 animate__bounce">
+                                        </span>
+                                        <div class="tw-mt-12">
+                                            <h2 class="tw-text-xl tw-leading-155 text-capitalize">Faster delivery -
+                                                Standard or
+                                                Express</h2>
+                                            <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will
+                                                need to receive
+                                                fast, reliable printing services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-6">
+                                <div class="tw-duration-200 group group-item pb-sm-0 pb-4 animation-item">
+                                    <div class="max-w-230-px ">
+                                        <span class="d-flex">
+                                            <img src="assets/images/icons/choose-us-icon4.png" alt="Choose Us Icon"
+                                                class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200 animate__bounce">
+                                        </span>
+                                        <div class="tw-mt-12">
+                                            <h2 class="tw-text-xl tw-leading-155 text-capitalize">Free 24/7 design &amp;
+                                                logistics
+                                                support</h2>
+                                            <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will
+                                                need to receive
+                                                fast, reliable printing services. </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="tw-duration-200 group group-item pb-sm-0 pb-4">
-                            <div class="max-w-230-px ">
-                                <span class="d-flex">
-                                    <img src="assets/images/icons/choose-us-icon2.png" alt="Choose Us Icon"
-                                        class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200">
-                                </span>
-                                <div class="tw-mt-12">
-                                    <h2 class="tw-text-xl tw-leading-155 text-capitalize">Low minimums &amp; easily
-                                        customizable</h2>
-                                    <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will need to receive
-                                        fast, reliable printing services.</p>
+                    <div class="tw-mt-15 tw-mt-10">
+                        <h2 class="text-34-px">50% Off For Everything</h2>
+                        <p class="text-body tw-text-lg tw-mt-6">Pellentesque vulputate malesuada dictumst fames interdum
+                            cursus an te
+                            tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae
+                            finibus
+                            ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies
+                            rutrum
+                            parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus
+                            feugiat
+                        </p>
+                        <div class="tw-mt-10 d-flex flex-wrap tw-gap-5 justify-content-between">
+                            <div class="d-flex flex-column tw-gap-5">
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Customer happiness guarantee</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Top quality prints using the latest
+                                        technology</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Fast and free standard
+                                        shipping</span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column tw-gap-5">
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Customer happiness guarantee</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Top quality prints using the latest
+                                        technology</span>
+                                </div>
+                                <div class="d-flex align-items-center tw-gap-2">
+                                    <span
+                                        class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
+                                        <i class="ph-bold ph-check"></i>
+                                    </span>
+                                    <span class="tw-text-xl text-body tw-text-lg-6">Fast and free standard
+                                        shipping</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="tw-duration-200 group group-item pb-sm-0 pb-4">
-                            <div class="max-w-230-px ">
-                                <span class="d-flex">
-                                    <img src="assets/images/icons/choose-us-icon3.png" alt="Choose Us Icon"
-                                        class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200">
-                                </span>
-                                <div class="tw-mt-12">
-                                    <h2 class="tw-text-xl tw-leading-155 text-capitalize">Faster delivery - Standard or
-                                        Express</h2>
-                                    <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will need to receive
-                                        fast, reliable printing services.</p>
+                    <div class="tw-my-10">
+                        <div class="row gy-4">
+                            <div class="col-sm-6">
+                                <div
+                                    class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-20-px">
+                                    <img src="assets/images/thumbs/service-details-img2.png" alt="Image"
+                                        data-animate="true"
+                                        class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                    <img src="assets/images/thumbs/service-details-img2.png" alt="Image"
+                                        class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div
+                                    class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-20-px">
+                                    <img src="assets/images/thumbs/service-details-img3.png" alt="Image"
+                                        data-animate="true"
+                                        class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                    <img src="assets/images/thumbs/service-details-img3.png" alt="Image"
+                                        class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="tw-duration-200 group group-item pb-sm-0 pb-4">
-                            <div class="max-w-230-px ">
-                                <span class="d-flex">
-                                    <img src="assets/images/icons/choose-us-icon4.png" alt="Choose Us Icon"
-                                        class="text-invert-black group-hover-item-text-invert-main-600 tw-duration-200">
-                                </span>
-                                <div class="tw-mt-12">
-                                    <h2 class="tw-text-xl tw-leading-155 text-capitalize">Free 24/7 design &amp;
-                                        logistics
-                                        support</h2>
-                                    <p class="tw-mt-6 text-body tw-text-lg-3">Know-how and every thing you will need to receive
-                                        fast, reliable printing services. </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="tw-mt-8">
+                        <h2 class="text-34-px">What We Provide</h2>
+                        <p class="text-body tw-text-lg tw-mt-8">Pellentesque vulputate malesuada dictumst fames interdum
+                            cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis
+                            arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit
+                            consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum
+                            inceptos nam felis penatibus feugiat</p>
+                        <p class="text-body tw-text-lg tw-mt-8">Quisque pulvinar facilisi tempor condimentum sit dui
+                            pharetra ad fringilla cursus. Consectetur nisl lacus felis proin inceptos vestibu lum mi
+                            fermentum cubilia. Augue praesent vel ridiculus blandit dapibus vehicu. Dignissim tortor
+                            ultricies iaculis penatibus hendrerit scelerisque elit fames donec.</p>
+                        <p class="text-body tw-text-lg tw-mt-8">At tempus aenean sapien torquent sed diam class
+                            efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac
+                            fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis
+                            lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex
+                            enim gravida cras congue pellentesque vulputate malesuada dictumst fames interdum cursus an
+                            te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae
+                            finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer
+                            ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam
+                            felis penatibus feugiat</p>
                     </div>
                 </div>
             </div>
-            <div class="tw-mt-15 tw-mt-10">
-                <h2 class="text-34-px">50% Off For Everything</h2>
-                <p class="text-body tw-text-lg tw-mt-6">Pellentesque vulputate malesuada dictumst fames interdum cursus an te
-                    tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus
-                    ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum
-                    parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat
-                </p>
-                <div class="tw-mt-10 d-flex flex-wrap tw-gap-5 justify-content-between">
-                    <div class="d-flex flex-column tw-gap-5">
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Customer happiness guarantee</span>
-                        </div>
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Top quality prints using the latest
-                                technology</span>
-                        </div>
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Fast and free standard shipping</span>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column tw-gap-5">
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Customer happiness guarantee</span>
-                        </div>
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Top quality prints using the latest
-                                technology</span>
-                        </div>
-                        <div class="d-flex align-items-center tw-gap-2">
-                            <span
-                                class="tw-w-7 tw-h-7 tw-rounded-md bg-white text-main-600 d-flex align-items-center justify-content-center shadow-sm">
-                                <i class="ph-bold ph-check"></i>
-                            </span>
-                            <span class="tw-text-xl text-body tw-text-lg-6">Fast and free standard shipping</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tw-my-10">
-                <div class="row gy-4">
-                    <div class="col-sm-6">
-                        <div class="tp--hover-item position-relative d-block h-100">
-                            <div class="tp--hover-img tw-rounded-xl overflow-hidden h-100"
-                                data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6" data-speedin="1"
-                                data-speedout="1">
-                                <img src="assets/images/thumbs/service-details-img2.png" alt="Contact Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="tp--hover-item position-relative d-block h-100">
-                            <div class="tp--hover-img tw-rounded-xl overflow-hidden h-100"
-                                data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6" data-speedin="1"
-                                data-speedout="1">
-                                <img src="assets/images/thumbs/service-details-img3.png" alt="Contact Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tw-mt-8">
-                <h2 class="text-34-px">What We Provide</h2>
-                <p class="text-body tw-text-lg tw-mt-8">Pellentesque vulputate malesuada dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat</p>
-                <p class="text-body tw-text-lg tw-mt-8">Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cursus. Consectetur nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Augue praesent vel ridiculus blandit dapibus vehicu. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque elit fames donec.</p>
-                <p class="text-body tw-text-lg tw-mt-8">At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo nibh hac fermentum orci ad pharetra consequat justo duis turpis lorem elit dui consectetur magnis lacinia odio per placerat vestibulum volutpat mauris mollis primis imperdiet posu ere ex enim gravida cras congue pellentesque vulputate malesuada dictumst fames interdum cursus an te tellus porta ullamcorper accumsan non eu adipiscing integer venenatis sagittis arcu curae finibus ridi culus aliquam velit lobortis senectus vitae sollicitudin sit consectetuer ultricies rutrum parturient pede nisi nascetur habitant netus quisque elementum inceptos nam felis penatibus feugiat</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ====================================== Service Details section end =============================== -->
+        </section>
+        <!-- ====================================== Service Details section end =============================== -->
 
-<!-- =========================== Working Process section start ================================ -->
+        <!-- =========================== Working Process section start ================================ -->
 <section class="working-process pt-120">
     <div class="container">
         <div class="section-heading tw-mb-10 text-center">
@@ -1039,7 +1079,7 @@
 </section>
 <!-- =========================== Working Process section end ================================ -->
 
-<!-- ============================== Instagram post section start ================================ -->
+        <!-- ============================== Instagram post section start ================================ -->
 <section class="instagram-post pt-120 px-md-0 px-3">
     <div class="position-relative lg-pt-100-px">
         <h2
@@ -1146,7 +1186,7 @@
 </section>
 <!-- ============================== Instagram post section end ================================ -->
 
-<!-- ==================== Footer Start Here ==================== -->
+        <!-- ==================== Footer Start Here ==================== -->
 <footer class="footer bg-white position-relative z-1 mt-auto">
   <div class="py-120">
     <div class="container container-two">
@@ -1324,6 +1364,8 @@
   </div>
 </footer>
 <!-- ==================== Footer End Here ==================== -->
+    </div>
+</div>
 
 <!-- Jquery js -->
 <script src="assets/js/jquery-3.7.1.min.js"></script>
