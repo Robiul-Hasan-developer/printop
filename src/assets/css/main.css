@@ -6470,16 +6470,6 @@ body.tp-magic-cursor #magic-cursor {
 
 /* FAQ css end */
 /* ================================= Features home service section start ================================= */
-@media (min-width: 576px) {
-    .feature-wrapper {
-        margin-bottom: 24px;
-    }
-
-    .feature-wrapper div[class*=col]:nth-child(even) {
-        transform: translateY(24px);
-    }
-}
-
 .contact-features-wrapper:hover .card-animation > div {
     background: transparent;
 }

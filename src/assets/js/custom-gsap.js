@@ -903,6 +903,22 @@ function parallax(e) {
 }
 //**************************** Move on cursor hover js End ****************************
 
+//**************************** fixed content js End ****************************
+mmm.add("(min-width: 992px)", () => {
+  if ($(".fixed-content-wrapper").length > 0) {
+    ScrollTrigger.create({
+      trigger: ".feature-wrapper", // পুরো row
+      start: "top top+=140", // একটু spacing adjust করতে পারো
+      end: "bottom bottom", // right content শেষ হলে stop
+      pin: ".fixed-content",
+      pinSpacing: false,
+      scrub: 1,
+      markers: false,
+    });
+  }
+});
+//**************************** fixed content js End ****************************
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
