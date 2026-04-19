@@ -6507,6 +6507,13 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Team Css end */
+/* ============================ Product Range css start =============================== */
+.product-range-image {
+    bottom: 14%;
+    inset-inline-start: 34%;
+}
+
+/* ============================ Product Range css end =============================== */
 /* ================================== rtl css start ================================== */
 .text-start {
     text-align: start !important;
