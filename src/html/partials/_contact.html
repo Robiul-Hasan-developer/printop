@@ -12,11 +12,11 @@
         <div class="row gy-4">
             <div class="col-xl-4 col-md-6">
                 <div
-                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item">
+                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item animation-item">
                     <span
                         class="tw-w-16 tw-h-16 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center group-hover-bg-main-two-600 tw-duration-300 flex-shrink-0">
                         <img src="assets/images/icons/icon-phone-msg.png" alt="Phone Icon"
-                            class="group-hover-item-text-invert-white tw-duration-300">
+                            class="group-hover-item-text-invert-white tw-duration-300 animate__heartBeat">
                     </span>
                     <div class="">
                         <span class="text-body-11 tw-text-base">Call Us 7/24</span>
@@ -26,11 +26,11 @@
             </div>
             <div class="col-xl-4 col-md-6">
                 <div
-                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item">
+                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item animation-item">
                     <span
                         class="tw-w-16 tw-h-16 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center group-hover-bg-main-two-600 tw-duration-300 flex-shrink-0">
                         <img src="assets/images/icons/icon-location-circle.png" alt="Phone Icon"
-                            class="group-hover-item-text-invert-white tw-duration-300">
+                            class="group-hover-item-text-invert-white tw-duration-300 animate__heartBeat">
                     </span>
                     <div class="">
                         <span class="text-body-11 tw-text-base">Location</span>
@@ -40,11 +40,11 @@
             </div>
             <div class="col-xl-4 col-md-6">
                 <div
-                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item">
+                    class="h-100 border border-neutral-100 hover-border-neutral-600 tw-duration-300 tw-px-40-px tw-py-11 tw-rounded-20-px d-flex align-items-center tw-gap-5 group group-item animation-item">
                     <span
                         class="tw-w-16 tw-h-16 bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center group-hover-bg-main-two-600 tw-duration-300 flex-shrink-0">
                         <img src="assets/images/icons/icon-envelope-ad.png" alt="Phone Icon"
-                            class="group-hover-item-text-invert-white tw-duration-300">
+                            class="group-hover-item-text-invert-white tw-duration-300 animate__heartBeat">
                     </span>
                     <div class="">
                         <span class="text-body-11 tw-text-base">Make a Quote</span>
@@ -59,7 +59,7 @@
                     <div class="">
                         <form action="#"
                             class="bg-white border border-neutral-100 tw-py-10 tw-px-40-px tw-rounded-xl form-submit">
-                            <h2 class="tw-mt-2 tw-pb-6 mb-0">Get In Touch</h2>
+                            <h2 class="tw-mt-2 tw-pb-6 mb-0 text-reveal">Get In Touch</h2>
                             <div class="row gy-4">
                                 <div class="col-sm-6">
                                     <input type="text"
@@ -92,17 +92,16 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="tw-mt-4">
-                                        <button type="submit"
-                                            class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 rounded-pill tw-py-5"
-                                            data-block="button">
-                                            <span class="button__flair"></span>
-                                            <span class="button__label">Send Your Message</span>
-                                            <span class="d-flex position-relative tw-text-xl">
-                                                <span class="btn-down-arrow">
+                                        <div class="custom-fade-animation" data-delay=".6" data-fade-from="bottom"
+                                            data-ease="bounce">
+                                            <button type="submit"
+                                                class="btn bg-main-two-600 hover-bg-animation hover-bg-animation-main-600">
+                                                <span class="btn-text">Send Your Message </span>
+                                                <span class="btn-icon-animation d-flex">
                                                     <i class="ph-bold ph-arrow-down-right"></i>
                                                 </span>
-                                            </span>
-                                        </button>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
