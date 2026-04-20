@@ -43,6 +43,7 @@
   &__button {
     &.active {
       background-color: var(--main-600) !important;
+      color: #fff; 
     }
   }
 }

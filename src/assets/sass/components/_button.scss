@@ -21,8 +21,8 @@
         box-shadow: none !important;
     }
 
-    &:hover {
-        color: #fff
+    &:hover, &:focus, &:active {
+        color: #fff !important;
     }
 }
 

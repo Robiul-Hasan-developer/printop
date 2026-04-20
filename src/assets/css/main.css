@@ -272,8 +272,8 @@
     box-shadow: none !important;
 }
 
-.btn:hover {
-    color: #fff;
+.btn:hover, .btn:focus, .btn:active {
+    color: #fff !important;
 }
 
 .hover-bg-animation {
@@ -5857,6 +5857,7 @@ input:focus-visible {
 
 .settings-panel__button.active {
     background-color: var(--main-600) !important;
+    color: #fff;
 }
 
 .remove-animate-cursor .cursor,

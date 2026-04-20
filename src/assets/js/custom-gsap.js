@@ -512,35 +512,6 @@ headings.forEach((heading) => {
 });
 // **************************** Text hover animation js End ****************************
 
-// const text = document.querySelector(".text");
-
-// gsap.registerPlugin(SplitText);
-
-// const Split = SplitText.create(text, {
-//   splitBy: "chars,words",
-//   wordsClass: "word",
-//   charsClass: "char",
-//   mask: "words",
-//   autoSplit: true,
-//   onSplit: (self) => {
-//     self.words.forEach((word) => {
-//       // Get all the characters
-//       const content = word.innerHTML;
-//       word.innerHTML = "";
-//       // Add the original characters back in
-//       const chars = document.createElement("div");
-//       chars.classList.add("before");
-//       chars.innerHTML = content;
-//       // Duplicate the characters with aria-hidden, so that screen-readers don't read duplicate content
-//       const dupe = document.createElement("div");
-//       dupe.classList.add("after");
-//       dupe.innerHTML = content;
-
-//       word.append(chars, dupe);
-//     });
-//   }
-// });
-
 // **************************** Section to title zoom and item upper js End ****************************
 gsap.matchMedia().add("(min-width: 1200px)", () => {
   const portfolioArea = document.querySelector(".sticky-section");
