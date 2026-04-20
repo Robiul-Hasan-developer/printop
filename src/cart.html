@@ -56,7 +56,7 @@
   <!-- ========================== Settings Panel start ==================================== -->
 <div class="settings-panel position-fixed top-50 translate-middle-y tw-z-999 d-flex align-items-center">
   <button type="button"
-    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-800 tw-duration-100 d-flex justify-content-center align-items-center">
+    class="settings-button tw-w-12 tw-h-12 bg-main-600 text-white hover-bg-main-two-600 tw-duration-100 d-flex justify-content-center align-items-center">
     <i class="ph-fill ph-gear-six setting-icon tw-text-2xl tw-leading-none animation-rotate tw-w-6 tw-h-6"></i>
     <i class="ph-bold ph-x close-icon tw-text-2xl tw-leading-none tw-w-6 tw-h-6"></i>
   </button>
@@ -761,7 +761,7 @@
     </div>
 </section>
 <!-- ==================== Breadcrumb End Here ==================== -->
-        
+
         <!-- ======================== Shop Details Start ========================== -->
         <section class="cart-section py-120">
             <div class="container">
@@ -771,19 +771,22 @@
                             <table class="table min-w-max">
                                 <thead>
                                     <tr>
-                                        <th scope="col" class="border-bottom border-main-600 pb-3">
+                                        <th scope="col" class="border-bottom border-main-two-600 pb-3">
                                             <span class="invisible opacity-0">#</span>
                                         </th>
-                                        <th scope="col" class="border-bottom border-main-600 pb-3">Products</th>
-                                        <th scope="col" class="border-bottom border-main-600 pb-3 text-center">Price</th>
-                                        <th scope="col" class="border-bottom border-main-600 pb-3 text-center">Quantity</th>
-                                        <th scope="col" class="border-bottom border-main-600 pb-3">Subtotal</th>
+                                        <th scope="col" class="border-bottom border-main-two-600 pb-3">Products</th>
+                                        <th scope="col" class="border-bottom border-main-two-600 pb-3 text-center">Price
+                                        </th>
+                                        <th scope="col" class="border-bottom border-main-two-600 pb-3 text-center">Quantity
+                                        </th>
+                                        <th scope="col" class="border-bottom border-main-two-600 pb-3">Subtotal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="py-4 border-bottom border-neutral-200">
-                                            <button type="button" class="tw-text-lg d-flex text-heading hover-text-main-600">
+                                            <button type="button"
+                                                class="tw-text-lg d-flex text-heading hover-text-main-600">
                                                 <i class="ph ph-x"></i>
                                             </button>
                                         </td>
@@ -821,7 +824,8 @@
                                     </tr>
                                     <tr>
                                         <td class="py-4 border-bottom border-neutral-200">
-                                            <button type="button" class="tw-text-lg d-flex text-heading hover-text-main-600">
+                                            <button type="button"
+                                                class="tw-text-lg d-flex text-heading hover-text-main-600">
                                                 <i class="ph ph-x"></i>
                                             </button>
                                         </td>
@@ -859,7 +863,8 @@
                                     </tr>
                                     <tr>
                                         <td class="py-4 border-bottom border-neutral-200">
-                                            <button type="button" class="tw-text-lg d-flex text-heading hover-text-main-600">
+                                            <button type="button"
+                                                class="tw-text-lg d-flex text-heading hover-text-main-600">
                                                 <i class="ph ph-x"></i>
                                             </button>
                                         </td>
@@ -900,22 +905,33 @@
                         </div>
                         <div class="d-flex tw-gap-6 flex-wrap justify-content-between align-items-center tw-mt-14">
                             <form action="#" class="d-flex tw-gap-5 flex-sm-nowrap flex-wrap">
-                                <input type="text"
-                                    class="border border-neutral-200 focus-border-main-600 tw-rounded-md tw-px-6 tw-py-305 focus-outline-0 text-body fw-medium"
-                                    placeholder="Coupon code">
-                                <button type="submit"
-                                    class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 tw-rounded-xl tw-py-5"
-                                    data-block="button">
-                                    <span class="button__flair"></span>
-                                    <span class="button__label">APPLY COUPON</span>
-                                </button>
+                                <div class="custom-fade-animation" data-delay=".6" data-fade-from="bottom"
+                                    data-ease="bounce">
+                                    <input type="text"
+                                        class="border border-neutral-200 focus-border-main-600 tw-rounded-md tw-px-6 tw-py-305 focus-outline-0 text-body fw-medium"
+                                        placeholder="Coupon code">
+                                </div>
+                                <div class="custom-fade-animation" data-delay=".8" data-fade-from="bottom"
+                                    data-ease="bounce">
+                                    <button type="button"
+                                        class="btn bg-main-600 hover-bg-animation hover-bg-animation-main-two-600 tw-py-5 tw-rounded-xl">
+                                        <div class="btn-text">APPLY COUPON </div>
+                                        <span class="btn-icon-animation d-flex">
+                                            <i class="ph-bold ph-arrow-down-right"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </form>
-                            <button type="submit"
-                                class="btn btn-main-two-outline hover-style-one button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 tw-rounded-xl tw-py-5 hover-text-white fw-semibold"
-                                data-block="button">
-                                <span class="button__flair"></span>
-                                <span class="button__label">UPDATE CART</span>
-                            </button>
+                            <div class="custom-fade-animation" data-delay=".7" data-fade-from="bottom"
+                                data-ease="bounce">
+                                <button type="button"
+                                    class="btn bg-transparent border border-main-two-600 text-main-two-600 hover-bg-animation hover-bg-animation-main-two-600 tw-rounded-xl">
+                                    <div class="btn-text">UPDATE CART </div>
+                                    <span class="btn-icon-animation d-flex">
+                                        <i class="ph-bold ph-arrow-down-right"></i>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
@@ -932,18 +948,22 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button"
-                            class="btn btn-main-two hover-style-two button--stroke tw-duration-100 d-inline-flex align-items-center justify-content-center tw-gap-3 group fw-normal tw-text-base tw-px-705 tw-rounded-xl tw-py-5 tw-mt-6"
-                            data-block="button">
-                            <span class="button__flair"></span>
-                            <span class="button__label">PROCCED TO CHECKOUT</span>
-                        </button>
+                        <div class="custom-fade-animation tw-mt-6" data-delay=".6" data-fade-from="bottom"
+                            data-ease="bounce">
+                            <button type="button"
+                                class="btn bg-main-two-600 hover-bg-animation hover-bg-animation-main-600 tw-py-5 tw-rounded-xl">
+                                <div class="btn-text">PROCCED TO CHECKOUT </div>
+                                <span class="btn-icon-animation d-flex">
+                                    <i class="ph-bold ph-arrow-down-right"></i>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ======================== Shop Details End ========================== -->
-        
+
         <!-- ======================== Similar Product Section Start ========================== -->
         <section class="similar-product">
             <div class="container">
@@ -955,23 +975,24 @@
                     </span>
                     <h2 class="text-reveal fw-semibold tw-mt-4">You May Also Like</h2>
                 </div>
-        
+
                 <div class="row gy-4">
                     <div class="col-xl-3 col-lg-4 col-sm-6">
                         <div class="shop-item">
                             <div class="">
                                 <div class="">
-                                    <a href="shop-details.html" class="tp--hover-item position-relative d-block">
-                                        <div class="tp--hover-img tw-rounded-lg overflow-hidden"
-                                            data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6"
-                                            data-speedin="1" data-speedout="1">
-                                            <img src="assets/images/thumbs/shop-img9.png" alt="Image"
-                                                class="w-100 h-100 object-fit-cover">
-                                        </div>
+                                    <a href="shop.html"
+                                        class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-lg">
+                                        <img src="assets/images/thumbs/shop-img9.png" alt="Image"
+                                            data-animate="true"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                        <img src="assets/images/thumbs/shop-img9.png" alt="Image"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
                                     </a>
                                     <div class="tw-mt-6 text-center">
                                         <span class="text-main-600 d-block fw-semibold tw-mb-2">$26.00 - $29.00</span>
-                                        <a href="shop-details.html" class="text-body-7 hover-text-main-600 fw-semibold h4">Tote
+                                        <a href="shop-details.html"
+                                            class="text-body-7 hover-text-heading hover-common-underline fw-semibold h4">Tote
                                             Bag Print</a>
                                     </div>
                                 </div>
@@ -982,17 +1003,18 @@
                         <div class="shop-item">
                             <div class="">
                                 <div class="">
-                                    <a href="shop-details.html" class="tp--hover-item position-relative d-block">
-                                        <div class="tp--hover-img tw-rounded-lg overflow-hidden"
-                                            data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6"
-                                            data-speedin="1" data-speedout="1">
-                                            <img src="assets/images/thumbs/shop-img10.png" alt="Image"
-                                                class="w-100 h-100 object-fit-cover">
-                                        </div>
+                                    <a href="shop.html"
+                                        class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-lg">
+                                        <img src="assets/images/thumbs/shop-img10.png" alt="Image"
+                                            data-animate="true"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                        <img src="assets/images/thumbs/shop-img10.png" alt="Image"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
                                     </a>
                                     <div class="tw-mt-6 text-center">
                                         <span class="text-main-600 d-block fw-semibold tw-mb-2">$26.00 - $29.00</span>
-                                        <a href="shop-details.html" class="text-body-7 hover-text-main-600 fw-semibold h4">Chips
+                                        <a href="shop-details.html"
+                                            class="text-body-7 hover-text-heading hover-common-underline fw-semibold h4">Chips
                                             Packaging</a>
                                     </div>
                                 </div>
@@ -1003,17 +1025,18 @@
                         <div class="shop-item">
                             <div class="">
                                 <div class="">
-                                    <a href="shop-details.html" class="tp--hover-item position-relative d-block">
-                                        <div class="tp--hover-img tw-rounded-lg overflow-hidden"
-                                            data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6"
-                                            data-speedin="1" data-speedout="1">
-                                            <img src="assets/images/thumbs/shop-img11.png" alt="Image"
-                                                class="w-100 h-100 object-fit-cover">
-                                        </div>
+                                    <a href="shop.html"
+                                        class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-lg">
+                                        <img src="assets/images/thumbs/shop-img11.png" alt="Image"
+                                            data-animate="true"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                        <img src="assets/images/thumbs/shop-img11.png" alt="Image"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
                                     </a>
                                     <div class="tw-mt-6 text-center">
                                         <span class="text-main-600 d-block fw-semibold tw-mb-2">$26.00 - $29.00</span>
-                                        <a href="shop-details.html" class="text-body-7 hover-text-main-600 fw-semibold h4">Flat
+                                        <a href="shop-details.html"
+                                            class="text-body-7 hover-text-heading hover-common-underline fw-semibold h4">Flat
                                             Sticker</a>
                                     </div>
                                 </div>
@@ -1024,18 +1047,19 @@
                         <div class="shop-item">
                             <div class="">
                                 <div class="">
-                                    <a href="shop-details.html" class="tp--hover-item position-relative d-block">
-                                        <div class="tp--hover-img tw-rounded-lg overflow-hidden"
-                                            data-displacement="assets/images/shapes/fluid.jpg" data-intensity="0.6"
-                                            data-speedin="1" data-speedout="1">
-                                            <img src="assets/images/thumbs/shop-img12.png" alt="Image"
-                                                class="w-100 h-100 object-fit-cover">
-                                        </div>
+                                    <a href="shop.html"
+                                        class="clip-animation image-double-animation overflow-hidden position-relative d-block tw-rounded-lg">
+                                        <img src="assets/images/thumbs/shop-img12.png" alt="Image"
+                                            data-animate="true"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
+                                        <img src="assets/images/thumbs/shop-img12.png" alt="Image"
+                                            class="image-double-animation__element w-100 h-100 object-fit-cover clip-animation-img">
                                     </a>
                                     <div class="tw-mt-6 text-center">
                                         <span class="text-main-600 d-block fw-semibold tw-mb-2">$26.00 - $29.00</span>
                                         <a href="shop-details.html"
-                                            class="text-body-7 hover-text-main-600 fw-semibold h4">Business Card Print</a>
+                                            class="text-body-7 hover-text-heading hover-common-underline fw-semibold h4">Business Card
+                                            Print</a>
                                     </div>
                                 </div>
                             </div>
@@ -1045,7 +1069,7 @@
             </div>
         </section>
         <!-- ======================== Similar Product Section End ========================== -->
-        
+
         <!-- ============================== Instagram post section start ================================ -->
 <section class="instagram-post pt-120 px-md-0 px-3">
     <div class="position-relative lg-pt-100-px">
@@ -1152,7 +1176,7 @@
     </div>
 </section>
 <!-- ============================== Instagram post section end ================================ -->
-        
+
         <!-- ==================== Footer Start Here ==================== -->
 <footer class="footer bg-white position-relative z-1 mt-auto">
   <div class="py-120">
@@ -1274,7 +1298,7 @@
                 placeholder="Enter email" required>
 
               <button type="submit"
-                class="tw-w-10 tw-h-10 flex-center tw-rounded-xl bg-main-600 text-white hover-bg-main-800 position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-105 transition-all">
+                class="tw-w-10 tw-h-10 flex-center tw-rounded-xl bg-main-600 text-white hover-bg-main-two-600 position-absolute top-50 tw--translate-y-50 tw-end-0 tw-me-105 tw-duration-300">
                 <i class="ph ph-paper-plane-tilt"></i>
               </button>
             </form>
