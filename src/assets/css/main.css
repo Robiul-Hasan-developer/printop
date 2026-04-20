@@ -5187,6 +5187,10 @@ input:focus-visible {
     width: 300px;
 }
 
+.tw-w-90-px {
+    width: 90px;
+}
+
 .tw-w-100-px {
     width: 100px;
 }
