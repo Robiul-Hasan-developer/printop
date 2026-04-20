@@ -1,20 +1,27 @@
 @@include('../partials/_template-top.html')
 
-    @@include('../partials/_top-header.html')
+@@include('../partials/_top-header.html')
 
-    @@include('../partials/_header-inner.html')
-    
-     @@include('../partials/_breadcrumb.html', {
+@@include('../partials/_header-inner.html')
+
+<div id="smooth-wrapper">
+    <div id="smooth-content" class="inner-pages-bottom-space">
+        
+        @@include('../partials/_breadcrumb.html', {
         'breadcrumbText': 'Blog Details'
-    })
+        })
+        
+        @@include('../partials/_blog-details-page-content.html')
+        
+        @@include('../partials/_instagram-post.html')
+        
+        @@include('../partials/_footer.html')
+    </div>
+</div>
 
-    @@include('../partials/_blog-details-page-content.html')
-    
-    @@include('../partials/_instagram-post.html')
 
-    @@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')
 
-    @@include('../partials/_template-bottom.html')
+</body>
 
-    </body>
 </html>
