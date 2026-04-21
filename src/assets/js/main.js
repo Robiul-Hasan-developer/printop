@@ -723,6 +723,30 @@
     });
     // ========================== Add Attribute For Bg Image Js End =====================
 
+    // ========================= Category Js Start ===================
+    let categoryButton = document.querySelector(".category-button");
+    let categoryDropdown = document.querySelector(".category-dropdown");
+
+    if (categoryButton && categoryDropdown) {
+      categoryButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        this.classList.toggle("active");
+        categoryDropdown.classList.toggle("active");
+      });
+
+      categoryDropdown.addEventListener("click", function (event) {
+        event.stopPropagation();
+        categoryButton.classList.add("active");
+        categoryDropdown.classList.add("active");
+      });
+
+      document.querySelector("body").addEventListener("click", function () {
+        categoryButton.classList.remove("active");
+        categoryDropdown.classList.remove("active");
+      });
+    }
+    // ========================= Category Js End ===================
+
     // ========================= Counter Up Js End ===================
     const counterUp = window.counterUp.default;
 

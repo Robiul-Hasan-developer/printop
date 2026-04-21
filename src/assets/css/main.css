@@ -6464,13 +6464,38 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .home-style-gradient .hover-bg-animation::before {
-    height: 100%;
-}
-
-.home-style-gradient .hover-bg-animation::before {
     background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
+/* Category Dropdown Css Start */
+.category-dropdown {
+    transform: translateY(30px);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 420px;
+}
+
+.category-dropdown.active {
+    transform: translateY(0px);
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 424px) {
+    .category-dropdown {
+        min-width: 320px;
+    }
+}
+
+.category-button.active .icon {
+    transform: rotate(180deg);
+}
+
+.category-button.active {
+    color: var(--main-600);
+}
+
+/* Category Dropdown Css End */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
