@@ -6463,6 +6463,10 @@ body.tp-magic-cursor #magic-cursor {
     background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
+.home-style-gradient .bg-main-600:hover {
+    color: #fff !important;
+}
+
 .home-style-gradient .hover-bg-animation::before {
     background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
