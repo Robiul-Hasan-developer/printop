@@ -319,6 +319,7 @@
     line-height: 20px;
     overflow: hidden;
     display: block !important;
+    z-index: 1;
 }
 
 .btn:hover .btn-icon-animation {
@@ -6460,6 +6461,14 @@ body.tp-magic-cursor #magic-cursor {
 /* ================================= Features home service section end ================================= */
 .home-style-gradient .bg-main-600 {
     background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+}
+
+.home-style-gradient .hover-bg-animation::before {
+    height: 100%;
+}
+
+.home-style-gradient .hover-bg-animation::before {
+    background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
 /* Team Css start */
