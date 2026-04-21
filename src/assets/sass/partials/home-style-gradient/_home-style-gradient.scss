@@ -1,3 +1,11 @@
-.home-style-gradient body {
-    background-color: red;
+.home-style-gradient {
+    .bg-main-600 {
+        background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+    }
 }
+
+
+
+// .home-style-gradient body {
+//     background-color: red;
+// }

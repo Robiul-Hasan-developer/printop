@@ -530,6 +530,15 @@
 
 /* =========================== Button Css End =================== */
 /* ================================= Form Css Start =========================== */
+.option-bg-white option {
+    background: #ffffff;
+    color: #000;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
 /* input File Start */
 .common-file[type=file] {
     line-height: 50px;
@@ -678,45 +687,6 @@ input[type=number] {
 }
 
 /* Custom Checkbox & Radio Css End */
-/* Switch Css Start */
-.form-switch {
-    padding-inline-start: 0;
-}
-
-.form-switch .form-check-input {
-    box-shadow: none !important;
-    margin: 0;
-    position: relative;
-    background-color: var(--gray-100);
-    border: 0;
-    background-image: none !important;
-    width: 30px;
-    height: 18px;
-}
-
-.form-switch .form-check-input:checked {
-    background-color: var(--primary-600);
-}
-
-.form-switch .form-check-input:checked::before {
-    inset-inline-start: calc(100% - 15px);
-    transition: 0.2s linear;
-}
-
-.form-switch .form-check-input::before {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    inset-inline-start: 3px;
-    transition: 0.2s linear;
-}
-
-/* Switch Css End */
 /* ================================= Form Css End =========================== */
 /* ================================= Tab Css Start =========================== */
 .common-tab .nav-item .nav-link.active {
@@ -3743,6 +3713,10 @@ input:focus-visible {
     max-width: 1720px;
 }
 
+.max-w-1760-px {
+    max-width: 1760px;
+}
+
 .max-w-45-percent {
     max-width: 45%;
 }
@@ -6480,6 +6454,10 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* ================================= Features home service section end ================================= */
+.home-style-gradient .bg-main-600 {
+    background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+}
+
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
