@@ -100,6 +100,7 @@
     --white: 0 0% 100%;
     --black: 0 0% 13%;
     --body: 0 0% 48%;
+    --primary-new: 249 96% 67%;
     --heading-color: var(--black);
     --body-color: var(--body);
     --translate-x-50: translateX(-50%);
@@ -1334,10 +1335,6 @@ input:focus-visible {
     background-color: #1C64FF17;
 }
 
-.bg-blue-600 {
-    background-color: #735CFC;
-}
-
 .bg-green-50 {
     background-color: #1CFFA417;
 }
@@ -1392,6 +1389,10 @@ input:focus-visible {
 
 .promo-banner-service-bg-two {
     background-color: #F8EFEA;
+}
+
+.bg-primary-new {
+    background-color: hsl(var(--primary-new));
 }
 
 /* hover bg class end */
@@ -1926,6 +1927,10 @@ input:focus-visible {
 
 .text-pink-600 {
     color: #FF1C6A;
+}
+
+.text-primary-new {
+    color: hsl(var(--primary-new));
 }
 
 .text-body-1 {
@@ -3710,6 +3715,10 @@ input:focus-visible {
     max-width: 730px;
 }
 
+.max-w-980-px {
+    max-width: 980px;
+}
+
 .max-w-1100-px {
     max-width: 1100px;
 }
@@ -4919,6 +4928,10 @@ input:focus-visible {
 
 .common-shadow-one {
     box-shadow: 9px 10px 87.1px 0px #41071B14;
+}
+
+.common-shadow-two {
+    box-shadow: 0px 6px 30px 0px #0000000A;
 }
 
 .hover-shadow-one:hover {
@@ -6459,6 +6472,19 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* ================================= Features home service section end ================================= */
+.font-size-style-new:root {
+    --heading-one: clamp(2.25rem, 0.7133rem + 3.5vw, 3rem);
+    --heading-two: clamp(2rem, 0.7133rem + 3.5vw, 2.5rem);
+    --heading-three: clamp(1.75rem, 0.3353rem + 2.5vw, 2rem);
+    --heading-four: clamp(1.25rem, 0.5569rem + 2vw, 1.5rem);
+    --heading-five: 1.25rem;
+    --heading-six: 1rem;
+}
+
+.home-style-gradient .display-2 {
+    font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 5rem);
+}
+
 .home-style-gradient .bg-main-600 {
     background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
@@ -6468,6 +6494,11 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .home-style-gradient .hover-bg-animation::before {
+    background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+}
+
+.home-style-gradient .settings-panel__button.active {
+    background-color: hsl(var(--primary-new)) !important;
     background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 

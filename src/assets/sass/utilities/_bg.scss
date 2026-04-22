@@ -42,9 +42,6 @@
 .bg-blue-50 {
   background-color: #1C64FF17;
 }
-.bg-blue-600 {
-  background-color: #735CFC;
-}
 .bg-green-50 {
   background-color: #1CFFA417;
 }
@@ -95,6 +92,11 @@
 
 .promo-banner-service-bg-two {
   background-color: #F8EFEA;
+}
+
+
+.bg-primary-new {
+  background-color: hsl(var(--primary-new));
 }
 
 /* hover bg class end */

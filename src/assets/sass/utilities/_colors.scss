@@ -26,6 +26,11 @@
     }
 }
 
+.text-primary-new {
+  color: hsl(var(--primary-new));
+}
+
+
 .text-body {
   &-1 {
     color: #B9B9B9;
