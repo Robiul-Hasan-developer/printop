@@ -855,7 +855,7 @@ mmm.add("(min-width: 992px)", () => {
 //**************************** fixed content js End ****************************
 
 //**************************** scroll scale item js Start ****************************
-mmm.add("(min-width: 1199px)", () => {
+// mmm.add("(min-width: 1199px)", () => {
   if ($(".scroll-scale-item").length) {
     const tl = gsap
       .timeline({
@@ -863,7 +863,7 @@ mmm.add("(min-width: 1199px)", () => {
           trigger: ".scroll-scale-item",
           scrub: 1,
           pin: true,
-          start: "top 160px",
+          start: "top 120px",
           end: "+=100%",
         },
       })
@@ -873,7 +873,7 @@ mmm.add("(min-width: 1199px)", () => {
         // autoAlpha: 0, // ✅ hides completely
       });
   }
-});
+// });
 //**************************** scroll scale item js End ****************************
 
 /* **************************************************************************** 

@@ -2199,6 +2199,16 @@ input:focus-visible {
     font-size: clamp(6rem, 0.3353rem + 10.1661vw, 10rem);
 }
 
+.text-220-px {
+    font-size: clamp(8rem, 0.3353rem + 10.1661vw, 13.75rem);
+}
+
+@media (max-width: 575px) {
+    .text-res-12-px {
+        font-size: 12px !important;
+    }
+}
+
 .tw-text-xs {
     font-size: 0.75rem;
 }
@@ -3719,8 +3729,8 @@ input:focus-visible {
     max-width: 730px;
 }
 
-.max-w-965-px {
-    max-width: 965px;
+.max-w-1050-px {
+    max-width: 1050px;
 }
 
 .max-w-1100-px {
@@ -6494,10 +6504,6 @@ body.tp-magic-cursor #magic-cursor {
     --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
-.home-style-gradient .display-2 {
-    font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 5rem);
-}
-
 .home-style-gradient .bg-main-600 {
     background: var(--gradient-main);
 }
@@ -6538,6 +6544,19 @@ body.tp-magic-cursor #magic-cursor {
     -webkit-text-fill-color: #fff !important;
 }
 
+.text-stroke {
+    font-weight: 600;
+    line-height: 120%;
+    opacity: 0.24;
+    color: transparent;
+    -webkit-text-stroke: 1px hsl(var(--primary-new));
+}
+
+.text-stroke:hover {
+    color: hsl(var(--primary-new));
+    -webkit-text-stroke: 2px hsl(var(--primary-new));
+}
+
 /* Category Dropdown Css Start */
 .category-dropdown {
     transform: translateY(30px);
@@ -6570,6 +6589,10 @@ body.tp-magic-cursor #magic-cursor {
 /* Banner new css start */
 .section-bg-gradient {
     background: linear-gradient(360deg, rgba(115, 92, 252, 0) 0%, rgba(115, 92, 252, 0.08) 25%, rgba(115, 92, 252, 0.16) 50%, rgba(115, 92, 252, 0.08) 75%, rgba(115, 92, 252, 0) 100%);
+}
+
+.writing-mode-lr {
+    writing-mode: sideways-lr;
 }
 
 /* Banner new css end */

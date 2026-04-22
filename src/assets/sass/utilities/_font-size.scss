@@ -23,6 +23,16 @@
   &-160-px {
     font-size: clamp(6rem, 0.3353rem + 10.1661vw, 10rem);
   }
+
+  &-220-px {
+    font-size: clamp(8rem, 0.3353rem + 10.1661vw, 13.75rem);
+  }
+}
+
+.text-res-12-px {
+  @media (max-width: 575px) {
+    font-size: 12px !important;
+  }
 }
 
 @each $property, $value in $font-sizes {

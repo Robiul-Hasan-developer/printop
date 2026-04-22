@@ -14,11 +14,6 @@
 
 
 .home-style-gradient {
-    .display-2 {
-        font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 5rem); // Min: 40px - Max: 80px
-    }
-
-
     .bg-main-600 {
         background: var(--gradient-main);
 
@@ -58,4 +53,18 @@
     background: #ffffff00 !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: #fff !important;
+}
+
+
+.text-stroke {
+    font-weight: 600;
+    line-height: 120%;
+    opacity: 0.24;
+    color: transparent;
+    -webkit-text-stroke: 1px hsl(var(--primary-new));
+}
+
+.text-stroke:hover {
+    color: hsl(var(--primary-new));
+    -webkit-text-stroke: 2px hsl(var(--primary-new));
 }
