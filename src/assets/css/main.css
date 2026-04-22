@@ -3715,8 +3715,8 @@ input:focus-visible {
     max-width: 730px;
 }
 
-.max-w-980-px {
-    max-width: 980px;
+.max-w-965-px {
+    max-width: 965px;
 }
 
 .max-w-1100-px {
@@ -5199,6 +5199,10 @@ input:focus-visible {
     width: 160px;
 }
 
+.tw-w-340-px {
+    width: 340px;
+}
+
 .tw-w-w-max {
     width: max-content;
 }
@@ -6479,6 +6483,7 @@ body.tp-magic-cursor #magic-cursor {
     --heading-four: clamp(1.25rem, 0.5569rem + 2vw, 1.5rem);
     --heading-five: 1.25rem;
     --heading-six: 1rem;
+    --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
 .home-style-gradient .display-2 {
@@ -6486,7 +6491,7 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .home-style-gradient .bg-main-600 {
-    background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+    background: var(--gradient-main);
 }
 
 .home-style-gradient .bg-main-600:hover {
@@ -6494,12 +6499,23 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .home-style-gradient .hover-bg-animation::before {
-    background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+    background: var(--gradient-main);
+    transform: rotate(180deg);
 }
 
 .home-style-gradient .settings-panel__button.active {
     background-color: hsl(var(--primary-new)) !important;
-    background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+    background: var(--gradient-main);
+}
+
+.text-gradient-main {
+    background: var(--gradient-main);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.hover-icon-white:hover .btn-icon-animation {
+    background: #fff !important;
 }
 
 /* Category Dropdown Css Start */

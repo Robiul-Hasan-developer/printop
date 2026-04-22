@@ -6,6 +6,9 @@
         --heading-four: clamp(1.25rem, 0.5569rem + 2vw, 1.5rem); // Min: 20px - Max: 24px
         --heading-five: 1.25rem; // 20px
         --heading-six: 1rem; // 16px
+
+        --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+        
     }
 }
 
@@ -14,10 +17,10 @@
     .display-2 {
         font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 5rem); // Min: 40px - Max: 80px
     }
-    
-    
+
+
     .bg-main-600 {
-        background: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+        background: var(--gradient-main);
 
         &:hover {
             color: #fff !important;
@@ -25,11 +28,22 @@
     }
 
     .hover-bg-animation::before {
-        background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+        background: var(--gradient-main);
+       transform: rotate(180deg);
     }
 
     .settings-panel__button.active {
         background-color: hsl(var(--primary-new)) !important;
-        background: linear-gradient(270deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+        background: var(--gradient-main);
     }
+}
+
+.text-gradient-main {
+    background: var(--gradient-main);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.hover-icon-white:hover .btn-icon-animation {
+    background: #fff !important;
 }
