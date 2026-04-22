@@ -8,7 +8,7 @@
         --heading-six: 1rem; // 16px
 
         --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
-        
+
     }
 }
 
@@ -29,7 +29,7 @@
 
     .hover-bg-animation::before {
         background: var(--gradient-main);
-       transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
     .settings-panel__button.active {
@@ -39,11 +39,23 @@
 }
 
 .text-gradient-main {
-    background: var(--gradient-main);
+    background: var(--gradient-main) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
 .hover-icon-white:hover .btn-icon-animation {
     background: #fff !important;
+
+    i {
+        background: var(--gradient-main) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+}
+
+.hover-animate-text-white:hover .text-gradient-main {
+    background: #ffffff00 !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #fff !important;
 }

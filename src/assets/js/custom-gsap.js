@@ -767,42 +767,6 @@ if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
 //**************************** scale little bit onscroll animation js End ****************************
 
 //**************************** Card Item animation js End ****************************
-// mmm.add("(min-width: 1200px)", () => {
-//   if ($(".item-animation-wrapper").length) {
-//     const sections = document.querySelectorAll(".item-animation-wrapper");
-
-//     sections.forEach((section) => {
-//       const item1 = $("#item1").get(0);
-//       const item2 = $("#item2").get(0);
-//       const item3 = $("#item3").get(0);
-
-//       gsap.set(item1, { x: "90%", duration: 10, backgroundColor: "#EEF3F4" });
-//       gsap.set(item2, { x: "10%", duration: 10, backgroundColor: "#EEF3F4" });
-//       gsap.set(item3, { x: "-70%", duration: 10, backgroundColor: "#EEF3F4" });
-//       gsap.set(item4, { x: "-140%", duration: 10, backgroundColor: "#EEF3F4" });
-
-//       let tlll = gsap.timeline({
-//         scrollTrigger: {
-//           trigger: section,
-//           pin: true,
-//           start: "top 130px",
-//           end: "bottom 150%",
-//           scrub: 2,
-//           pinSpacing: false,
-//           markers: false,
-//           transition: '3s'
-//         },
-//       });
-
-//       tlll
-//         .to(item1, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
-//         .to(item2, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
-//         .to(item3, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0)
-//         .to(item4, { x: "0%", duration: 4, backgroundColor: "transparent" }, 0);
-//     });
-//   }
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth > 1200) {
     const wrappers = document.querySelectorAll(".card-animation-wrapper");
@@ -889,6 +853,28 @@ mmm.add("(min-width: 992px)", () => {
   }
 });
 //**************************** fixed content js End ****************************
+
+//**************************** scroll scale item js Start ****************************
+mmm.add("(min-width: 1199px)", () => {
+  if ($(".scroll-scale-item").length) {
+    const tl = gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".scroll-scale-item",
+          scrub: 1,
+          pin: true,
+          start: "top 160px",
+          end: "+=100%",
+        },
+      })
+      .to(".scroll-scale-item", {
+        scale: 3.2,
+        ease: "none",
+        // autoAlpha: 0, // ✅ hides completely
+      });
+  }
+});
+//**************************** scroll scale item js End ****************************
 
 /* **************************************************************************** 
                           Custom GSAP js start 

@@ -1772,6 +1772,10 @@ input:focus-visible {
     border-style: dashed !important;
 }
 
+.border-primary-new {
+    border-color: hsl(var(--primary-new)) !important;
+}
+
 .border-pink-600 {
     border-color: #FF1C6A !important;
 }
@@ -4562,6 +4566,10 @@ input:focus-visible {
     padding-block: 80px;
 }
 
+.pt-80-px {
+    padding-block: 80px;
+}
+
 .py-120 {
     padding-block-start: 60px;
     padding-block-end: 60px;
@@ -6509,13 +6517,25 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 .text-gradient-main {
-    background: var(--gradient-main);
+    background: var(--gradient-main) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
 
 .hover-icon-white:hover .btn-icon-animation {
     background: #fff !important;
+}
+
+.hover-icon-white:hover .btn-icon-animation i {
+    background: var(--gradient-main) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.hover-animate-text-white:hover .text-gradient-main {
+    background: #ffffff00 !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #fff !important;
 }
 
 /* Category Dropdown Css Start */
@@ -6547,6 +6567,12 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Category Dropdown Css End */
+/* Banner new css start */
+.section-bg-gradient {
+    background: linear-gradient(360deg, rgba(115, 92, 252, 0) 0%, rgba(115, 92, 252, 0.08) 25%, rgba(115, 92, 252, 0.16) 50%, rgba(115, 92, 252, 0.08) 75%, rgba(115, 92, 252, 0) 100%);
+}
+
+/* Banner new css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
