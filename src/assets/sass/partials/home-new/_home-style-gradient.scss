@@ -71,3 +71,8 @@
     color: hsl(var(--primary-new));
     -webkit-text-stroke: 2px hsl(var(--primary-new));
 }
+
+
+.section-bg-gradient-two {
+    background: linear-gradient(360deg, rgba(115, 92, 252, 0.04) 0%, rgba(115, 92, 252, 0.12) 25%, rgba(115, 92, 252, 0.2) 50%, rgba(115, 92, 252, 0.12) 75%, rgba(115, 92, 252, 0.04) 100%);
+}
