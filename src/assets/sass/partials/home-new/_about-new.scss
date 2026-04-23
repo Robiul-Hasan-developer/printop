@@ -1,0 +1,24 @@
+/* About new css start */
+.about-img-two {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 1;
+}
+.about-img-three {
+    position: absolute;
+    inset-inline-end: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.about-img-wrapper {
+    position: absolute;
+    padding-inline-start: 144px;
+    padding-inline-end: 122px;
+    padding-bottom: 96px;
+    inset-inline-start: 53%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* About new css end */

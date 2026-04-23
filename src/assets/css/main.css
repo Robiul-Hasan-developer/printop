@@ -3713,6 +3713,10 @@ input:focus-visible {
     max-width: 550px;
 }
 
+.max-w-530-px {
+    max-width: 530px;
+}
+
 .max-w-580-px {
     max-width: 580px;
 }
@@ -6720,6 +6724,32 @@ body.tp-magic-cursor #magic-cursor {
     }
 }
 /* Choose us new css end */
+/* About new css start */
+.about-img-two {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    z-index: 1;
+}
+
+.about-img-three {
+    position: absolute;
+    inset-inline-end: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.about-img-wrapper {
+    position: absolute;
+    padding-inline-start: 144px;
+    padding-inline-end: 122px;
+    padding-bottom: 96px;
+    inset-inline-start: 53%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* About new css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
