@@ -746,6 +746,26 @@
       });
     }
     // ========================= Category Js End ===================
+    
+    // ========================= typed js text Js Start ===================
+    var typing = new Typed(".typed-text", {
+        strings: ["Creative", "Trending", "Modern"],
+        typeSpeed: 60,      // slower = smoother typing
+        backSpeed: 40,      // smooth deleting
+        backDelay: 1500,    // pause before deleting
+        startDelay: 500,    // delay before start
+        loop: true,
+        showCursor: false   // hide cursor
+    });
+    // ========================= typed js text Js End ===================
+
+    // ========================= magnific Popup Js Start =====================
+    $(".play-button").magnificPopup({
+      type: "iframe",
+      removalDelay: 300,
+      mainClass: "mfp-fade",
+    });
+    // ========================= magnific Popup Js End =====================
 
     // ========================= Counter Up Js End ===================
     const counterUp = window.counterUp.default;

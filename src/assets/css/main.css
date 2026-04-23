@@ -6504,6 +6504,10 @@ body.tp-magic-cursor #magic-cursor {
     --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
 }
 
+.display-5 {
+    font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 3.5rem);
+}
+
 .home-style-gradient .bg-main-600 {
     background: var(--gradient-main);
 }
@@ -6669,6 +6673,38 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Banner new css end */
+/* Choose us new css start */
+@media (min-width: 1199px) {
+    .choose-us-new-counter::before {
+        position: absolute;
+        content: "";
+        inset-inline-start: 0;
+        height: 64%;
+        width: 3px;
+        background: #735CFC;
+        opacity: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .choose-us-new-counter-item {
+        padding-left: 80px;
+    }
+
+    .choose-us-new-counter-item::before {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: blue;
+        border-radius: 50%;
+        inset-inline-start: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+}
+/* Choose us new css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);

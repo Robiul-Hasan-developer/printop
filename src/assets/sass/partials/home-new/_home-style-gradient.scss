@@ -8,8 +8,11 @@
         --heading-six: 1rem; // 16px
 
         --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
-
     }
+}
+
+.display-5 {
+    font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 3.5rem); // Min: 40px - Max: 56px
 }
 
 
