@@ -877,11 +877,6 @@ mmm.add("(min-width: 992px)", () => {
 //**************************** scroll scale item js End ****************************
 
 
-
-
-
-
-
 //**************************** Border on scroll up down js Start ****************************
   // TOP → DOWN
   gsap.from(".border-first-style-one, .border-first-style-two", {
