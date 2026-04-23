@@ -6708,6 +6708,13 @@ body.tp-magic-cursor #magic-cursor {
         z-index: 1;
     }
 }
+
+@media (max-width: 992px) {
+    .all-info-item:not(:first-child) {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
 /* Choose us new css end */
 /* Team Css start */
 .on-hover-animation-item li {
