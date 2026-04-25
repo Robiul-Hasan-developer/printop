@@ -6897,6 +6897,13 @@ body.tp-magic-cursor #magic-cursor {
         height: 100%;
     }
 }
+
+.get-started-item-wrapper {
+    max-height: 740px;
+    overflow-y: auto;
+    padding-inline-start: 48px;
+}
+
 /* Get started new css end */
 /* Team Css start */
 .on-hover-animation-item li {

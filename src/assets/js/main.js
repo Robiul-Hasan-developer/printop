@@ -629,7 +629,7 @@
     var getStartedProductSliderOne = new Swiper(
       ".get-started-product-slider-one",
       {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 14,
         grabCursor: true,
         centeredSlides: true,
@@ -675,7 +675,7 @@
     var getStartedProductSliderTwo = new Swiper(
       ".get-started-product-slider-two",
       {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 14,
         grabCursor: true,
         centeredSlides: true,
@@ -721,7 +721,7 @@
     var getStartedProductSliderThree = new Swiper(
       ".get-started-product-slider-three",
       {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 14,
         grabCursor: true,
         centeredSlides: true,
@@ -767,7 +767,7 @@
     var getStartedProductSliderFour = new Swiper(
       ".get-started-product-slider-four",
       {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 14,
         grabCursor: true,
         centeredSlides: true,
@@ -813,7 +813,7 @@
     var getStartedProductSliderFive = new Swiper(
       ".get-started-product-slider-five",
       {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 14,
         grabCursor: true,
         centeredSlides: true,

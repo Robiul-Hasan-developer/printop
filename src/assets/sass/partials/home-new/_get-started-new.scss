@@ -11,10 +11,9 @@
     }
 }
 
-// .get-started-item {
-//     &:last-child {
-//         padding-bottom: 0;
-//         border-bottom: 0 !important;
-//     }
-// }
+.get-started-item-wrapper {
+    max-height: 740px;
+    overflow-y: auto;
+    padding-inline-start: 48px;
+}
 /* Get started new css end */
