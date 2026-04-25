@@ -625,6 +625,55 @@
     });
     // ========================= Shop Details Slider Js End =====================
 
+    // ================================= Testimonials Services slider End =========================
+    var getStartedProductSliderOne = new Swiper(
+      ".get-started-product-slider-one",
+      {
+        slidesPerView: 3,
+        spaceBetween: 14,
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        autoplay: true,
+        speed: 6000,
+        autoplay: {
+          delay: 0,
+          enabled: true,
+          reverseDirection: false,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".testimonials-home-service-slider-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 2,
+          },
+        },
+      },
+    );
+    // ================================= Testimonials Services slider End =========================
+
     // ========================= Category sidebar show hide Js Start =====================
     $(".category-btn").on("click", function () {
       $(".banner-inner__sidebar").toggleClass("active");
@@ -746,16 +795,16 @@
       });
     }
     // ========================= Category Js End ===================
-    
+
     // ========================= typed js text Js Start ===================
     var typing = new Typed(".typed-text", {
-        strings: ["Creative", "Trending", "Modern"],
-        typeSpeed: 60,      // slower = smoother typing
-        backSpeed: 40,      // smooth deleting
-        backDelay: 1500,    // pause before deleting
-        startDelay: 500,    // delay before start
-        loop: true,
-        showCursor: false   // hide cursor
+      strings: ["Creative", "Trending", "Modern"],
+      typeSpeed: 60, // slower = smoother typing
+      backSpeed: 40, // smooth deleting
+      backDelay: 1500, // pause before deleting
+      startDelay: 500, // delay before start
+      loop: true,
+      showCursor: false, // hide cursor
     });
     // ========================= typed js text Js End ===================
 

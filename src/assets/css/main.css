@@ -4571,6 +4571,10 @@ input:focus-visible {
     padding-top: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
 }
 
+.tw-pb-48-px {
+    padding-bottom: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
+}
+
 @media (min-width: 992px) {
     .lg-pt-100-px {
         padding-top: 100px;
@@ -6878,6 +6882,12 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Service New section css end  */
+/* Get started new css start */
+.get-started-product-box {
+    border-radius: 0 24px 0;
+}
+
+/* Get started new css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);

@@ -109,6 +109,12 @@
       padding-top: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
     }
   }
+  &-pb {
+    &-48-px {
+      padding-bottom: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
+    }
+
+  }
 }
 
 .lg-pt-100-px {
