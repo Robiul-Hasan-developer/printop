@@ -1,0 +1,30 @@
+/* Service New section css start  */
+.rounded-left-right-shape {
+    position: relative;
+}
+
+.rounded-left-right-shape::before,
+.rounded-left-right-shape::after {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 24px;
+    box-shadow: 10px 10px #fff;
+    border-radius: 50%;
+    inset-inline-end: -23px;
+    top: calc(39% + 1px);
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.rounded-left-right-shape::after {
+    inset-inline-end: auto;
+    inset-inline-start: -22px;
+    transform: rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.rounded-left-right-shape {
+    margin-bottom: -45px;
+}
+
+/* Service New section css end  */
