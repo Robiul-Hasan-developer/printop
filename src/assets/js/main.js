@@ -810,6 +810,52 @@
         },
       },
     );
+    var getStartedProductSliderFive = new Swiper(
+      ".get-started-product-slider-five",
+      {
+        slidesPerView: 3,
+        spaceBetween: 14,
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        autoplay: true,
+        speed: 6000,
+        autoplay: {
+          delay: 0,
+          enabled: true,
+          reverseDirection: false,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".testimonials-home-service-slider-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          425: {
+            slidesPerView: 1,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 2,
+          },
+        },
+      },
+    );
     // ================================= Testimonials Services slider End =========================
 
     // ========================= Category sidebar show hide Js Start =====================
