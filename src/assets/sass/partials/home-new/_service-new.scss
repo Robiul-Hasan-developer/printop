@@ -27,4 +27,29 @@
     margin-bottom: -45px;
 }
 
+
+.gradient-outline-bg-white::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: #fff;
+    border-radius: inherit;
+    top: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.gradient-outline-bg-white:hover::after {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.gradient-outline-bg-white:hover .text-gradient-main {
+    background: #fff !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #fff !important;
+    
+}
 /* Service New section css end  */
