@@ -2473,6 +2473,10 @@ input:focus-visible {
     height: 84px;
 }
 
+.tw-h-88-px {
+    height: 88px;
+}
+
 .tw-h-92-px {
     height: 92px;
 }
@@ -5203,6 +5207,10 @@ input:focus-visible {
 
 .tw-w-74-px {
     width: 74px;
+}
+
+.tw-w-88-px {
+    width: 88px;
 }
 
 .tw-w-300-px {
