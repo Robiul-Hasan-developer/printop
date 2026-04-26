@@ -6936,6 +6936,30 @@ body.tp-magic-cursor #magic-cursor {
 
 /* Get started new css end */
 /* Testimonials new css start */
+.testimonials-new-img {
+    margin-bottom: -24px;
+}
+
+.testimonials-new-shape1 {
+    top: 8px;
+    inset-inline-start: 0;
+}
+
+.testimonials-new-shape2 {
+    top: 14px;
+    inset-inline-end: 16px;
+}
+
+.testimonials-new-shape3 {
+    top: 30%;
+    inset-inline-start: 11%;
+}
+
+.testimonials-new-shape4 {
+    top: 24%;
+    inset-inline-end: 20%;
+}
+
 /* Testimonials new css end */
 /* Team Css start */
 .on-hover-animation-item li {
