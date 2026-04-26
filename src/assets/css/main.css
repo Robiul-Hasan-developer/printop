@@ -4968,14 +4968,8 @@ input:focus-visible {
 }
 
 .scroll-style-main::-webkit-scrollbar-thumb {
-    background: #735CFC;
+    background: #735CFC !important;
     border-radius: 50px;
-}
-
-@media (max-width: 992px) {
-    .scroll-style-main::-webkit-scrollbar-thumb {
-        background: #735CFC;
-    }
 }
 
 .scroll-style-main::-webkit-scrollbar-thumb:hover {
@@ -6924,7 +6918,12 @@ body.tp-magic-cursor #magic-cursor {
 .get-started-item-wrapper {
     max-height: 740px;
     overflow-y: auto;
-    padding-inline-start: 48px;
+    padding-inline-end: 48px;
+    direction: rtl;
+}
+
+.get-started-item-wrapper > * {
+    direction: ltr;
 }
 
 /* Get started new css end */

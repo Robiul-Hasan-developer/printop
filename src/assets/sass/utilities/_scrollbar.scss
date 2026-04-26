@@ -38,11 +38,8 @@
         background: #D1C8FD;
     }
     &::-webkit-scrollbar-thumb {
-        background: #735CFC;
+        background: #735CFC !important;
         border-radius: 50px;
-        @media (max-width: 992px) {
-            background: #735CFC;
-        }
     }
     &::-webkit-scrollbar-thumb:hover {
         background: #735CFC !important

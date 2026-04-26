@@ -14,6 +14,11 @@
 .get-started-item-wrapper {
     max-height: 740px;
     overflow-y: auto;
-    padding-inline-start: 48px;
+    padding-inline-end: 48px;
+    direction: rtl;
+}
+
+.get-started-item-wrapper > * {
+    direction: ltr;
 }
 /* Get started new css end */
