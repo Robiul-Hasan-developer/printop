@@ -438,6 +438,10 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      navigation: {
+        prevEl: ".testimonials-new-btn-prev",
+        nextEl: ".testimonials-new-btn-next",
+      },
     });
     // ================================= testimonials slider End =========================
 
