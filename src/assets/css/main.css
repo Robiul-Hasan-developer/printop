@@ -6979,9 +6979,14 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Active slider animation css start */
-.active-slider-animate {
-    transform: scale(0.96);
+.active-slider-animate-little-updown {
     margin-top: 24px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-scalation {
+    transform: scale(0.9);
     visibility: hidden;
     opacity: 0;
 }
@@ -7008,9 +7013,14 @@ body.tp-magic-cursor #magic-cursor {
     transition-delay: 2s !important;
 }
 
-.swiper-slide-active .active-slider-animate {
-    transform: scale(1);
+.swiper-slide-active .active-slider-animate-little-updown {
     margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.swiper-slide-active .active-slider-animate-scalation {
+    transform: scale(1);
     visibility: visible;
     opacity: 1;
 }

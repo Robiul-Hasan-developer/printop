@@ -36,9 +36,14 @@
 
 
 /* Active slider animation css start */
-.active-slider-animate {
-    transform: scale(.96);
+.active-slider-animate-little-updown {
     margin-top: 24px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-scalation {
+    transform: scale(.9);
     visibility: hidden;
     opacity: 0;
 }
@@ -53,21 +58,29 @@
     .transition-delay-05 {
         transition-delay: .5s !important;
     }
+
     .transition-delay-1 {
         transition-delay: 1s !important;
     }
+
     .transition-delay-105 {
         transition-delay: 1.5s !important;
     }
+
     .transition-delay-2 {
         transition-delay: 2s !important;
     }
 }
 
 .swiper-slide-active {
-    .active-slider-animate {
-        transform: scale(1);
+    .active-slider-animate-little-updown {
         margin-top: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .active-slider-animate-scalation {
+        transform: scale(1);
         visibility: visible;
         opacity: 1;
     }
@@ -78,6 +91,7 @@
         opacity: 1;
     }
 }
+
 /* Active slider animation css end */
 
 
