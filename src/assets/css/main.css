@@ -3717,6 +3717,10 @@ input:focus-visible {
     max-width: 550px;
 }
 
+.max-w-500-px {
+    max-width: 500px;
+}
+
 .max-w-530-px {
     max-width: 530px;
 }
@@ -4515,6 +4519,10 @@ input:focus-visible {
 
 .tw-p-44-px {
     padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
+}
+
+.tw-p-40-px {
+    padding: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
 }
 
 .tw-p-48-px {
@@ -6927,6 +6935,8 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Get started new css end */
+/* Testimonials new css start */
+/* Testimonials new css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);

@@ -51,6 +51,10 @@
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 2.75rem);
     }
 
+    &-40-px {
+      padding: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
+    }
+
     &-48-px {
       padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3rem);
     }
@@ -71,6 +75,7 @@
   &-ps-40-px {
     padding-inline-start: clamp(1.5rem, -6.1013rem + 11.4763vw, 2.5rem);
   }
+
   &-xl-ps-74-px {
     @media (min-width: 768px) {
       padding-inline-start: 64px;
@@ -94,6 +99,7 @@
       padding-inline: clamp(2rem, -6.1013rem + 11.4763vw, 5rem);
     }
   }
+
   &-py {
     &-80-px {
       padding-block: clamp(3rem, -6.1013rem + 11.4763vw, 5rem);
@@ -109,6 +115,7 @@
       padding-top: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
     }
   }
+
   &-pb {
     &-48-px {
       padding-bottom: clamp(1.5rem, -6.1013rem + 9.4763vw, 3rem);
