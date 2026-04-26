@@ -14,7 +14,16 @@
     &-300 {
         transition-duration: 300ms;
     } 
+    &-400 {
+        transition-duration: 400ms;
+    } 
     &-500 {
         transition-duration: 500ms;
+    }
+    &-600 {
+        transition-duration: 600ms;
+    }
+    &-700 {
+        transition-duration: 700ms;
     }
 }

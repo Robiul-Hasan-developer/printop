@@ -420,6 +420,27 @@
     });
     // ================================= testimonials slider End =========================
 
+    // ================================= testimonials slider End =========================
+    var testimonialsNewSlider = new Swiper(".testimonials-new-slider", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: false, // ✅ active slide centered
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      autoplay: true,
+      speed: 1000,
+      effect: "fade",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    // ================================= testimonials slider End =========================
+
     // ================================= Testimonials Demand slider End =========================
     var testimonialsDemandSlider = new Swiper(".testimonials-demand-slider", {
       slidesPerView: 6,

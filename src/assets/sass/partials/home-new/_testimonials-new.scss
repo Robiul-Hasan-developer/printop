@@ -1,7 +1,15 @@
 /* Testimonials new css start */
 .testimonials-new-img {
-    margin-bottom: -24px;
+    transform: translateY(60px);
+    max-height: 490px;
+    overflow: hidden;
 }
+
+.quate-new-icon {
+    max-width: 32%;
+}
+
+
 
 .testimonials-new-shape1 {
     top: 8px;
@@ -22,5 +30,60 @@
     top: 24%;
     inset-inline-end: 20%;
 }
+
+
+
+
+
+/* Active slider animation css start */
+.active-slider-animate {
+    transform: scale(.96);
+    margin-top: 24px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-updown {
+    transform: translateY(60%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.swiper-slide-active {
+    .transition-delay-05 {
+        transition-delay: .5s !important;
+    }
+    .transition-delay-1 {
+        transition-delay: 1s !important;
+    }
+    .transition-delay-105 {
+        transition-delay: 1.5s !important;
+    }
+    .transition-delay-2 {
+        transition-delay: 2s !important;
+    }
+}
+
+.swiper-slide-active {
+    .active-slider-animate {
+        transform: scale(1);
+        margin-top: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .active-slider-animate-updown {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+/* Active slider animation css end */
+
+
+
+
+
+
 
 /* Testimonials new css end */

@@ -5039,8 +5039,20 @@ input:focus-visible {
     transition-duration: 300ms;
 }
 
+.tw-duration-400 {
+    transition-duration: 400ms;
+}
+
 .tw-duration-500 {
     transition-duration: 500ms;
+}
+
+.tw-duration-600 {
+    transition-duration: 600ms;
+}
+
+.tw-duration-700 {
+    transition-duration: 700ms;
 }
 
 /*================================== Translate Css Start ==================================*/
@@ -6937,7 +6949,13 @@ body.tp-magic-cursor #magic-cursor {
 /* Get started new css end */
 /* Testimonials new css start */
 .testimonials-new-img {
-    margin-bottom: -24px;
+    transform: translateY(60px);
+    max-height: 490px;
+    overflow: hidden;
+}
+
+.quate-new-icon {
+    max-width: 32%;
 }
 
 .testimonials-new-shape1 {
@@ -6960,6 +6978,50 @@ body.tp-magic-cursor #magic-cursor {
     inset-inline-end: 20%;
 }
 
+/* Active slider animation css start */
+.active-slider-animate {
+    transform: scale(0.96);
+    margin-top: 24px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.active-slider-animate-updown {
+    transform: translateY(60%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.swiper-slide-active .transition-delay-05 {
+    transition-delay: 0.5s !important;
+}
+
+.swiper-slide-active .transition-delay-1 {
+    transition-delay: 1s !important;
+}
+
+.swiper-slide-active .transition-delay-105 {
+    transition-delay: 1.5s !important;
+}
+
+.swiper-slide-active .transition-delay-2 {
+    transition-delay: 2s !important;
+}
+
+.swiper-slide-active .active-slider-animate {
+    transform: scale(1);
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.swiper-slide-active .active-slider-animate-updown {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Active slider animation css end */
 /* Testimonials new css end */
 /* Team Css start */
 .on-hover-animation-item li {
