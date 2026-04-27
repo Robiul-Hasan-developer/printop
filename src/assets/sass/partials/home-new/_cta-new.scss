@@ -1,0 +1,23 @@
+/* CTA new section css start */
+.cta-new-left {
+    width: 41%;
+}
+
+.cta-new-right {
+    width: 59%;
+}
+
+
+@media (min-width: 575px) {
+    .cta-content {
+        &-left {
+            width: 50%;
+        }
+
+        &-right {
+            width: 50%;
+        }
+    }
+}
+
+/* CTA new section css end */

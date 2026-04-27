@@ -7063,8 +7063,25 @@ body.tp-magic-cursor #magic-cursor {
 }
 
 /* Top categories new css end */
-/* Blog new section css start */
-/* Blog new section css end */
+/* CTA new section css start */
+.cta-new-left {
+    width: 41%;
+}
+
+.cta-new-right {
+    width: 59%;
+}
+
+@media (min-width: 575px) {
+    .cta-content-left {
+        width: 50%;
+    }
+
+    .cta-content-right {
+        width: 50%;
+    }
+}
+/* CTA new section css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
