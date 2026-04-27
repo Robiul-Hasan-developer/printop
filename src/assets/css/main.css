@@ -1860,6 +1860,10 @@ input:focus-visible {
     border-color: #ffffff59 !important;
 }
 
+.border-white-16 {
+    border-color: #ffffff29 !important;
+}
+
 .border-transparent {
     border-color: transparent !important;
 }
@@ -3645,6 +3649,10 @@ input:focus-visible {
 
 .tw--mt-10-px {
     margin-block-start: -10px;
+}
+
+.tw--mt-40-px {
+    margin-block-start: -40px;
 }
 
 .tw--me-16-px {
@@ -6031,7 +6039,7 @@ input:focus-visible {
 }
 
 .animation-rotate {
-    animation: animationRotate 2s linear infinite;
+    animation: animationRotate 5s linear infinite;
 }
 
 @keyframes animationRotate {
