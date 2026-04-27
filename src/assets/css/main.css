@@ -1390,6 +1390,10 @@ input:focus-visible {
     background-color: hsl(var(--white)/0.08);
 }
 
+.bg-white-2 {
+    background-color: hsl(var(--white)/0.2);
+}
+
 .bg-gradient-sidebar {
     background: linear-gradient(80.26deg, #FFDCE9 25.59%, #DDE5FE 108.77%);
     background: linear-gradient(80.26deg, #ffdce978 25.59%, #dde5fe8a 108.77%);
@@ -2280,8 +2284,14 @@ input:focus-visible {
 }
 
 @media (max-width: 575px) {
-    .text-res-14-px {
+    .text-sm-res-14-px {
         font-size: 14px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .text-sm-res-24-px {
+        font-size: 24px !important;
     }
 }
 
