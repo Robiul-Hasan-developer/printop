@@ -338,6 +338,7 @@
       },
     });
     // ================================= Product Shop slider End =========================
+    
     // ================================= Product Shop slider End =========================
     var productCategorySlider = new Swiper(".product-category-slider", {
       slidesPerView: 1,
@@ -882,6 +883,40 @@
       },
     );
     // ================================= Testimonials Services slider End =========================
+
+     // ================================= Blog New slider End =========================
+    var blogNewSlider = new Swiper(".blog-new-slider", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      grabCursor: true,
+      loop: true,
+      autoplay: false,
+      speed: 1000,
+      pagination: {
+        el: ".blog-new-slider-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".blog-new-btn-prev",
+        nextEl: ".blog-new-btn-next",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+    // ================================= Blog New slider End =========================
+    
 
     // ========================= Category sidebar show hide Js Start =====================
     $(".category-btn").on("click", function () {
