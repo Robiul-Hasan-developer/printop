@@ -1,10 +1,15 @@
 /* CTA new section css start */
-.cta-new-left {
-    width: 41%;
-}
 
-.cta-new-right {
-    width: 59%;
+
+@media (min-width: 992px) {
+
+    .cta-new-left {
+        width: 41%;
+    }
+
+    .cta-new-right {
+        width: 59%;
+    }
 }
 
 

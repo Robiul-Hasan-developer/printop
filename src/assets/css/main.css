@@ -4610,7 +4610,7 @@ input:focus-visible {
 }
 
 .tw-p-60-px {
-    padding: clamp(1.5rem, -12.1677rem + 32.9177vw, 3.75rem);
+    padding: clamp(1.5rem, -12.1677rem + 21.9177vw, 3.75rem);
 }
 
 .tw-pe-150-px {
@@ -7068,12 +7068,14 @@ body.tp-magic-cursor #magic-cursor {
 
 /* Top categories new css end */
 /* CTA new section css start */
-.cta-new-left {
-    width: 41%;
-}
+@media (min-width: 992px) {
+    .cta-new-left {
+        width: 41%;
+    }
 
-.cta-new-right {
-    width: 59%;
+    .cta-new-right {
+        width: 59%;
+    }
 }
 
 @media (min-width: 575px) {
