@@ -7097,6 +7097,18 @@ body.tp-magic-cursor #magic-cursor {
         width: 50%;
     }
 }
+
+.contact-new-contact {
+    margin-top: 80px;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .contact-new-contact {
+        margin-top: -123px;
+        position: relative;
+    }
+}
 /* CTA new section css end */
 /* Team Css start */
 .on-hover-animation-item li {
