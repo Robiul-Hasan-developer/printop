@@ -7030,6 +7030,45 @@ body.tp-magic-cursor #magic-cursor {
     -webkit-text-fill-color: #fff !important;
 }
 
+.service-small-image-wrapper {
+    position: absolute;
+    inset-inline-start: 67%;
+    top: 0;
+}
+
+.service-small-image-wrapper .swiper-slide {
+    height: 200px !important;
+}
+
+.service-small-image-wrapper .swiper-slide:nth-child(2) {
+    margin-top: -76px;
+    margin-inline-start: 76px;
+}
+
+.service-small-image-wrapper .swiper-slide:nth-child(3) {
+    margin-top: -76px;
+    margin-inline-start: 152px;
+  /* 76 * 2 */
+}
+
+.service-small-image-wrapper .swiper-slide:nth-child(4) {
+    margin-top: -76px;
+    margin-inline-start: 228px;
+  /* 76 * 3 */
+}
+
+.service-small-image-wrapper .swiper-slide:nth-child(5) {
+    margin-top: -76px;
+    margin-inline-start: 304px;
+  /* 76 * 4 */
+}
+
+.service-small-image-wrapper .swiper-slide:nth-child(6) {
+    margin-top: -76px;
+    margin-inline-start: 380px;
+  /* 76 * 5 */
+}
+
 /* Service New section css end  */
 /* Get started new css start */
 .get-started-product-box {
