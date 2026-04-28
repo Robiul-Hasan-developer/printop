@@ -904,6 +904,31 @@ gsap.from(".border-second-style-one, .border-second-style-two", {
 });
 //**************************** Border on scroll up down js End ****************************
 
+//**************************** On scroll side item coming js Start ****************************
+mmm.add("(min-width: 1024px)", () => {
+  if (document.querySelectorAll(".about--section.five").length > 0) {
+    const boxes = document.querySelectorAll(
+      ".about--section.five .about--content",
+    );
+    gsap.from(boxes, {
+      x: "100%",
+      duration: 1.5,
+      stagger: 0.3,
+      ease: "power2.out",
+      scrollTrigger: {
+        scrub: 2,
+        trigger: ".about-content--wrap",
+        start: "top 100%",
+        end: "bottom 40%",
+        toggleActions: "play none none reverse",
+      },
+    });
+  }
+});
+//**************************** On scroll side item coming js End ****************************
+
+
+
 /* **************************************************************************** 
                           Custom GSAP js start 
 ****************************************************************************  */
