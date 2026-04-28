@@ -947,6 +947,14 @@ input[type=number] {
     transition-delay: 0.5s !important;
 }
 
+.animated-slider-wrapper .swiper-slide-active .transition-delay-07 {
+    transition-delay: 0.7s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-09 {
+    transition-delay: 0.9s !important;
+}
+
 .animated-slider-wrapper .swiper-slide-active .transition-delay-1 {
     transition-delay: 1s !important;
 }
@@ -6994,7 +7002,7 @@ body.tp-magic-cursor #magic-cursor {
     transform: translateY(-50%) rotate(0deg);
 }
 
-.rounded-left-right-shape {
+.tw--mt-45-px {
     margin-bottom: -45px;
 }
 

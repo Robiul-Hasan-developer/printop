@@ -421,6 +421,27 @@
     });
     // ================================= testimonials slider End =========================
 
+    // ================================= service slider End =========================
+    var serviceNewSlider = new Swiper(".service-new-slider", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // centeredSlides: false, // ✅ active slide centered
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      autoplay: false,
+      speed: 1000,
+      effect: "fade",
+      navigation: {
+        prevEl: ".service-new-btn-prev",
+        nextEl: ".service-new-btn-next",
+      },
+    });
+    // ================================= service slider End =========================
+
     // ================================= testimonials slider End =========================
     var testimonialsNewSlider = new Swiper(".testimonials-new-slider", {
       slidesPerView: 1,
