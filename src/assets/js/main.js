@@ -338,7 +338,7 @@
       },
     });
     // ================================= Product Shop slider End =========================
-    
+
     // ================================= Product Shop slider End =========================
     var productCategorySlider = new Swiper(".product-category-slider", {
       slidesPerView: 1,
@@ -421,11 +421,21 @@
     });
     // ================================= testimonials slider End =========================
 
-    // ================================= service slider End =========================
+    // ================================= service new slider Start =========================
+    var serviceNewSmallSlider = new Swiper(".service-new-small-slider", {
+      loop: true,
+      spaceBetween: 0,
+      slidesPerView: 5,
+      freeMode: true,
+      watchSlidesProgress: true,
+      grabCursor: true,
+      direction: "vertical",
+      // centeredSlides: true,
+    });
+
     var serviceNewSlider = new Swiper(".service-new-slider", {
       slidesPerView: 1,
       spaceBetween: 0,
-      // centeredSlides: false, // ✅ active slide centered
       grabCursor: true,
       loop: true,
       autoplay: {
@@ -439,8 +449,11 @@
         prevEl: ".service-new-btn-prev",
         nextEl: ".service-new-btn-next",
       },
+      thumbs: {
+        swiper: serviceNewSmallSlider,
+      },
     });
-    // ================================= service slider End =========================
+    // ================================= service new slider End =========================
 
     // ================================= testimonials slider End =========================
     var testimonialsNewSlider = new Swiper(".testimonials-new-slider", {
@@ -905,7 +918,7 @@
     );
     // ================================= Testimonials Services slider End =========================
 
-     // ================================= Blog New slider End =========================
+    // ================================= Blog New slider End =========================
     var blogNewSlider = new Swiper(".blog-new-slider", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -937,7 +950,6 @@
       },
     });
     // ================================= Blog New slider End =========================
-    
 
     // ========================= Category sidebar show hide Js Start =====================
     $(".category-btn").on("click", function () {
