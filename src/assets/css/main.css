@@ -7040,33 +7040,38 @@ body.tp-magic-cursor #magic-cursor {
     height: 200px !important;
 }
 
+.service-small-image-wrapper .swiper-slide:nth-child(2), .service-small-image-wrapper .swiper-slide:nth-child(3), .service-small-image-wrapper .swiper-slide:nth-child(4), .service-small-image-wrapper .swiper-slide:nth-child(5), .service-small-image-wrapper .swiper-slide:nth-child(6) {
+    margin-top: -127px;
+}
+
+.service-small-image-wrapper .swiper-slide {
+    transition: 0.3s linear;
+}
+
 .service-small-image-wrapper .swiper-slide:nth-child(2) {
-    margin-top: -76px;
     margin-inline-start: 76px;
 }
 
 .service-small-image-wrapper .swiper-slide:nth-child(3) {
-    margin-top: -76px;
     margin-inline-start: 152px;
   /* 76 * 2 */
 }
 
 .service-small-image-wrapper .swiper-slide:nth-child(4) {
-    margin-top: -76px;
     margin-inline-start: 228px;
   /* 76 * 3 */
 }
 
 .service-small-image-wrapper .swiper-slide:nth-child(5) {
-    margin-top: -76px;
     margin-inline-start: 304px;
   /* 76 * 4 */
 }
 
-.service-small-image-wrapper .swiper-slide:nth-child(6) {
-    margin-top: -76px;
-    margin-inline-start: 380px;
-  /* 76 * 5 */
+.service-small-image-wrapper .swiper-slide:last-child {
+    margin-inline-start: 0;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0;
 }
 
 /* Service New section css end  */
