@@ -856,56 +856,53 @@ mmm.add("(min-width: 992px)", () => {
 
 //**************************** scroll scale item js Start ****************************
 // mmm.add("(min-width: 1199px)", () => {
-  if ($(".scroll-scale-item").length) {
-    const tl = gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".scroll-scale-item",
-          scrub: 1,
-          pin: true,
-          start: "top 120px",
-          end: "+=100%",
-        },
-      })
-      .to(".scroll-scale-item", {
-        scale: 3.2,
-        ease: "none",
-        // autoAlpha: 0, // ✅ hides completely
-      });
-  }
+if ($(".scroll-scale-item").length) {
+  const tl = gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".scroll-scale-item",
+        scrub: 1,
+        pin: true,
+        start: "top 120px",
+        end: "+=100%",
+      },
+    })
+    .to(".scroll-scale-item", {
+      scale: 3.2,
+      ease: "none",
+      // autoAlpha: 0, // ✅ hides completely
+    });
+}
 // });
 //**************************** scroll scale item js End ****************************
 
-
 //**************************** Border on scroll up down js Start ****************************
-  // TOP → DOWN
-  gsap.from(".border-first-style-one, .border-first-style-two", {
-    height: 10,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".about-new",
-      start: "top bottom",
-      end: "+=100%",
-      scrub: true,
-      markers: false // 👈 DEBUG
-    }
-  });
+// TOP → DOWN
+gsap.from(".border-first-style-one, .border-first-style-two", {
+  height: 10,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".about-new",
+    start: "top bottom",
+    end: "+=100%",
+    scrub: true,
+    markers: false, // 👈 DEBUG
+  },
+});
 
-  // BOTTOM → UP
-  gsap.from(".border-second-style-one, .border-second-style-two", {
-    height: 1,
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".about-new",
-      start: "top 90%",
-      end: "+=100%",
-      scrub: true,
-      markers: false // 👈 DEBUG
-    }
-  });
+// BOTTOM → UP
+gsap.from(".border-second-style-one, .border-second-style-two", {
+  height: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".about-new",
+    start: "top 90%",
+    end: "+=100%",
+    scrub: true,
+    markers: false, // 👈 DEBUG
+  },
+});
 //**************************** Border on scroll up down js End ****************************
-
-
 
 /* **************************************************************************** 
                           Custom GSAP js start 
