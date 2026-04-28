@@ -432,7 +432,7 @@
         delay: 4000,
         disableOnInteraction: false,
       },
-      autoplay: true,
+      autoplay: false,
       speed: 1000,
       effect: "fade",
       pagination: {
