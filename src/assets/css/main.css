@@ -926,7 +926,10 @@ input[type=number] {
     visibility: hidden;
     opacity: 0;
     transition-duration: 900ms !important;
-    transition: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.transition-bounce {
+    transition: cubic-bezier(0.34, 1.44, 0.64, 1);
 }
 
 .animated-slider-wrapper .swiper-slide {
@@ -7050,7 +7053,7 @@ body.tp-magic-cursor #magic-cursor {
 /* Get started new css end */
 /* Testimonials new css start */
 .testimonials-new-img {
-    transform: translateY(60px);
+    transform: translateY(40px);
     max-height: 490px;
     overflow: hidden;
     max-width: 475px;
@@ -7059,6 +7062,10 @@ body.tp-magic-cursor #magic-cursor {
 
 .quate-new-icon {
     max-width: 32%;
+}
+
+.shadow-text {
+    text-shadow: 6px 6px 8px #000;
 }
 
 .testimonials-new-shape1 {

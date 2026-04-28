@@ -1,6 +1,6 @@
 /* Testimonials new css start */
 .testimonials-new-img {
-    transform: translateY(60px);
+    transform: translateY(40px);
     max-height: 490px;
     overflow: hidden;
     max-width: 475px;
@@ -11,7 +11,9 @@
     max-width: 32%;
 }
 
-
+.shadow-text {
+    text-shadow: 6px 6px 8px #000;
+}
 
 .testimonials-new-shape1 {
     top: 8px;
