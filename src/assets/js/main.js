@@ -430,7 +430,6 @@
       watchSlidesProgress: true,
       grabCursor: true,
       direction: "vertical",
-      // centeredSlides: true,
     });
 
     var serviceNewSlider = new Swiper(".service-new-slider", {

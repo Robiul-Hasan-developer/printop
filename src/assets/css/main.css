@@ -7074,6 +7074,17 @@ body.tp-magic-cursor #magic-cursor {
     margin-top: 0;
 }
 
+.service-small-image-item {
+    margin: 2px;
+    outline: 2px solid transparent;
+    display: inline-block;
+}
+
+.swiper-slide.swiper-slide-thumb-active .service-small-image-item {
+    outline-color: hsl(var(--primary-new));
+    border-color: hsl(var(--primary-new)) !important;
+}
+
 /* Service New section css end  */
 /* Get started new css start */
 .get-started-product-box {
