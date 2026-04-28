@@ -13,12 +13,6 @@
     opacity: 1;
 }
 
-@media (max-width: 424px) {
-    .category-dropdown {
-        min-width: 320px;
-    }
-}
-
 .category-button.active .icon {
     transform: rotate(180deg);
 }
