@@ -3,7 +3,8 @@
     transform: translateY(30px);
     visibility: hidden;
     opacity: 0;
-    min-width: 420px;
+    min-width: 300px;
+    max-width: 330px;
 }
 
 .category-dropdown.active {
