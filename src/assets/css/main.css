@@ -7116,7 +7116,7 @@ body.tp-magic-cursor #magic-cursor {
 /* Get started new css end */
 /* Testimonials new css start */
 .testimonials-new-img {
-    transform: translateY(40px);
+    transform: translateY(48px);
     max-height: 490px;
     overflow: hidden;
     max-width: 475px;
