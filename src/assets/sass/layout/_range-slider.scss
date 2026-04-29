@@ -1,48 +1,79 @@
 /* ================================= Range Slider Css Start =========================== */
-.custom--range__content label {
-    width: 40%;
+/* Range slider start */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
-.custom--range__content input {
-    width: 60%;
-    text-align: right;
+.price-input .separator {
+    width: 130px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
 }
 
-.custom--range input {
-    border: 0;
-    color: hsl(var(--body-color));
-    font-weight: 400;
-    outline: none;
-}
-
-.custom--range #slider-range {
+.slider {
     height: 5px;
-    border: 0;
-    background: hsl(var(--main)/0.15);
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
 }
 
-.custom--range #slider-range .ui-widget-header {
-    background-color: var(--main-600);
-    transition: .2s linear;
+.slider .progress {
+    height: 100%;
+    inset-inline-start: 25%;
+    inset-inline-end: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17a2b8;
 }
 
-.custom--range #slider-range span:focus {
-    background-color: var(--main-600);
+.range-input {
+    position: relative;
 }
 
-.custom--range #slider-range .ui-slider-handle {
-    width: 18px !important;
-    height: 18px !important;
-    background-color: hsl(var(--main)) !important;
-    border: 2px solid hsl(var(--white)) !important;
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
     border-radius: 50%;
-    inset-block-start: 50%;
-    transform: translateY(-50%);
-    transition: .2s linear;
-    outline: none;
-    &:hover, &:active {
-    transform: translateY(-50%) scale(1.4);
-    }
+    background: hsl(var(--primary-new));
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    transition: 0.2s linear;
 }
 
+input[type=range]::-webkit-slider-thumb:hover {
+    transform: scale(1.6);
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17a2b8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    transition: 0.2s linear;
+}
+
+input[type=range]::-moz-range-thumb:hover {
+    transform: scale(1.6);
+}
+
+/* Range slider End */
 /* ================================= Range Slider Css End =========================== */

@@ -1092,6 +1092,70 @@
     });
     // ========================= magnific Popup Js End =====================
 
+      // ========================= Range Slider Js Start =====================
+    $(document).ready(function () {
+      var $rangeInput = $(".range-input input"),
+        $priceInput = $(".price-input input"),
+        $range = $(".slider .progress"),
+        priceGap = 1000;
+
+      // Update the range and price inputs when the price input fields change
+      $priceInput.on("input", function () {
+        var minPrice = parseInt($priceInput.eq(0).val(), 10),
+          maxPrice = parseInt($priceInput.eq(1).val(), 10);
+
+        if (
+          maxPrice - minPrice >= priceGap &&
+          maxPrice <= parseInt($rangeInput.eq(1).attr("max"), 10)
+        ) {
+          if ($(this).hasClass("input-min")) {
+            $rangeInput.eq(0).val(minPrice);
+            $range.css(
+              "inset-inline-start",
+              (minPrice / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 +
+                "%"
+            );
+          } else {
+            $rangeInput.eq(1).val(maxPrice);
+            $range.css(
+              "inset-inline-end",
+              100 -
+                (maxPrice / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+                "%"
+            );
+          }
+        }
+      });
+
+      // Update the price input fields and range visual when the range slider is dragged
+      $rangeInput.on("input", function () {
+        var minVal = parseInt($rangeInput.eq(0).val(), 10),
+          maxVal = parseInt($rangeInput.eq(1).val(), 10);
+
+        if (maxVal - minVal < priceGap) {
+          if ($(this).hasClass("range-min")) {
+            $rangeInput.eq(0).val(maxVal - priceGap);
+          } else {
+            $rangeInput.eq(1).val(minVal + priceGap);
+          }
+        } else {
+          $priceInput.eq(0).val(minVal);
+          $priceInput.eq(1).val(maxVal);
+          $range.css(
+            "inset-inline-start",
+            (minVal / parseInt($rangeInput.eq(0).attr("max"), 10)) * 100 + "%"
+          );
+          $range.css(
+            "inset-inline-end",
+            100 -
+              (maxVal / parseInt($rangeInput.eq(1).attr("max"), 10)) * 100 +
+              "%"
+          );
+        }
+      });
+    });
+    // ========================= Range Slider Js End =====================
+    
     // ========================= Counter Up Js End ===================
     const counterUp = window.counterUp.default;
 
