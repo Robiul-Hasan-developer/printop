@@ -1478,6 +1478,10 @@ input:focus-visible {
     background-color: hsl(var(--primary-new));
 }
 
+.hover-bg-primary-new:hover {
+    background-color: hsl(var(--primary-new)) !important;
+}
+
 .bg-secondary-new {
     background-color: hsl(var(--secondary-new));
 }
