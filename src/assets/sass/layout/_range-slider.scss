@@ -27,6 +27,7 @@ input[type=number]::-webkit-inner-spin-button {
     position: absolute;
     border-radius: 5px;
     background: hsl(var(--primary-new));
+    background: var(--gradient-main);
 }
 
 .range-input {
@@ -49,6 +50,7 @@ input[type=range]::-webkit-slider-thumb {
     width: 17px;
     border-radius: 50%;
     background: hsl(var(--primary-new));
+    background: var(--gradient-main);
     pointer-events: auto;
     -webkit-appearance: none;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
