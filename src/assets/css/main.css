@@ -1486,6 +1486,10 @@ input:focus-visible {
     background-color: hsl(var(--secondary-new));
 }
 
+.bg-pink-600 {
+    background-color: #FF4E8D;
+}
+
 /* hover bg class end */
 .border-main-50 {
     border-color: var(--main-50) !important;
@@ -2604,6 +2608,10 @@ input:focus-visible {
 
 .tw-h-320-px {
     height: 320px;
+}
+
+.tw-h-340-px {
+    height: 340px !important;
 }
 
 .h-unset {
@@ -7306,6 +7314,12 @@ input[type=range]::-moz-range-thumb:hover {
     }
 }
 /* Brand new css end */
+/* Shop css start */
+.wishlist-btn.active i {
+    font-family: "Phosphor-Fill" !important;
+}
+
+/* Shop css end */
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);

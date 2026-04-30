@@ -1040,6 +1040,14 @@
     });
     // ========================= Color Picker Js End =====================
 
+    // ========================= Toggle class Js Start =====================
+    $(document).on("click", ".toggle-btn", function () {
+      // $(".color-picker__color").css("transform", "scale(1)");
+
+      $(this).toggleClass('active');
+    });
+    // ========================= Toggle class Js End =====================
+
     // ========================= AOS Js Start ===========================
     AOS.init({
       once: false,
