@@ -906,9 +906,9 @@ gsap.from(".border-second-style-one, .border-second-style-two", {
 
 //**************************** On scroll side item coming js Start ****************************
 mmm.add("(min-width: 1024px)", () => {
-  if (document.querySelectorAll(".come-from-right-section").length > 0) {
+  if (document.querySelectorAll(".come-from-right-item-section").length > 0) {
     const boxes = document.querySelectorAll(
-      ".come-from-right",
+      ".come-from-right-item",
     );
     gsap.from(boxes, {
       x: "100%",
@@ -917,9 +917,9 @@ mmm.add("(min-width: 1024px)", () => {
       ease: "power2.out",
       scrollTrigger: {
         scrub: 2,
-        trigger: ".come-from-right-wrapper",
+        trigger: ".come-from-right-item-wrapper",
         start: "top 100%",
-        end: "bottom 40%",
+        end: "bottom 60%",
         toggleActions: "play none none reverse",
       },
     });
