@@ -38,6 +38,9 @@
 .border-primary-new {
   border-color: hsl(var(--primary-new)) !important;
 }
+.focus-border-primary-new:focus {
+  border-color: hsl(var(--primary-new)) !important;
+}
 
 
 .border-pink-600 {
