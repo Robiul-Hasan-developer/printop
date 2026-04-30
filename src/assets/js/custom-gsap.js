@@ -39,14 +39,25 @@ if ($(".preloader").length) {
     ease: "power1.in",
     delay: 2,
     stagger: 0.04,
-  }).to(".preloader", {
-    yPercent: -100,
-    duration: 0.6,
-    ease: "power2.inOut",
-    onComplete: () => {
-      gsap.set(".preloader", { display: "none" });
-    },
-  });
+  })
+    .to(".preloader", {
+      yPercent: -100,
+      duration: 0.6,
+      ease: "power2.inOut",
+      onComplete: () => {
+        gsap.set(".preloader", { display: "none" });
+      },
+    })
+    .from(
+      ".section-animation-onload",
+      {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      "-=0.2",
+    );
 }
 // **************************** Preloader js End ****************************
 
@@ -896,7 +907,7 @@ if ($(".border-first-style-one, .border-first-style-two").length) {
       markers: false, // 👈 DEBUG
     },
   });
-  
+
   gsap.from(".border-second-style-one, .border-second-style-two", {
     height: 1,
     ease: "none",
