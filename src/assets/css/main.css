@@ -2835,6 +2835,10 @@ input:focus-visible {
     margin-top: 0;
 }
 
+.group-item:hover .group-hover-item-mb-6 {
+    margin-bottom: 24px;
+}
+
 .group-item:hover .group-hover-item-scale-12 {
     transform: scale(1.2);
 }
@@ -5145,6 +5149,10 @@ input:focus-visible {
 
 .transition-timing-linear {
     transition-timing-function: linear;
+}
+
+.tw-transition-delay-03 {
+    transition-delay: 0.3s;
 }
 
 /* transition Css Class End */
