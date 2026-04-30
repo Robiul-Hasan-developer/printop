@@ -884,31 +884,31 @@ if ($(".scroll-scale-item").length) {
 //**************************** scroll scale item js End ****************************
 
 //**************************** Border on scroll up down js Start ****************************
-// TOP → DOWN
-gsap.from(".border-first-style-one, .border-first-style-two", {
-  height: 10,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".about-new",
-    start: "top bottom",
-    end: "+=100%",
-    scrub: true,
-    markers: false, // 👈 DEBUG
-  },
-});
-
-// BOTTOM → UP
-gsap.from(".border-second-style-one, .border-second-style-two", {
-  height: 1,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".about-new",
-    start: "top 90%",
-    end: "+=100%",
-    scrub: true,
-    markers: false, // 👈 DEBUG
-  },
-});
+if ($(".border-first-style-one, .border-first-style-two").length) {
+  gsap.from(".border-first-style-one, .border-first-style-two", {
+    height: 10,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".about-new",
+      start: "top bottom",
+      end: "+=100%",
+      scrub: true,
+      markers: false, // 👈 DEBUG
+    },
+  });
+  
+  gsap.from(".border-second-style-one, .border-second-style-two", {
+    height: 1,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".about-new",
+      start: "top 90%",
+      end: "+=100%",
+      scrub: true,
+      markers: false, // 👈 DEBUG
+    },
+  });
+}
 //**************************** Border on scroll up down js End ****************************
 
 //**************************** On scroll side item coming js Start ****************************

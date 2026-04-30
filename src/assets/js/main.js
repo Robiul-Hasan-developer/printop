@@ -315,7 +315,7 @@
       grabCursor: true,
       loop: true,
       speed: 1000,
-      // effect: "fade",
+      effect: "fade",
       autoplay: {
         delay: 6000,
         disableOnInteraction: false,
@@ -1145,15 +1145,17 @@
     // ========================= Category Js End ===================
 
     // ========================= typed js text Js Start ===================
-    var typing = new Typed(".typed-text", {
-      strings: ["Creative", "Trending", "Modern"],
-      typeSpeed: 60, // slower = smoother typing
-      backSpeed: 40, // smooth deleting
-      backDelay: 1500, // pause before deleting
-      startDelay: 500, // delay before start
-      loop: true,
-      showCursor: false, // hide cursor
-    });
+    if ($(".typed-text").length) {
+      var typing = new Typed(".typed-text", {
+        strings: ["Creative", "Trending", "Modern"],
+        typeSpeed: 60, // slower = smoother typing
+        backSpeed: 40, // smooth deleting
+        backDelay: 1500, // pause before deleting
+        startDelay: 500, // delay before start
+        loop: true,
+        showCursor: false, // hide cursor
+      });
+    }
     // ========================= typed js text Js End ===================
 
     // ========================= magnific Popup Js Start =====================

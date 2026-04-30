@@ -59,12 +59,31 @@
 }
 
 .animated-slider-wrapper .swiper-slide-active {
+    .transition-delay-02 {
+        transition-delay: .2s !important;
+    }
+    .transition-delay-03 {
+        transition-delay: .3s !important;
+    }
+
+    .transition-delay-04 {
+        transition-delay: .4s !important;
+    }
+
     .transition-delay-05 {
         transition-delay: .5s !important;
     }
 
+    .transition-delay-06 {
+        transition-delay: .6s !important;
+    }
+
     .transition-delay-07 {
         transition-delay: .7s !important;
+    }
+
+    .transition-delay-08 {
+        transition-delay: .8s !important;
     }
 
     .transition-delay-09 {
@@ -73,6 +92,10 @@
 
     .transition-delay-1 {
         transition-delay: 1s !important;
+    }
+
+    .transition-delay-12 {
+        transition-delay: 1.2s !important;
     }
 
     .transition-delay-105 {

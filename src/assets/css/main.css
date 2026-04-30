@@ -947,12 +947,32 @@ input[type=number] {
     opacity: 1;
 }
 
+.animated-slider-wrapper .swiper-slide-active .transition-delay-02 {
+    transition-delay: 0.2s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-03 {
+    transition-delay: 0.3s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-04 {
+    transition-delay: 0.4s !important;
+}
+
 .animated-slider-wrapper .swiper-slide-active .transition-delay-05 {
     transition-delay: 0.5s !important;
 }
 
+.animated-slider-wrapper .swiper-slide-active .transition-delay-06 {
+    transition-delay: 0.6s !important;
+}
+
 .animated-slider-wrapper .swiper-slide-active .transition-delay-07 {
     transition-delay: 0.7s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-08 {
+    transition-delay: 0.8s !important;
 }
 
 .animated-slider-wrapper .swiper-slide-active .transition-delay-09 {
@@ -961,6 +981,10 @@ input[type=number] {
 
 .animated-slider-wrapper .swiper-slide-active .transition-delay-1 {
     transition-delay: 1s !important;
+}
+
+.animated-slider-wrapper .swiper-slide-active .transition-delay-12 {
+    transition-delay: 1.2s !important;
 }
 
 .animated-slider-wrapper .swiper-slide-active .transition-delay-105 {
