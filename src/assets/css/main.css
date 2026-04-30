@@ -696,6 +696,10 @@ input[type=number] {
     color: hsl(var(--heading-color)) !important;
 }
 
+.active-btn-main-primary .nav-link.active {
+    background-color: hsl(var(--primary-new)) !important;
+}
+
 /* ================================= Tab Css End =========================== */
 /* ======================= Common Table Css Start ======================= */
 .table > :not(caption) > * > * {

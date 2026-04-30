@@ -8,4 +8,10 @@
         }
     }
 }
+
+.active-btn-main-primary {
+    .nav-link.active {
+        background-color: hsl(var(--primary-new)) !important;
+    }
+}
 /* ================================= Tab Css End =========================== */
