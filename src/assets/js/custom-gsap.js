@@ -755,6 +755,26 @@ if (document.querySelectorAll(".scale-littlebit-onscroll").length > 0) {
 }
 //**************************** scale little bit onscroll animation js End ****************************
 
+//**************************** scroll down little bit animation js End ****************************
+if ($(".scroll-down-littlebit-onscroll").length) {
+  const tl = gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".scroll-down-littlebit-onscroll",
+        scrub: 1,
+        pin: false,
+        start: "top 500px",
+        // end: "+=100px",
+      },
+    })
+    .to(".scroll-down-littlebit-onscroll", {
+      scale: 1.02,
+      y: 50,
+      ease: "none",
+    });
+}
+//**************************** scroll down little bit animation js End ****************************
+
 //**************************** Card Item animation js End ****************************
 document.addEventListener("DOMContentLoaded", function () {
   if (window.innerWidth > 1200) {
@@ -844,7 +864,6 @@ mmm.add("(min-width: 992px)", () => {
 //**************************** fixed content js End ****************************
 
 //**************************** scroll scale item js Start ****************************
-// mmm.add("(min-width: 1199px)", () => {
 if ($(".scroll-scale-item").length) {
   const tl = gsap
     .timeline({
@@ -862,7 +881,6 @@ if ($(".scroll-scale-item").length) {
       // autoAlpha: 0, // ✅ hides completely
     });
 }
-// });
 //**************************** scroll scale item js End ****************************
 
 //**************************** Border on scroll up down js Start ****************************

@@ -7353,6 +7353,31 @@ input[type=range]::-moz-range-thumb:hover {
 }
 
 /* Shop css end */
+/* Footer new css start */
+.footer-item-wrapper {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 576px) {
+    .footer-item-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-item-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1199px) {
+    .footer-item-wrapper {
+        grid-template-columns: 3fr 1.5fr 1.5fr 2.5fr 2fr;
+    }
+}
+/* Footer new css end*/
 /* Team Css start */
 .on-hover-animation-item li {
     transform: translateY(80px);
