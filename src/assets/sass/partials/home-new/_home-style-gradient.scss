@@ -8,6 +8,8 @@
         --heading-six: 1rem; // 16px
 
         --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+
+        --body-font: "DM Sans", sans-serif;
     }
 }
 
@@ -17,6 +19,10 @@
 
 
 .home-style-gradient {
+    .section-bg {
+        background: #735CFC0D;
+    }
+
     .bg-main-600 {
         background: var(--gradient-main);
 

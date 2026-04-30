@@ -73,7 +73,7 @@
 
    ================================== Css table of contents End======================================== */
 /* Font Family*/
-@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gabarito:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 /* ========================= Variable Css Start ======================== */
 :root {
   /* Font Family Variable */
@@ -5640,7 +5640,7 @@ input:focus-visible {
 }
 
 .animation-rotate-scale {
-    animation: scaleRotate 4.5s ease-in-out infinite;
+    animation: scaleRotate 14s ease-in-out infinite;
 }
 
 @keyframes scaleRotate {
@@ -5770,7 +5770,7 @@ input:focus-visible {
 }
 
 .animate__wobble__two {
-    animation: wobble 2.4s ease-in-out infinite;
+    animation: wobble 9.4s ease-in-out infinite;
 }
 
 /* ======================== Animation Css End ==================================== */
@@ -6789,10 +6789,15 @@ input[type=range]::-moz-range-thumb:hover {
     --heading-five: 1.25rem;
     --heading-six: 1rem;
     --gradient-main: linear-gradient(90deg, #FF4E8D 0%, #AF35E7 50%, #4C82FC 100%);
+    --body-font: "DM Sans", sans-serif;
 }
 
 .display-5 {
     font-size: clamp(2.5rem, 0.7133rem + 3.5vw, 3.5rem);
+}
+
+.home-style-gradient .section-bg {
+    background: #735CFC0D;
 }
 
 .home-style-gradient .bg-main-600 {
@@ -7225,7 +7230,7 @@ input[type=range]::-moz-range-thumb:hover {
 /* Get started new css end */
 /* Testimonials new css start */
 .testimonials-new-img {
-    transform: translateY(48px);
+    transform: translateY(28px);
     max-height: 490px;
     overflow: hidden;
     max-width: 475px;

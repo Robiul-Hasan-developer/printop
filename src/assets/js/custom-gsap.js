@@ -39,25 +39,14 @@ if ($(".preloader").length) {
     ease: "power1.in",
     delay: 2,
     stagger: 0.04,
-  })
-    .to(".preloader", {
-      yPercent: -100,
-      duration: 0.6,
-      ease: "power2.inOut",
-      onComplete: () => {
-        gsap.set(".preloader", { display: "none" });
-      },
-    })
-    .from(
-      ".hero-section.four",
-      {
-        y: 20,
-        opacity: 0,
-        duration: 0.8,
-        ease: "power3.out",
-      },
-      "-=0.2",
-    );
+  }).to(".preloader", {
+    yPercent: -100,
+    duration: 0.6,
+    ease: "power2.inOut",
+    onComplete: () => {
+      gsap.set(".preloader", { display: "none" });
+    },
+  });
 }
 // **************************** Preloader js End ****************************
 
@@ -907,9 +896,7 @@ gsap.from(".border-second-style-one, .border-second-style-two", {
 //**************************** On scroll side item coming js Start ****************************
 mmm.add("(min-width: 1024px)", () => {
   if (document.querySelectorAll(".come-from-right-item-section").length > 0) {
-    const boxes = document.querySelectorAll(
-      ".come-from-right-item",
-    );
+    const boxes = document.querySelectorAll(".come-from-right-item");
     gsap.from(boxes, {
       x: "100%",
       duration: 1.5,

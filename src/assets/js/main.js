@@ -505,7 +505,7 @@
         delay: 4000,
         disableOnInteraction: false,
       },
-      autoplay: false,
+      autoplay: true,
       speed: 1000,
       effect: "fade",
       navigation: {
