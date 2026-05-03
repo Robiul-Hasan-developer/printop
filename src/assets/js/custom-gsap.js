@@ -31,24 +31,55 @@ if ($("#smooth-wrapper").length && $("#smooth-content").length) {
 // **************************** Smooth Scroll js End ****************************
 
 // **************************** Preloader js Start ****************************
+// if ($(".preloader").length) {
+//   const tl = gsap.timeline();
+//   tl.from(".preloader .block", {
+//     scaleX: 0,
+//     duration: 0.8,
+//     ease: "power1.in",
+//     delay: 2,
+//     stagger: 0.04,
+//   })
+//     .to(".preloader", {
+//       yPercent: -100,
+//       duration: 0.6,
+//       ease: "power2.inOut",
+//       onComplete: () => {
+//         gsap.set(".preloader", { display: "none" });
+//       },
+//     })
+//     .from(
+//       ".section-animation-onload",
+//       {
+//         y: 20,
+//         opacity: 0,
+//         duration: 0.8,
+//         ease: "power3.out",
+//       },
+//       "-=0.2",
+//     );
+// }
 if ($(".preloader").length) {
   const tl = gsap.timeline();
+
   tl.from(".preloader .block", {
     scaleX: 0,
     duration: 0.8,
     ease: "power1.in",
     delay: 2,
     stagger: 0.04,
-  })
-    .to(".preloader", {
-      yPercent: -100,
-      duration: 0.6,
-      ease: "power2.inOut",
-      onComplete: () => {
-        gsap.set(".preloader", { display: "none" });
-      },
-    })
-    .from(
+  }).to(".preloader", {
+    yPercent: -100,
+    duration: 0.6,
+    ease: "power2.inOut",
+    onComplete: () => {
+      gsap.set(".preloader", { display: "none" });
+    },
+  });
+
+  // ✅ Only run if element exists
+  if ($(".section-animation-onload").length) {
+    tl.from(
       ".section-animation-onload",
       {
         y: 20,
@@ -56,8 +87,9 @@ if ($(".preloader").length) {
         duration: 0.8,
         ease: "power3.out",
       },
-      "-=0.2",
+      "-=0.2"
     );
+  }
 }
 // **************************** Preloader js End ****************************
 
