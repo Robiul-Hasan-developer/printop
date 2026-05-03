@@ -7431,7 +7431,7 @@ input[type=range]::-moz-range-thumb:hover {
 /* ============================ Product Range css start =============================== */
 .product-range-image {
     bottom: 14%;
-    inset-inline-start: 34%;
+    inset-inline-start: 36%;
 }
 
 /* ============================ Product Range css end =============================== */
