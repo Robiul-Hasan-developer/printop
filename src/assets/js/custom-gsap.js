@@ -77,7 +77,6 @@ if ($(".preloader").length) {
     },
   });
 
-  // ✅ Only run if element exists
   if ($(".section-animation-onload").length) {
     tl.from(
       ".section-animation-onload",
